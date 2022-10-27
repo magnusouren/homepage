@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import CvPhoto from "./components/home/cvphoto";
 import Wallpaper from "./components/home/wallpaper";
-import Navbar from "./components/nav/navbar";
+import { Navbar } from "./components/nav/navbar";
 
 function App() {
     return (
