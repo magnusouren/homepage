@@ -4,7 +4,7 @@ import {
     Route,
 } from "react-router-dom";
 import { PageLayout } from "./layouts/page";
-import { HomeView } from "./pages/homepage";
+import { HomeView } from "./pages/homeview";
 
 export const router = createBrowserRouter(
     createRoutesFromElements(
