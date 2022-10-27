@@ -5,6 +5,8 @@ import { Navbar } from "../components/nav/navbar";
 export const PageLayout: FC = () => (
     <main>
         <Navbar />
-        <Outlet />
+        <div className="ml-48 mb-20">
+            <Outlet />
+        </div>
     </main>
 );
