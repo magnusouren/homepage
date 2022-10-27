@@ -1,32 +1,34 @@
 import "../App.css";
-import CvPhoto from "../components/home/cvphoto";
 import Wallpaper from "../components/home/wallpaper";
-import { Navbar } from "../components/nav/navbar";
 
 export const HomeView = () => (
-    <>
-        <Navbar />
-        <div className="ml-48 mb-20">
-            <Wallpaper></Wallpaper>
-            <CvPhoto></CvPhoto>
-            <p className="w-96 ml-auto mr-auto mt-12">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                ex aspernatur eveniet sapiente ab est ad consectetur, accusamus
-                soluta eligendi libero doloribus sequi cumque dignissimos nulla
-                perspiciatis praesentium animi alias!
+    <div>
+        <Wallpaper></Wallpaper>
+        <div className="w-96 ml-auto mr-auto m-8">
+            <h2 className="text-4xl font-bold">magnus.ouren.no</h2>
+            <p className="font-semibold">react/typescript/tailwind</p>
+            <p className="mt-8">
+                Hello I'm Magnus and this is my first homepage. I am currently
+                studying informatics at my second year at NTNU in Trondheim.
             </p>
-            <p className="w-96 ml-auto mr-auto mt-12">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                ex aspernatur eveniet sapiente ab est ad consectetur, accusamus
-                soluta eligendi libero doloribus sequi cumque dignissimos nulla
-                perspiciatis praesentium animi alias!
+            <p className="mt-8">
+                This is my first ever buildt react webpage. My react-skills are
+                self-taught, so don't be harsh. You can check out the repository
+                for this webpage{" "}
+                <a
+                    target="blank"
+                    href="https://github.com/magnusouren/homepage"
+                    className="underline hover:font-semibold"
+                >
+                    here!
+                </a>
             </p>
-            <p className="w-96 ml-auto mr-auto mt-12">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                ex aspernatur eveniet sapiente ab est ad consectetur, accusamus
-                soluta eligendi libero doloribus sequi cumque dignissimos nulla
-                perspiciatis praesentium animi alias!
+            <p className="mt-8">
+                The amazing photo you can see above was taken on my last
+                holiday. The picture was taken in Monaco, where I was on a trip
+                with my friends. Expensive stay, but a very cool place! Can be
+                strongly recommended
             </p>
         </div>
-    </>
+    </div>
 );
