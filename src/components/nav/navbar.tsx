@@ -1,33 +1,33 @@
 import React from "react";
-import NavItem from "./navItem";
+import { NavItem, navItemType } from "./navItem";
 
-const navItems = [
+const navItems: navItemType[] = [
     {
-        label: "home",
+        text: "home",
         emoji: "🤍",
         url: "/",
         target: "self",
     },
     {
-        label: "github",
+        text: "github",
         emoji: "💻",
         url: "https://github.com/magnusouren",
         target: "blank",
     },
     {
-        label: "linkedin",
+        text: "linkedin",
         emoji: "🔗",
         url: "https://www.linkedin.com/in/magnus-tomter-ouren-44a80321b/",
         target: "blank",
     },
     {
-        label: "email",
+        text: "email",
         emoji: "✉️",
         url: "mailto:magnut0203@gmail.com",
         target: "_self",
     },
     {
-        label: "about me",
+        text: "about me",
         emoji: "👀",
         url: "/me",
         target: "_self",
@@ -39,7 +39,7 @@ export const Navbar = () => (
         <ul>
             {navItems.map((navItem) => (
                 <NavItem
-                    text={navItem.label}
+                    text={navItem.text}
                     url={navItem.url}
                     target={navItem.target}
                     emoji={navItem.emoji}
