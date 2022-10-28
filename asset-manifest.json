@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5e0cae16.css",
+    "main.js": "/static/js/main.35cfacd9.js",
+    "static/media/monaco.jpg": "/static/media/monaco.8578bcabf085ad13bb1d.jpg",
+    "static/media/cvphoto.jpg": "/static/media/cvphoto.d3217983a5e1d975013d.jpg",
+    "index.html": "/index.html",
+    "main.5e0cae16.css.map": "/static/css/main.5e0cae16.css.map",
+    "main.35cfacd9.js.map": "/static/js/main.35cfacd9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e0cae16.css",
+    "static/js/main.35cfacd9.js"
+  ]
+}
