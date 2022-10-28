@@ -6,7 +6,13 @@ const navItems: navItemType[] = [
     text: 'home',
     emoji: '🤍',
     url: '/',
-    target: 'self',
+    target: '_self',
+  },
+  {
+    text: 'about me',
+    emoji: '👀',
+    url: '/me',
+    target: '_self',
   },
   {
     text: 'github',
@@ -24,12 +30,6 @@ const navItems: navItemType[] = [
     text: 'email',
     emoji: '✉️',
     url: 'mailto:magnut0203@gmail.com',
-    target: '_self',
-  },
-  {
-    text: 'about me',
-    emoji: '👀',
-    url: '/me',
     target: '_self',
   },
 ];
