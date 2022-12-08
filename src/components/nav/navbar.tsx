@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavItem, navItemType } from './navItem';
 
 const navItems: navItemType[] = [
@@ -15,16 +14,22 @@ const navItems: navItemType[] = [
     target: '_self',
   },
   {
+    text: 'projects',
+    emoji: '💾',
+    url: '/projects',
+    target: '_self',
+  },
+  {
     text: 'github',
     emoji: '💻',
     url: 'https://github.com/magnusouren',
-    target: 'blank',
+    target: '_blank',
   },
   {
     text: 'linkedin',
     emoji: '🔗',
     url: 'https://www.linkedin.com/in/magnus-tomter-ouren-44a80321b/',
-    target: 'blank',
+    target: '_blank',
   },
   {
     text: 'email',

@@ -1,6 +1,6 @@
 import '../App.css';
 import { Logos } from '../components/home/logos';
-import Wallpaper from '../components/home/wallpaper';
+import { Wallpaper } from '../components/home/wallpaper';
 
 export const HomeView = () => (
   <div>
