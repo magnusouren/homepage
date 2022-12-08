@@ -6,5 +6,5 @@ interface LogoProps {
 }
 
 export const Logo: React.FC<LogoProps> = ({ url, width }) => (
-  <img src={url} alt={url} className={` w-${width} grayscale hover:grayscale-0`}></img>
+  <img src={url} alt={url} className={` w-${width} grayscale hover:grayscale-0 mx-4`}></img>
 );
