@@ -4,7 +4,7 @@ import { Wallpaper } from '../components/home/wallpaper';
 
 export const HomeView = () => (
   <div>
-    <Wallpaper></Wallpaper>
+    <Wallpaper />
     <div className="w-96 ml-auto mr-auto m-8">
       <h2 className="text-4xl font-bold">magnus.ouren.no</h2>
       <p className="font-semibold text-gray-500">react/typescript/tailwind css</p>
@@ -23,7 +23,7 @@ export const HomeView = () => (
         The amazing photo you can see above was taken on my last holiday. The picture was taken in Monaco, where I was
         on a trip with my friends. Expensive stay, but a very cool place! Can be strongly recommended!
       </p>
-      <Logos></Logos>
+      <Logos />
     </div>
   </div>
 );
