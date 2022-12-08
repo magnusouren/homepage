@@ -14,6 +14,12 @@ const navItems: navItemType[] = [
     target: '_self',
   },
   {
+    text: 'CV',
+    emoji: '📖',
+    url: '/cv',
+    target: '_self',
+  },
+  {
     text: 'projects',
     emoji: '💾',
     url: '/projects',

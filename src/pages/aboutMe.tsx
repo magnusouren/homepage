@@ -16,10 +16,7 @@ export const AboutMe = () => (
         Currently I am a part of the student organization for informatics, called Online. Where I am also a part of the
         board for the student organization. My role in the board is to be represant for the Business relation committee.
         More about Online can be found{' '}
-        <a
-          href="https://online.ntnu.no/"
-          className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-        >
+        <a href="https://online.ntnu.no/" className="underline hover:text-gray-500">
           here
         </a>
         . If you want to know more about me and what I do you should visit the <i className="italic">CV</i> and{' '}
@@ -27,10 +24,7 @@ export const AboutMe = () => (
       </p>
       <p className="my-4">
         Currently I am working for{' '}
-        <a
-          href="https://www.dykkershop.no/"
-          className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-        >
+        <a href="https://www.dykkershop.no/" className="underline hover:text-gray-500">
           Havsport Dykkersenter
         </a>{' '}
         as maintainer of the webshop. Also working with the development of the website for the shop. This is my first
