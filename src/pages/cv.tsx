@@ -10,6 +10,7 @@ const CVJobs: CVJobProps[] = [
     duration: 'January 2022 - Present',
     jobDescription: 'Maintaining and developing the webshop for Havsport Diving center AS.',
     logo: Havsport,
+    location: 'Trondheim',
   },
   {
     jobTitle: 'Lifeguard',
@@ -17,6 +18,7 @@ const CVJobs: CVJobProps[] = [
     duration: 'June 2022 - August 2022',
     jobDescription: 'Summer jobb as lifeguard at the public beaches in Oslo.',
     logo: NLS,
+    location: 'Oslo',
   },
   {
     jobTitle: 'Diving instructor',
@@ -25,6 +27,7 @@ const CVJobs: CVJobProps[] = [
     jobDescription:
       'Dive instructor for the Royal Norwegian Navy. Teaching and training skills for all types of divers for the Norwegian Armed Forces.',
     logo: ForsvaretLogo,
+    location: 'Bergen',
   },
   {
     jobTitle: 'Shipdiver',
@@ -33,6 +36,7 @@ const CVJobs: CVJobProps[] = [
     jobDescription:
       'Served as private as shipdiver for the Royal Norwegian Navy. Helping with maintanance and as instructor at the diving school. Teaching and training divers with fundamental skills for becoming shipdivers.',
     logo: ForsvaretLogo,
+    location: 'Bergen',
   },
 ];
 
@@ -48,6 +52,7 @@ export const CV = () => (
           duration={job.duration}
           jobDescription={job.jobDescription}
           logo={job.logo}
+          location={job.location}
         />
       ))}
     </div>
