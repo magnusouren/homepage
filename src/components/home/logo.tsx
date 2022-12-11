@@ -2,9 +2,8 @@ import React from 'react';
 
 interface LogoProps {
   url: string;
-  width: number;
 }
 
-export const Logo: React.FC<LogoProps> = ({ url, width }) => (
-  <img src={url} alt={url} className={` w-${width} grayscale hover:grayscale-0 mx-4`}></img>
+export const Logo: React.FC<LogoProps> = ({ url }) => (
+  <img src={url} alt={url} className={` w-16 grayscale hover:grayscale-0 mx-4`} />
 );
