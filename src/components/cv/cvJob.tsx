@@ -31,21 +31,17 @@ export const CVJob: React.FC<CVJobProps> = ({ jobTitle, company, duration, jobDe
         </div>
         <img src={logo} alt="logo" className="w-24 h-24 mt-2 m-2" />
       </div>
-      {displayDescription && (
-        <>
-          <button className="border-black bg-transparent flex hover:underline" onClick={toggleContent}>
-            <img src={Arrow} alt="Arrow down" className="w-4 mr-2 mt-1 rotate-180" />
-            <span>Hide</span>
-          </button>
-          <CvDescription description={jobDescription} />
-        </>
-      )}
-      {!displayDescription && (
-        <button className="border-black bg-transparent flex hover:underline" onClick={toggleContent}>
-          <img src={Arrow} alt="Arrow down" className="w-4 mr-2 mt-1" />
-          <span>Read more</span>
-        </button>
-      )}
+      <button className="border-black bg-transparent flex hover:underline" onClick={toggleContent}>
+        <img
+          src={Arrow}
+          alt="Arrow down"
+          className={`w-4 mr-2 mt-1 rotate-${
+            displayDescription ? 180 : 0
+          } transition duration-300 ease-in-out transform`}
+        />
+        <span> {displayDescription ? 'Hide' : 'Read more'}</span>
+      </button>
+      {displayDescription && <CvDescription description={jobDescription} />}
     </div>
   );
 };
