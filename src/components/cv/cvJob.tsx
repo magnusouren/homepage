@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { CvDescription } from './cvDescription';
-import Arrow from '../../img/downArrow.png';
 
 export interface CVJobProps {
   jobTitle: string;
@@ -9,17 +8,28 @@ export interface CVJobProps {
   jobDescription: string;
   logo: string;
   location: string;
+  href?: string;
 }
 
-export const CVJob: React.FC<CVJobProps> = ({ jobTitle, company, duration, jobDescription, logo, location }) => {
+export const CVJob: React.FC<CVJobProps> = ({
+  jobTitle,
+  company,
+  duration,
+  jobDescription,
+  logo,
+  location,
+  href = 'test',
+}) => {
   const [displayDescription, setDisplayDescription] = useState(false);
 
-  const toggleContent = () => {
-    setDisplayDescription(!displayDescription);
+  const handleOnClick = () => {
+    if (href) {
+      window.open(href, '_blank');
+    }
   };
 
   return (
-    <div className="py-4 border-b-2">
+    <div className="my-4">
       <div className="flex justify-between">
         <div className="pr-4">
           <h4 className="font-semibold text-xl my-2">
@@ -28,20 +38,11 @@ export const CVJob: React.FC<CVJobProps> = ({ jobTitle, company, duration, jobDe
           <span className="text-gray-600 my-2">
             {location} | {duration}
           </span>
+          <CvDescription displayDescription={displayDescription} setDisplayDescription={setDisplayDescription} />
         </div>
-        <img src={logo} alt="logo" className="w-24 h-24 mt-2 m-2" />
+        <img src={logo} alt="logo" className="block w-24 h-24 mt-2 m-2 cursor-pointer" onClick={handleOnClick} />
       </div>
-      <button className="border-black bg-transparent flex hover:underline" onClick={toggleContent}>
-        <img
-          src={Arrow}
-          alt="Arrow down"
-          className={`w-4 mr-2 mt-1 rotate-${
-            displayDescription ? 180 : 0
-          } transition duration-300 ease-in-out transform`}
-        />
-        <span> {displayDescription ? 'Hide' : 'Read more'}</span>
-      </button>
-      {displayDescription && <CvDescription description={jobDescription} />}
+      {displayDescription && <p className="text-gray-800 text-justify bg-gray-100 p-4 mt-4">{jobDescription}</p>}
     </div>
   );
 };
