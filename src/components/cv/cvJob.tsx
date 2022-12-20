@@ -1,3 +1,7 @@
+import { useState } from 'react';
+import { CvDescription } from './cvDescription';
+import Arrow from '../../img/downArrow.png';
+
 export interface CVJobProps {
   jobTitle: string;
   company: string;
@@ -7,21 +11,41 @@ export interface CVJobProps {
   location: string;
 }
 
-export const CVJob: React.FC<CVJobProps> = (props) => {
+export const CVJob: React.FC<CVJobProps> = ({ jobTitle, company, duration, jobDescription, logo, location }) => {
+  const [displayDescription, setDisplayDescription] = useState(false);
+
+  const toggleContent = () => {
+    setDisplayDescription(!displayDescription);
+  };
+
   return (
-    <div className=" py-4">
+    <div className="py-4 border-b-2">
       <div className="flex justify-between">
         <div className="pr-4">
-          <h4 className="font-semibold my-2">
-            {props.jobTitle} at {props.company}
+          <h4 className="font-semibold text-xl my-2">
+            {jobTitle} at {company}
           </h4>
           <span className="text-gray-600 my-2">
-            {props.location} | {props.duration}
+            {location} | {duration}
           </span>
-          <p className="text-gray-800 my-2">{props.jobDescription}</p>
         </div>
-        <img src={props.logo} alt="logo" className="w-36 mt-auto mb-auto m-2" />
+        <img src={logo} alt="logo" className="w-24 h-24 mt-2 m-2" />
       </div>
+      {displayDescription && (
+        <>
+          <button className="border-black bg-transparent flex hover:underline" onClick={toggleContent}>
+            <img src={Arrow} alt="Arrow down" className="w-4 mr-2 mt-1 rotate-180" />
+            <span>Hide</span>
+          </button>
+          <CvDescription description={jobDescription} />
+        </>
+      )}
+      {!displayDescription && (
+        <button className="border-black bg-transparent flex hover:underline" onClick={toggleContent}>
+          <img src={Arrow} alt="Arrow down" className="w-4 mr-2 mt-1" />
+          <span>Read more</span>
+        </button>
+      )}
     </div>
   );
 };

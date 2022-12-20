@@ -8,7 +8,8 @@ const CVJobs: CVJobProps[] = [
     jobTitle: 'Webshop maintainer and developer',
     company: 'Havsport Diving center AS',
     duration: 'January 2022 - Present',
-    jobDescription: 'Maintaining and developing the webshop for Havsport Diving center AS.',
+    jobDescription:
+      "As part of my job at Havsport Diving Center AS, I was responsible for maintaining and developing the company's webshop. This involved updating and adding new products, as well as making price adjustments based on market conditions. I worked to ensure that the webshop was user-friendly and provided a smooth online shopping experience for our customers. Overall, my role was critical in maintaining the online presence and success of Havsport Diving Center AS.",
     logo: Havsport,
     location: 'Trondheim',
   },
@@ -16,7 +17,8 @@ const CVJobs: CVJobProps[] = [
     jobTitle: 'Lifeguard',
     company: 'Norwegian Lifeguard Association',
     duration: 'June 2022 - August 2022',
-    jobDescription: 'Summer jobb as lifeguard at the public beaches in Oslo.',
+    jobDescription:
+      'Summer job as lifeguard at the public beaches during the summer season in Oslo. Lifeguarding and first aid for the visitors at the beach. Preventing accidents and helping people in need, both in and out of the water. Internationally certified lifeguard.',
     logo: NLS,
     location: 'Oslo',
   },
@@ -25,7 +27,7 @@ const CVJobs: CVJobProps[] = [
     company: 'The Norwegain Naval Diving School - Royal Norwegian Navy',
     duration: 'July 2021 - July 2022',
     jobDescription:
-      'Dive instructor for the Royal Norwegian Navy. Teaching and training skills for all types of divers for the Norwegian Armed Forces.',
+      'As a diving instructor for the Royal Norwegian Navy, I was responsible for teaching and training a wide range of diving skills to members of the Norwegian Armed Forces. This included providing instruction in various diving techniques, as well as teaching safety protocols and emergency procedures. I worked with divers of all levels, from beginners to experienced professionals. In addition to conducting in-water training, I participated in the development of the instructional materials and lesson plans, and assisted in the maintenance and upkeep of diving equipment. Overall, my role was to ensure that the Norwegian Armed Forces had highly skilled and proficient divers.',
     logo: ForsvaretLogo,
     location: 'Bergen',
   },
