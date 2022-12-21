@@ -1,38 +1,41 @@
 import React from 'react';
+import { CvContent } from './cvContent';
 
-export interface CvEducationProps {
+export type CvEducationProps = {
   degree: string;
   description?: string;
   endYear?: number;
+  endmonth?: string;
   fieldOfStudy: string;
   institution: string;
   location: string;
   logo: string;
   startYear: number;
-}
+  startMonth?: string;
+};
 
 export const CvEducation: React.FC<CvEducationProps> = ({
   degree,
   description = '',
   endYear,
+  endmonth = '',
   fieldOfStudy,
   institution,
   location,
   logo,
   startYear,
-}) => (
-  <div className="my-4">
-    <div className="flex justify-between">
-      <div>
-        <h4 className="font-semibold text-xl">
-          {degree} in {fieldOfStudy}
-        </h4>
-        <span className="text-gray-600 my-2">
-          {institution}, {location} | {startYear}-{endYear ? endYear : 'Present'}
-        </span>
-        <p className="mt-2">{description}</p>
-      </div>
-      <img src={logo} alt="education" className="w-24 h-24 mx-2" />
-    </div>
+  startMonth = '',
+}: CvEducationProps) => (
+  <div className="mb-8">
+    <CvContent
+      header={degree + ' in ' + fieldOfStudy}
+      location={institution + ', ' + location}
+      logo={logo}
+      startYear={startYear}
+      startMonth={startMonth}
+      endMonth={endmonth}
+      endYear={endYear}
+      description={description}
+    />
   </div>
 );
