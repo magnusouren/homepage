@@ -17,7 +17,7 @@ export const CVEducationData: CvEducationProps[] = [
     description: '5,00 / 6,00 as final grade (without extra points)',
     endYear: 2019,
     fieldOfStudy: 'Natural sciences',
-    institution: 'Lambertseter videregående skole',
+    institution: 'Lambertseter VGS',
     location: 'Oslo',
     logo: LVGS,
     startYear: 2016,
