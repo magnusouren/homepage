@@ -1,25 +1,25 @@
 export type CvContentProps = {
+  description?: string | JSX.Element;
+  endMonth?: string;
+  endYear?: number;
   header: string;
+  href?: string;
+  logo?: string;
   location: string;
   startMonth?: string;
-  endMonth?: string;
   startYear: number;
-  endYear?: number;
-  logo?: string;
-  description?: string | JSX.Element;
-  href?: string;
 };
 
 export const CvContent = ({
-  startMonth = '',
-  startYear,
+  description = '',
   endMonth = '',
   endYear = 0,
-  location,
   header,
-  logo = '',
-  description = '',
   href = '',
+  logo = '',
+  location,
+  startMonth = '',
+  startYear,
 }: CvContentProps) => {
   const handleOnClick = () => {
     if (href) window.open(href, '_blank');
