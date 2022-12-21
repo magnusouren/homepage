@@ -1,12 +1,30 @@
+import { CvEducation } from '../components/cv/cvEducation';
 import { CVJob } from '../components/cv/cvJob';
-import { CVJobs } from '../data/cv';
+import { Subtitle } from '../components/subtitle';
+import { CVEducationData } from '../data/cv/cvEducation';
+import { CVJobsData } from '../data/cv/cvJobs';
 
 export const CV = () => (
-  <div className="ml-auto mr-auto max-w-xl p-4">
-    <h2 className="text-4xl font-bold my-4">curriculum vitae</h2>
+  <div className="ml-auto mr-auto max-w-xl px-4">
+    <Subtitle subtitle="curriculum vitae" />
     <div className="py-4">
-      <h3 className="text-2xl font-bold my-4 border-b-2">working experience:</h3>
-      {CVJobs.map((job) => (
+      <h3 className="text-2xl font-bold border-b-2">education:</h3>
+      {CVEducationData.map((education) => (
+        <CvEducation
+          degree={education.degree}
+          description={education.description}
+          fieldOfStudy={education.fieldOfStudy}
+          institution={education.institution}
+          location={education.location}
+          logo={education.logo}
+          startYear={education.startYear}
+          endYear={education.endYear}
+        />
+      ))}
+    </div>
+    <div>
+      <h3 className="text-2xl font-bold border-b-2">working experience:</h3>
+      {CVJobsData.map((job) => (
         <CVJob
           jobTitle={job.jobTitle}
           company={job.company}
@@ -17,9 +35,6 @@ export const CV = () => (
           href={job.href}
         />
       ))}
-    </div>
-    <div className="py-4 border-gray-700">
-      <h3 className="text-2xl font-bold border-b-2">education:</h3>
     </div>
   </div>
 );
