@@ -1,9 +1,10 @@
 import { CvPhoto } from '../components/home/cvphoto';
+import { Subtitle } from '../components/subtitle';
 
 export const AboutMe = () => (
   <div>
-    <div className="ml-auto mr-auto max-w-xl">
-      <h2 className="text-4xl font-bold my-4">about me</h2>
+    <div className="ml-auto mr-auto max-w-xl px-4">
+      <Subtitle subtitle="about me" />
       <p className="my-4 text-justify">
         I am a 22 year old student from Trondheim, Norway. Grew up and comes from Oslo. Currently studying informatics
         at NTNU in Trondheim. At the moment at the second year of the bachelor program. I am a very curious person and I
