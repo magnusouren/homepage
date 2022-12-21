@@ -3,6 +3,7 @@ import { CVJob } from '../components/cv/cvJob';
 import { Subtitle } from '../components/subtitle';
 import { CVEducationData } from '../data/cv/cvEducation';
 import { CVJobsData } from '../data/cv/cvJobs';
+import { CvVoluntaryWorkData } from '../data/cv/cvVoluntaryWorkData';
 
 export const CV = () => (
   <div className="ml-auto mr-auto max-w-xl px-4">
@@ -41,6 +42,19 @@ export const CV = () => (
     </div>
     <div>
       <h3 className="text-2xl font-bold border-b-2 mb-4">voluntary work:</h3>
+      {CvVoluntaryWorkData.map((voluntaryWork) => (
+        <CVJob
+          jobTitle={voluntaryWork.position}
+          company={voluntaryWork.institution}
+          startYear={voluntaryWork.startYear}
+          endYear={voluntaryWork.endYear}
+          startMonth={voluntaryWork.startMonth}
+          endMonth={voluntaryWork.endMonth}
+          jobDescription={voluntaryWork.description}
+          logo={voluntaryWork.logo}
+          location={voluntaryWork.location}
+        />
+      ))}
     </div>
   </div>
 );
