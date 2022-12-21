@@ -23,18 +23,24 @@ export const CV = () => (
       ))}
     </div>
     <div>
-      <h3 className="text-2xl font-bold border-b-2 mb-4">working experience:</h3>
+      <h3 className="text-2xl font-bold border-b-2">working experience:</h3>
       {CVJobsData.map((job) => (
         <CVJob
           jobTitle={job.jobTitle}
           company={job.company}
-          duration={job.duration}
+          startYear={job.startYear}
+          endYear={job.endYear}
+          startMonth={job.startMonth}
+          endMonth={job.endMonth}
           jobDescription={job.jobDescription}
           logo={job.logo}
           location={job.location}
           href={job.href}
         />
       ))}
+    </div>
+    <div>
+      <h3 className="text-2xl font-bold border-b-2 mb-4">voluntary work:</h3>
     </div>
   </div>
 );
