@@ -4,25 +4,25 @@ const navItems: navItemType[] = [
   {
     text: 'home',
     emoji: '🤍',
-    url: '/',
+    url: '',
     target: '_self',
   },
   {
     text: 'about me',
     emoji: '👀',
-    url: '/me',
+    url: 'me',
     target: '_self',
   },
   {
     text: 'CV',
     emoji: '📖',
-    url: '/cv',
+    url: 'cv',
     target: '_self',
   },
   {
     text: 'projects',
     emoji: '💾',
-    url: '/projects',
+    url: 'projects',
     target: '_self',
   },
   {

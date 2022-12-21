@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export interface navItemType {
   text: string;
@@ -10,8 +11,8 @@ export interface navItemType {
 export const NavItem: React.FC<navItemType> = ({ text, url, target, emoji }) => (
   <li className="mt-8 w-full text-center">
     <span className="text-2xl ">{emoji} </span>
-    <a target={target} href={url} className="font-medium hover:font-bold">
+    <Link to={url} className="font-medium hover:font-bold">
       {text}
-    </a>
+    </Link>
   </li>
 );
