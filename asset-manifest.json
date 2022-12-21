@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/homepage/static/css/main.cee9317d.css",
-    "main.js": "/homepage/static/js/main.8a695abd.js",
+    "main.css": "/homepage/static/css/main.e2cccf46.css",
+    "main.js": "/homepage/static/js/main.a2bd987e.js",
     "static/media/monaco.jpg": "/homepage/static/media/monaco.8578bcabf085ad13bb1d.jpg",
     "static/media/cvphoto.jpg": "/homepage/static/media/cvphoto.d3217983a5e1d975013d.jpg",
     "static/media/react.png": "/homepage/static/media/react.8a6fc0a24a800d1e0f4a.png",
@@ -13,11 +13,11 @@
     "static/media/lvgs.jpg": "/homepage/static/media/lvgs.b479e2574c72d9db1aad.jpg",
     "static/media/ntnu.png": "/homepage/static/media/ntnu.832c94c7151cdf2f043c.png",
     "index.html": "/homepage/index.html",
-    "main.cee9317d.css.map": "/homepage/static/css/main.cee9317d.css.map",
-    "main.8a695abd.js.map": "/homepage/static/js/main.8a695abd.js.map"
+    "main.e2cccf46.css.map": "/homepage/static/css/main.e2cccf46.css.map",
+    "main.a2bd987e.js.map": "/homepage/static/js/main.a2bd987e.js.map"
   },
   "entrypoints": [
-    "static/css/main.cee9317d.css",
-    "static/js/main.8a695abd.js"
+    "static/css/main.e2cccf46.css",
+    "static/js/main.a2bd987e.js"
   ]
 }
