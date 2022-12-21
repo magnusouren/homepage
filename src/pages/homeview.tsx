@@ -5,7 +5,7 @@ import { Wallpaper } from '../components/home/wallpaper';
 export const HomeView = () => (
   <div>
     <Wallpaper />
-    <div className="ml-auto mr-auto m-8 max-w-xl">
+    <div className="ml-auto mr-auto mt-8 max-w-xl px-4">
       <h2 className="text-4xl font-bold">magnus.ouren.no</h2>
       <p className="font-semibold text-gray-500">react/typescript/tailwind css</p>
       <p className="my-4 text-justify">
