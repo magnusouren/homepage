@@ -6,7 +6,7 @@ export type CvContentProps = {
   startYear: number;
   endYear?: number;
   logo?: string;
-  description?: string;
+  description?: string | JSX.Element;
   href?: string;
 };
 
@@ -27,12 +27,12 @@ export const CvContent = ({
   return (
     <div className="flex justify-between">
       <div>
-        <h4 className="font-semibold text-l">{header}</h4>
-        <span className="text-gray-600 my-2">
+        <h4 className="font-semibold my-2">{header}</h4>
+        <p className="text-gray-500 my-2">
           {location} | {startMonth ? startMonth : ''} {startYear} - {endMonth ? endMonth + ' ' : ''}
           {endYear ? endYear : 'Present'}
-        </span>
-        {description && <p className="">{description}</p>}
+        </p>
+        {description}
       </div>
       {logo && (
         <img

@@ -12,7 +12,7 @@ export const CvDescription: React.FC<cvDescriptionProps> = ({ displayDescription
   };
 
   return (
-    <button className="border-black bg-transparent flex mt-2 hover:underline" onClick={toggleContent}>
+    <button className="border-black bg-transparent flex hover:underline" onClick={toggleContent}>
       <img
         src={Arrow}
         alt="Arrow down"

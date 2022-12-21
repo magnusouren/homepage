@@ -30,7 +30,7 @@ export const CVJob = ({
   const [displayDescription, setDisplayDescription] = useState(false);
 
   return (
-    <div className="mb-8">
+    <div className="mb-4">
       <CvContent
         header={jobTitle + ' at ' + company}
         location={location}
@@ -40,8 +40,10 @@ export const CVJob = ({
         endMonth={endMonth}
         endYear={endYear}
         href={href}
+        description={
+          <CvDescription displayDescription={displayDescription} setDisplayDescription={setDisplayDescription} />
+        }
       />
-      <CvDescription displayDescription={displayDescription} setDisplayDescription={setDisplayDescription} />
       {displayDescription && <p className="text-gray-800 text-justify bg-gray-100 p-4 mt-4">{jobDescription}</p>}
     </div>
   );
