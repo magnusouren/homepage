@@ -29,7 +29,7 @@ export const CVJob: React.FC<CVJobProps> = ({
   };
 
   return (
-    <div className="my-4">
+    <div className="mb-8">
       <div className="flex justify-between">
         <div>
           <h4 className="font-semibold text-xl">
