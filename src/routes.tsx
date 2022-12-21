@@ -7,11 +7,11 @@ import { Projects } from './pages/projects';
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<PageLayout />}>
-      <Route path="/" element={<HomeView />} />
-      <Route path="/me" element={<AboutMe />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/cv" element={<CV />} />
+    <Route path="/homepage" element={<PageLayout />}>
+      <Route path="/homepage" element={<HomeView />} />
+      <Route path="/homepage/me" element={<AboutMe />} />
+      <Route path="/homepage/projects" element={<Projects />} />
+      <Route path="/homepage/cv" element={<CV />} />
     </Route>,
   ),
 );
