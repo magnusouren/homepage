@@ -1,9 +1,9 @@
-import { CVJobProps } from '../components/cv/cvJob';
-import ForsvaretLogo from '../img/cv/forsvaret.jpg';
-import Havsport from '../img/cv/havsport.svg';
-import NLS from '../img/cv/nls.jpeg';
+import { CVJobProps } from '../../components/cv/cvJob';
+import ForsvaretLogo from '../../img/cv/forsvaret.jpg';
+import Havsport from '../../img/cv/havsport.svg';
+import NLS from '../../img/cv/nls.jpeg';
 
-export const CVJobs: CVJobProps[] = [
+export const CVJobsData: CVJobProps[] = [
   {
     jobTitle: 'Webshop maintainer and developer',
     company: 'Havsport Diving center AS',
