@@ -28,7 +28,7 @@ const navItems: navItemType[] = [
   {
     text: 'github',
     emoji: '💻',
-    url: 'https://github.com/magnusouren',
+    url: 'https://www.github.com/magnusouren',
     target: '_blank',
   },
   {

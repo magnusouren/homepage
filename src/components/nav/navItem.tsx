@@ -1,18 +1,23 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
-export interface navItemType {
+export type navItemType = {
   text: string;
   url: string;
   target: string;
   emoji: string;
-}
+};
 
-export const NavItem: React.FC<navItemType> = ({ text, url, target, emoji }) => (
+export const NavItem = ({ text, url, target, emoji }: navItemType) => (
   <li className="mt-8 w-full text-center">
     <span className="text-2xl ">{emoji} </span>
-    <Link to={url} className="font-medium hover:font-bold">
-      {text}
-    </Link>
+    {url.includes('.com' || 'www' || 'https' || '.org') ? (
+      <a href={url} target="_blank" rel="noreferrer">
+        {text}
+      </a>
+    ) : (
+      <Link to={url} className="font-medium hover:font-bold">
+        {text}
+      </Link>
+    )}
   </li>
 );
