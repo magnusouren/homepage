@@ -5,7 +5,7 @@ import { Navbar } from '../components/nav/navbar';
 export const PageLayout: FC = () => (
   <main>
     <Navbar />
-    <div className="ml-0 mt-16 md:pl-48 md:mt-0 mb-20 w-full">
+    <div className="ml-0 mt-24 md:pl-48 md:mt-0 mb-20 w-full">
       <Outlet />
     </div>
   </main>
