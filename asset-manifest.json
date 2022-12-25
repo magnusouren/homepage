@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.58bac121.css",
-    "main.js": "/static/js/main.81021b75.js",
+    "main.css": "/static/css/main.351366a6.css",
+    "main.js": "/static/js/main.43bd7271.js",
     "static/media/monaco.jpg": "/static/media/monaco.8578bcabf085ad13bb1d.jpg",
     "static/media/cvphoto.jpg": "/static/media/cvphoto.3c0ff81e5de4b1266646.jpg",
     "static/media/havsport.svg": "/static/media/havsport.17402dad14b83b545c808a703aff206a.svg",
@@ -10,11 +10,11 @@
     "static/media/lvgs.jpg": "/static/media/lvgs.b479e2574c72d9db1aad.jpg",
     "static/media/ntnu.png": "/static/media/ntnu.832c94c7151cdf2f043c.png",
     "index.html": "/index.html",
-    "main.58bac121.css.map": "/static/css/main.58bac121.css.map",
-    "main.81021b75.js.map": "/static/js/main.81021b75.js.map"
+    "main.351366a6.css.map": "/static/css/main.351366a6.css.map",
+    "main.43bd7271.js.map": "/static/js/main.43bd7271.js.map"
   },
   "entrypoints": [
-    "static/css/main.58bac121.css",
-    "static/js/main.81021b75.js"
+    "static/css/main.351366a6.css",
+    "static/js/main.43bd7271.js"
   ]
 }
