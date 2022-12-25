@@ -8,7 +8,7 @@ export type navItemType = {
 };
 
 export const NavItem = ({ text, url, target, emoji }: navItemType) => (
-  <li className="my-4 md:my-8 md:w-full text-center md:block px-2 flex justify-evenly">
+  <li className="my-4 md:my-8 md:w-full text-center md:block flex">
     <span className="text-2xl hidden md:inline">{emoji} </span>
     {url.includes('.com' || 'www' || 'https' || '.org') ? (
       <a href={url} target="_blank" rel="noreferrer" className="hover:font-bold">

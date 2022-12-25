@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { NavItem, navItemType } from './navItem';
 
 const navItems: navItemType[] = [
@@ -47,11 +48,19 @@ const navItems: navItemType[] = [
 
 export const Navbar = () => (
   <nav className="w-full md:w-48 md:h-screen bg-black fixed left-0 top-0 text-white">
-    <ul className="flex justify-evenly md:block">
-      {navItems.map((navItem) => (
-        <NavItem text={navItem.text} url={navItem.url} target={navItem.target} emoji={navItem.emoji} />
-      ))}
-    </ul>
-    <p className="hidden md:block absolute bottom-8 w-full text-center font-extralight align-middle">- 2022 -</p>
+    <div className="hidden md:block">
+      <ul>
+        {navItems.map((navItem) => (
+          <NavItem text={navItem.text} url={navItem.url} target={navItem.target} emoji={navItem.emoji} />
+        ))}
+      </ul>
+      <p className="hidden md:block absolute bottom-8 w-full text-center font-extralight align-middle">- 2022 -</p>
+    </div>
+    <div className="flex md:hidden bg-black h-16 justify-between items-center p-4">
+      <Link to="" className="font-medium hover:font-bold">
+        magnus.ouren.no
+      </Link>
+      <button>Menu</button>
+    </div>
   </nav>
 );
