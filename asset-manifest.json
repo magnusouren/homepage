@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/homepage/static/css/main.e2cccf46.css",
-    "main.js": "/homepage/static/js/main.a2bd987e.js",
+    "main.js": "/homepage/static/js/main.f3df3e8e.js",
     "static/media/monaco.jpg": "/homepage/static/media/monaco.8578bcabf085ad13bb1d.jpg",
-    "static/media/cvphoto.jpg": "/homepage/static/media/cvphoto.d3217983a5e1d975013d.jpg",
+    "static/media/cvphoto.jpg": "/homepage/static/media/cvphoto.3c0ff81e5de4b1266646.jpg",
     "static/media/react.png": "/homepage/static/media/react.8a6fc0a24a800d1e0f4a.png",
     "static/media/havsport.svg": "/homepage/static/media/havsport.17402dad14b83b545c808a703aff206a.svg",
     "static/media/tailwind.jpg": "/homepage/static/media/tailwind.b622e290e82093c36cca.jpg",
@@ -14,10 +14,10 @@
     "static/media/ntnu.png": "/homepage/static/media/ntnu.832c94c7151cdf2f043c.png",
     "index.html": "/homepage/index.html",
     "main.e2cccf46.css.map": "/homepage/static/css/main.e2cccf46.css.map",
-    "main.a2bd987e.js.map": "/homepage/static/js/main.a2bd987e.js.map"
+    "main.f3df3e8e.js.map": "/homepage/static/js/main.f3df3e8e.js.map"
   },
   "entrypoints": [
     "static/css/main.e2cccf46.css",
-    "static/js/main.a2bd987e.js"
+    "static/js/main.f3df3e8e.js"
   ]
 }
