@@ -1,4 +1,4 @@
-import { createRoutesFromElements, createBrowserRouter, Route, createHashRouter } from 'react-router-dom';
+import { createRoutesFromElements, Route, createHashRouter } from 'react-router-dom';
 import { PageLayout } from './layouts/page';
 import { AboutMe } from './pages/aboutMe';
 import { CV } from './pages/cv';
