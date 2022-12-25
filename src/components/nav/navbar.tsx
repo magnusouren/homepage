@@ -46,12 +46,12 @@ const navItems: navItemType[] = [
 ];
 
 export const Navbar = () => (
-  <nav className="h-screen w-48 bg-black fixed left-0 top-0 text-white">
-    <ul>
+  <nav className="w-full md:w-48 md:h-screen bg-black fixed left-0 top-0 text-white">
+    <ul className="flex justify-evenly md:block">
       {navItems.map((navItem) => (
         <NavItem text={navItem.text} url={navItem.url} target={navItem.target} emoji={navItem.emoji} />
       ))}
     </ul>
-    <p className="absolute bottom-8 w-full text-center font-extralight">- 2022 -</p>
+    <p className="hidden md:block absolute bottom-8 w-full text-center font-extralight align-middle">- 2022 -</p>
   </nav>
 );
