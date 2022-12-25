@@ -26,7 +26,7 @@ export const HomeView = () => (
         The amazing photo you can see above was taken on my last holiday. The picture was taken in Monaco, where I was
         on a trip with my friends. Expensive stay, but a very cool place! Can be strongly recommended!
       </p>
-      <Logos />
+      {/* <Logos /> */}
     </div>
   </div>
 );

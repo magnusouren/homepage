@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { MobileNav } from './mobileNav';
 import { NavItem, navItemType } from './navItem';
 
 const navItems: navItemType[] = [
@@ -56,11 +57,6 @@ export const Navbar = () => (
       </ul>
       <p className="hidden md:block absolute bottom-8 w-full text-center font-extralight align-middle">- 2022 -</p>
     </div>
-    <div className="flex md:hidden bg-black h-16 justify-between items-center p-4">
-      <Link to="" className="font-medium hover:font-bold">
-        magnus.ouren.no
-      </Link>
-      <button>Menu</button>
-    </div>
+    <MobileNav navItems={navItems} />
   </nav>
 );
