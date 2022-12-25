@@ -16,10 +16,10 @@ export const MobileNav = ({ navItems }: MobileNavProps) => {
   return (
     <>
       <div className="flex md:hidden bg-black h-16 justify-between items-center p-4">
-        <Link to="" className="font-medium hover:font-bold text-xl">
+        <Link to="" onClick={() => setViewMenu(false)} className="font-medium">
           magnus.ouren.no
         </Link>
-        {viewMenu ? <button onClick={toggleMenu}>Close</button> : <button onClick={toggleMenu}>Menu</button>}
+        {viewMenu ? <button onClick={toggleMenu}>close</button> : <button onClick={toggleMenu}>menu</button>}
       </div>
       {viewMenu && (
         <div className="bg-black h-screen">
