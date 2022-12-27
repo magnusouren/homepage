@@ -25,7 +25,13 @@ export const MobileNav = ({ navItems }: MobileNavProps) => {
         <div className="bg-black h-screen">
           <ul className="px-4 w-screen text-center" onClick={toggleMenu}>
             {navItems.map((navItem) => (
-              <NavItem text={navItem.text} url={navItem.url} target={navItem.target} emoji={navItem.emoji} />
+              <NavItem
+                text={navItem.text}
+                url={navItem.url}
+                target={navItem.target}
+                emoji={navItem.emoji}
+                key={navItem.text}
+              />
             ))}
           </ul>
         </div>

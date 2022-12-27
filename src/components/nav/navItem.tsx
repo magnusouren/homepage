@@ -7,20 +7,20 @@ export type navItemType = {
   emoji: string;
 };
 
-export const NavItem = ({ text, url, target, emoji }: navItemType) => {
+export const NavItem = ({ text, url, target, emoji }: navItemType, key: string) => {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
 
   return (
-    <li className="my-4 md:my-8 md:w-full text-center md:block flex">
+    <li key={text} className="my-4 md:my-8 md:w-full text-center md:block flex">
       <span className="text-2xl hidden md:inline">{emoji} </span>
       {url.includes('.com' || 'www' || 'https' || '.org') ? (
-        <a href={url} target="_blank" rel="noreferrer" className="hover:font-bold">
+        <a key={text} href={url} target="_blank" rel="noreferrer" className="hover:font-bold">
           {text}
         </a>
       ) : (
-        <Link to={url} className="font-medium hover:font-bold" onClick={scrollToTop}>
+        <Link to={url} key={text} className="font-medium hover:font-bold" onClick={scrollToTop}>
           {text}
         </Link>
       )}
