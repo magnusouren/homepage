@@ -1,4 +1,4 @@
-import { CvPhoto } from '../components/cv/cvphoto';
+import { CvPhoto } from '../components/aboutme/portrait';
 import { Subtitle } from '../components/subtitle';
 
 export const AboutMe = () => (
