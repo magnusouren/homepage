@@ -10,9 +10,9 @@ export const HomeView = () => (
       <p className="mt-8 mb-4 text-justify">
         Hello I'm Magnus and this is my first homepage. I am currently studying informatics at my second year at NTNU in
         Trondheim. This webpage is made with React, Typescript and Tailwind CSS as a hoby project to learn more about
-        new technologies. Started as a workshop with a friend for learing React, but has developed into a bigger webpage
-        about me, what I do, and I who am. that's reasonably selfish, but hopefully I wil add other types of content in
-        the future.
+        new technologies. It started as a workshop with a friend for learning React, but has developed into a bigger
+        webpage about me, what I do, and I who am. that's reasonably selfish, but hopefully I wil add other types of
+        content in the future.
       </p>
       <p className="my-4 text-justify">
         It's my first ever buildt react webpage. My react-skills are mostly self-taught, so don't be harsh. You can
