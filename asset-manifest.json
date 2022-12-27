@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.0609320f.css",
-    "main.js": "/static/js/main.132f4fb3.js",
+    "main.css": "/static/css/main.493111f4.css",
+    "main.js": "/static/js/main.02702204.js",
+    "static/media/trainingDiary.png": "/static/media/trainingDiary.db2d2334dc60aceb179b.png",
     "static/media/monaco.jpg": "/static/media/monaco.520259c254a5bf3a8c4b.jpg",
+    "static/media/strength.png": "/static/media/strength.ea22f41f1e3f626d455f.png",
+    "static/media/summary.png": "/static/media/summary.a52d3fc17b4ac38ffa55.png",
     "static/media/portrait.jpg": "/static/media/portrait.3c0ff81e5de4b1266646.jpg",
     "static/media/havsport.svg": "/static/media/havsport.17402dad14b83b545c808a703aff206a.svg",
     "static/media/forsvaret.jpg": "/static/media/forsvaret.db9b3c05badbe72fef16.jpg",
@@ -10,11 +13,11 @@
     "static/media/lvgs.jpg": "/static/media/lvgs.b479e2574c72d9db1aad.jpg",
     "static/media/ntnu.png": "/static/media/ntnu.832c94c7151cdf2f043c.png",
     "index.html": "/index.html",
-    "main.0609320f.css.map": "/static/css/main.0609320f.css.map",
-    "main.132f4fb3.js.map": "/static/js/main.132f4fb3.js.map"
+    "main.493111f4.css.map": "/static/css/main.493111f4.css.map",
+    "main.02702204.js.map": "/static/js/main.02702204.js.map"
   },
   "entrypoints": [
-    "static/css/main.0609320f.css",
-    "static/js/main.132f4fb3.js"
+    "static/css/main.493111f4.css",
+    "static/js/main.02702204.js"
   ]
 }
