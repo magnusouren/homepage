@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { CvContent } from './cvContent';
-import { CvDescription } from './cvDescription';
+import { ReadMoreButton } from '../readMoreButton';
 
 export type CVJobProps = {
   company: string;
@@ -41,7 +41,7 @@ export const CVJob = ({
         endYear={endYear}
         href={href}
         description={
-          <CvDescription displayDescription={displayDescription} setDisplayDescription={setDisplayDescription} />
+          <ReadMoreButton displayDescription={displayDescription} setDisplayDescription={setDisplayDescription} />
         }
       />
       {displayDescription && <p className="text-gray-800 text-justify bg-gray-100 p-4 mt-4">{jobDescription}</p>}
