@@ -15,7 +15,7 @@ export const ReadMore = ({ longDescription, secondaryImages = [] }: ReadMoreProp
               src={image}
               alt="alt text
                 "
-              className="w-1/2 my-2 "
+              className="my-2 md:w-1/2 sm:w-full"
             />
           ))}
         </div>
