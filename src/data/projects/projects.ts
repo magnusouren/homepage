@@ -25,7 +25,7 @@ export const projects: ProjectType[] = [
       'Backend unit- and integrationtests is tested with Junit. ' +
       'The frontend is tested with Vitest and React Testing Library. ' +
       'End to end testing is done with Playwrigth. ',
-    tags: ['Java', 'React', 'Typescript', 'TailwindCSS', 'Agile development'],
+    tags: ['Java', 'React', 'Typescript', 'TailwindCSS', 'Agile development', 'Scrum'],
     url: '',
     secondaryImages: [NewCard, PlayDeck],
   },
