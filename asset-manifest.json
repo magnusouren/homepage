@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.493111f4.css",
-    "main.js": "/static/js/main.02702204.js",
+    "main.css": "/static/css/main.d46c8d19.css",
+    "main.js": "/static/js/main.01b63612.js",
+    "static/media/newCard.png": "/static/media/newCard.262d10e6c504989026ab.png",
+    "static/media/playDeck.png": "/static/media/playDeck.40f99e31965e2ec5691e.png",
     "static/media/trainingDiary.png": "/static/media/trainingDiary.db2d2334dc60aceb179b.png",
     "static/media/monaco.jpg": "/static/media/monaco.520259c254a5bf3a8c4b.jpg",
-    "static/media/strength.png": "/static/media/strength.ea22f41f1e3f626d455f.png",
-    "static/media/summary.png": "/static/media/summary.a52d3fc17b4ac38ffa55.png",
+    "static/media/cardsnap.png": "/static/media/cardsnap.7e83a8e4b925aefec738.png",
     "static/media/portrait.jpg": "/static/media/portrait.3c0ff81e5de4b1266646.jpg",
+    "static/media/strength.png": "/static/media/strength.cb3187ce79ae2d9848ea.png",
+    "static/media/run.png": "/static/media/run.4f9204fb0ab04595ca18.png",
     "static/media/havsport.svg": "/static/media/havsport.17402dad14b83b545c808a703aff206a.svg",
     "static/media/forsvaret.jpg": "/static/media/forsvaret.db9b3c05badbe72fef16.jpg",
     "static/media/nls.jpeg": "/static/media/nls.8b8a68ebdbdf80532058.jpeg",
     "static/media/lvgs.jpg": "/static/media/lvgs.b479e2574c72d9db1aad.jpg",
     "static/media/ntnu.png": "/static/media/ntnu.832c94c7151cdf2f043c.png",
     "index.html": "/index.html",
-    "main.493111f4.css.map": "/static/css/main.493111f4.css.map",
-    "main.02702204.js.map": "/static/js/main.02702204.js.map"
+    "main.d46c8d19.css.map": "/static/css/main.d46c8d19.css.map",
+    "main.01b63612.js.map": "/static/js/main.01b63612.js.map"
   },
   "entrypoints": [
-    "static/css/main.493111f4.css",
-    "static/js/main.02702204.js"
+    "static/css/main.d46c8d19.css",
+    "static/js/main.01b63612.js"
   ]
 }
