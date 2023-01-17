@@ -21,8 +21,9 @@ export const CvVoluntaryWorkData: CvVoluntaryWorkProps[] = [
     startMonth: 'October',
   },
   {
-    position: 'Grill master',
-    description: 'Was grill master in "Fadderukene" for the student organization.',
+    position: 'Grill master for the Welcome Committee',
+    description:
+      'Was grill master in "Fadderukene" for the student organization. Arranged grill events for 150 new informatics-students. ',
     institution: 'Online',
     location: 'Trondheim',
     startYear: 2022,
