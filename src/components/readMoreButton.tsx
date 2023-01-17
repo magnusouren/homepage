@@ -16,7 +16,9 @@ export const ReadMoreButton = ({ displayDescription, setDisplayDescription }: Re
       <img
         src={Arrow}
         alt="Arrow down"
-        className={`w-4 mr-2 mt-1 rotate-${displayDescription ? 180 : 0} transition duration-300 ease-in-out transform`}
+        className={`w-4 mr-2 mt-1 rotate-${
+          displayDescription ? '180' : '0'
+        } transition duration-300 ease-in-out transform`}
       />
       {displayDescription ? 'Hide' : 'Read more'}
     </button>
