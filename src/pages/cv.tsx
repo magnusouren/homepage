@@ -20,6 +20,7 @@ export const CV = () => (
           logo={education.logo}
           startYear={education.startYear}
           endYear={education.endYear}
+          key={education.degree}
         />
       ))}
     </div>
@@ -37,6 +38,7 @@ export const CV = () => (
           logo={job.logo}
           location={job.location}
           href={job.href}
+          key={job.jobTitle}
         />
       ))}
     </div>
@@ -53,6 +55,7 @@ export const CV = () => (
           jobDescription={voluntaryWork.description}
           logo={voluntaryWork.logo}
           location={voluntaryWork.location}
+          key={voluntaryWork.position}
         />
       ))}
     </div>
