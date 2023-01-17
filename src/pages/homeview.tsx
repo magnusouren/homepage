@@ -16,7 +16,7 @@ export const HomeView = () => (
       </p>
       <p className="my-4 text-justify">
         It's my first ever built React webpage. My React skills are mostly self-taught, so don't be harsh. You can check
-        out the repository for this webpage.{' '}
+        out the repository for this webpage{' '}
         <a target="blank" href="https://github.com/magnusouren/homepage" className="underline hover:text-gray-500">
           here!
         </a>
