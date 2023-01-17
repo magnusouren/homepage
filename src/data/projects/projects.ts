@@ -11,7 +11,7 @@ export const projects: ProjectType[] = [
     title: 'Cardsnap',
     image: Cardsnap,
     shortDescription:
-      'School project in the course IT1901, Informatics project work, at NTNU. The project was to create an application. We chose to create a web application for flash-cards. The web application is a tool for students to create and study flash-cards. The application is made with React, Typescript, and TailwindCSS. The backend is made with Java. The project was made in a group of 4 people. Since it was a school project the code is not available right now due to grading.',
+      'School project in the course IT1901, Informatics project work, at NTNU. The project was to create an application. We chose to create a web application for flash-cards. The web application is a tool for students to create and study flash-cards. The application is made with React, Typescript, and TailwindCSS. The backend is made with Java. The project was made in a group of 4 people.',
     longDescription:
       'This was a group project for learning agile ' +
       'development in a group. The main purpose of the project was to ' +
@@ -26,7 +26,7 @@ export const projects: ProjectType[] = [
       'The frontend is tested with Vitest and React Testing Library. ' +
       'End to end testing is done with Playwrigth. ',
     tags: ['Java', 'React', 'Typescript', 'TailwindCSS', 'Agile development', 'Scrum'],
-    url: '',
+    url: 'https://github.com/magnusouren/Cardsnap',
     secondaryImages: [NewCard, PlayDeck],
   },
   {
