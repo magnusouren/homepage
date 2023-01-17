@@ -7,7 +7,7 @@ export type navItemType = {
   emoji: string;
 };
 
-export const NavItem = ({ text, url, target, emoji }: navItemType, key: string) => {
+export const NavItem = ({ text, url, target, emoji }: navItemType) => {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
