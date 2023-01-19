@@ -14,13 +14,14 @@ export const NavItem = ({ text, url, target, emoji }: navItemType) => {
 
   return (
     <li key={text} className="my-4 md:my-8 md:w-full text-center md:block flex">
-      <span className="text-2xl hidden md:inline">{emoji} </span>
       {url.includes('.com' || 'www' || 'https' || '.org') ? (
         <a key={text} href={url} target="_blank" rel="noreferrer" className="hover:font-bold">
+          <span className="text-2xl hidden md:inline">{emoji} </span>
           {text}
         </a>
       ) : (
-        <Link to={url} key={text} className="font-medium hover:font-bold" onClick={scrollToTop}>
+        <Link to={url} key={text} className="hover:font-bold" onClick={scrollToTop}>
+          <span className="text-2xl hidden md:inline">{emoji} </span>
           {text}
         </Link>
       )}
