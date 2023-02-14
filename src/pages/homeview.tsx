@@ -12,7 +12,7 @@ export const HomeView = () => (
         in Trondheim. This webpage is made with React, Typescript, and Tailwind CSS as a hobby project to learn more
         about new technologies. It started as a workshop with a friend for learning React, but has developed into a
         bigger webpage about me, what I do, and who I am. That's reasonably selfish, but hopefully I will add other
-        types of content in the future.
+        types of content in the future :)
       </p>
       <p className="my-4 text-justify">
         It's my first ever built React webpage. My React skills are mostly self-taught, so don't be harsh. You can check
