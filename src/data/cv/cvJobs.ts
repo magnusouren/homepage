@@ -2,8 +2,31 @@ import { CVJobProps } from '../../components/cv/cvJob';
 import ForsvaretLogo from '../../img/cv/forsvaret.jpg';
 import Havsport from '../../img/cv/havsport.svg';
 import NLS from '../../img/cv/nls.jpeg';
+import NTNU from '../../img/cv/ntnu.png';
 
 export const CVJobsData: CVJobProps[] = [
+  {
+    jobTitle: 'Learning assistant',
+    company: 'NTNU',
+    startYear: 2023,
+    startMonth: 'January',
+    jobDescription:
+      'As a learning assistant, I will be responsible for helping students with their studies. This includes answering questions, providing feedback on assignments, and assisting with projects. Courses: TDT4100, Object oriented programming (OOP)',
+    logo: NTNU,
+    location: 'Trondheim',
+    href: 'https://www.ntnu.edu/',
+  },
+  {
+    jobTitle: 'Coordinator of programming competitions',
+    company: 'NTNU',
+    startYear: 2023,
+    startMonth: 'March',
+    jobDescription:
+      'As a coordinator of programming competitions, I am responsible for organizing and running programming competitions for students at NTNU. Hosting Nordic Collegiate Programming Contest (NCPC) and IDI Open. ',
+    logo: NTNU,
+    location: 'Trondheim',
+    href: 'https://www.ntnu.edu/',
+  },
   {
     jobTitle: 'Webshop maintainer and developer',
     company: 'Havsport Diving center AS',

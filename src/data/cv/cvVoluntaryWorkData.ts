@@ -21,9 +21,29 @@ export const CvVoluntaryWorkData: CvVoluntaryWorkProps[] = [
     startMonth: 'October',
   },
   {
-    position: 'Grill master for the Welcome Committee',
+    position: 'Board member in KiD - student-business network',
     description:
-      'Was grill master in "Fadderukene" for the student organization. Arranged grill events for 150 new informatics-students. ',
+      'Representing my student organization, Online, in the student-business network KiD. KiD is a network of 3 student organizations in Trondheim and about 25 companies. The network is working to improve the relationship between the students and the companies to promote motivation and learning outcome in the lower levels of the studies. ',
+    institution: 'IE-faculty NTNU',
+    location: 'Trondheim',
+    startYear: 2022,
+    logo: '',
+    startMonth: 'August',
+  },
+  {
+    position: 'Member of the Excurtion committee',
+    description:
+      'Working in the Excurtion committee to organize the yearly excursion for the informatic-students. Mainly working with planning and hosting Tech Talks, a series of events where companies come to the university to present themselves and their work to support the excursion. ',
+    institution: 'Online',
+    location: 'Trondheim',
+    startYear: 2023,
+    logo: '',
+    startMonth: 'April',
+  },
+  {
+    position: 'Grill event coordinator for the Welcome Committee',
+    description:
+      'Was grill event coordinator in "Fadderukene" for the student organization. Arranged grill events for 200 new informatics-students. ',
     institution: 'Online',
     location: 'Trondheim',
     startYear: 2022,
