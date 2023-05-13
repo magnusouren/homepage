@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.94bb0b6a.css",
-    "main.js": "/static/js/main.a6426ae4.js",
+    "main.js": "/static/js/main.3f61e4fd.js",
     "static/media/newCard.png": "/static/media/newCard.262d10e6c504989026ab.png",
     "static/media/playDeck.png": "/static/media/playDeck.40f99e31965e2ec5691e.png",
     "static/media/trainingDiary.png": "/static/media/trainingDiary.db2d2334dc60aceb179b.png",
@@ -17,10 +17,10 @@
     "static/media/ntnu.png": "/static/media/ntnu.832c94c7151cdf2f043c.png",
     "index.html": "/index.html",
     "main.94bb0b6a.css.map": "/static/css/main.94bb0b6a.css.map",
-    "main.a6426ae4.js.map": "/static/js/main.a6426ae4.js.map"
+    "main.3f61e4fd.js.map": "/static/js/main.3f61e4fd.js.map"
   },
   "entrypoints": [
     "static/css/main.94bb0b6a.css",
-    "static/js/main.a6426ae4.js"
+    "static/js/main.3f61e4fd.js"
   ]
 }
