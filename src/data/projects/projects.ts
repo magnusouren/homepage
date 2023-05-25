@@ -5,6 +5,13 @@ import Run from '../../img/projects/trainingDiary/run.png';
 import Cardsnap from '../../img/projects/cardsnap/cardsnap.png';
 import NewCard from '../../img/projects/cardsnap/newCard.png';
 import PlayDeck from '../../img/projects/cardsnap/playDeck.png';
+import WOShare from '../../img/projects/woshare/main.png';
+import Sessions from '../../img/projects/woshare/sessions.png';
+import Programs from '../../img/projects/woshare/programs.png';
+import Profile from '../../img/projects/woshare/profile.png';
+import Feed from '../../img/projects/woshare/feed.png';
+import CreateSession from '../../img/projects/woshare/create_session.png';
+import CreateProgram from '../../img/projects/woshare/create_program.png';
 
 export const projects: ProjectType[] = [
   {
@@ -47,5 +54,27 @@ export const projects: ProjectType[] = [
     tags: ['Object-Oriented Programming', 'Java', 'FXML'],
     url: 'https://github.com/magnusouren/Training-diary',
     secondaryImages: [Strength, Run],
+  },
+  {
+    title: 'WO Share',
+    image: WOShare,
+    shortDescription:
+      'Group project in the course TDT4140 - Software development at NTNU. The main focus during the project was to learn agile development in Scrum. Our product owner ordered a web application for sharing workouts and programs. The application is made with React, Typescript, and TailwindCSS. We used Firebase as BaaS (Backend-as-a-Service). The project was made in a group of 6 people.',
+    longDescription:
+      'This was a group project for learning agile ' +
+      'development in a group. The main purpose of the project was to ' +
+      'learn more about agile development, and how to apply it in ' +
+      'practice. The program we created is a web application for sharing workouts and programs. ' +
+      'The backend is made with Firebase, and the frontend is made with React, Typescript, and TailwindCSS. ' +
+      'Firebase was used for authentication, and for storing data. ' +
+      'Our team had a interdisciplinary approach, from different studies' +
+      'and different years. We had a product owner, and the role as scrum master rolled. ' +
+      'We learned a lot about agile development, and how to work in a group. ' +
+      'The project lasted for 8 weeks, and was divided into 2 sprints for 4 weeks each. \n ' +
+      'Our product let the user create workouts and programs, and share them with other users. ' +
+      'The user can also search for others users, follow them, and see their publishes content.',
+    tags: ['React', 'Typescript', 'TailwindCSS', 'Firebase', 'Agile development', 'Scrum'],
+    url: 'https://github.com/magnusouren/woshare',
+    secondaryImages: [Sessions, Programs, Profile, Feed, CreateSession, CreateProgram],
   },
 ];
