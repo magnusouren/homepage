@@ -3,7 +3,7 @@ import { CvVoluntaryWorkProps } from '../../components/cv/cvVoluntaryWork';
 export const CvVoluntaryWorkData: CvVoluntaryWorkProps[] = [
   {
     position: 'Board member',
-    description: 'Representing the Business relation committee in the at the student organization.',
+    description: 'Representing the Business Relation Committee in the at the student organization.',
     institution: 'Online',
     location: 'Trondheim',
     startYear: 2022,
@@ -11,7 +11,7 @@ export const CvVoluntaryWorkData: CvVoluntaryWorkProps[] = [
     startMonth: 'October',
   },
   {
-    position: 'Member of the Business relation committee',
+    position: 'Member of the Business Relation Committee',
     description:
       'Working in the Business relation committee to improve the relationship between the students and the companies. Helping the companies with hosting events and workshops for the students, publishing job advertisements and more.',
     institution: 'Online',
@@ -31,7 +31,7 @@ export const CvVoluntaryWorkData: CvVoluntaryWorkProps[] = [
     startMonth: 'August',
   },
   {
-    position: 'Member of the Excurtion committee',
+    position: 'Member of the Excurtion Committee',
     description:
       'Working in the Excurtion committee to organize the yearly excursion for the informatic-students. Mainly working with planning and hosting Tech Talks, a series of events where companies come to the university to present themselves and their work to support the excursion. ',
     institution: 'Online',
