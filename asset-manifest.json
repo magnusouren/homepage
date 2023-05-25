@@ -1,11 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.94bb0b6a.css",
-    "main.js": "/static/js/main.3f61e4fd.js",
+    "main.css": "/static/css/main.3e091a6c.css",
+    "main.js": "/static/js/main.9910d4d4.js",
+    "static/media/main.png": "/static/media/main.505b9131e83f96089ec1.png",
+    "static/media/feed.png": "/static/media/feed.63b13c48ea64b84c2d45.png",
+    "static/media/sessions.png": "/static/media/sessions.523da4b94ca4799a9525.png",
+    "static/media/create_session.png": "/static/media/create_session.9055cb1c5352a5616a48.png",
+    "static/media/create_program.png": "/static/media/create_program.c3f7b1012297d046f94d.png",
     "static/media/newCard.png": "/static/media/newCard.262d10e6c504989026ab.png",
     "static/media/playDeck.png": "/static/media/playDeck.40f99e31965e2ec5691e.png",
     "static/media/trainingDiary.png": "/static/media/trainingDiary.db2d2334dc60aceb179b.png",
+    "static/media/profile.png": "/static/media/profile.2fff1cc097d4a551cbd6.png",
     "static/media/monaco.jpg": "/static/media/monaco.520259c254a5bf3a8c4b.jpg",
+    "static/media/programs.png": "/static/media/programs.7e85209b5acc6418789f.png",
     "static/media/cardsnap.png": "/static/media/cardsnap.7e83a8e4b925aefec738.png",
     "static/media/portrait.jpg": "/static/media/portrait.3c0ff81e5de4b1266646.jpg",
     "static/media/strength.png": "/static/media/strength.cb3187ce79ae2d9848ea.png",
@@ -16,11 +23,11 @@
     "static/media/lvgs.jpg": "/static/media/lvgs.b479e2574c72d9db1aad.jpg",
     "static/media/ntnu.png": "/static/media/ntnu.832c94c7151cdf2f043c.png",
     "index.html": "/index.html",
-    "main.94bb0b6a.css.map": "/static/css/main.94bb0b6a.css.map",
-    "main.3f61e4fd.js.map": "/static/js/main.3f61e4fd.js.map"
+    "main.3e091a6c.css.map": "/static/css/main.3e091a6c.css.map",
+    "main.9910d4d4.js.map": "/static/js/main.9910d4d4.js.map"
   },
   "entrypoints": [
-    "static/css/main.94bb0b6a.css",
-    "static/js/main.3f61e4fd.js"
+    "static/css/main.3e091a6c.css",
+    "static/js/main.9910d4d4.js"
   ]
 }
