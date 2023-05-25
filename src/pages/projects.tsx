@@ -22,6 +22,7 @@ export const Projects = () => (
           secondaryImages={project.secondaryImages}
           url={project.url}
           tags={project.tags}
+          key={project.title}
         />
       ))}
     </div>
