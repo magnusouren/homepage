@@ -31,9 +31,9 @@ export const CvVoluntaryWorkData: CvVoluntaryWorkProps[] = [
     startMonth: 'August',
   },
   {
-    position: 'Member of the Excurtion Committee',
+    position: 'Member of the Excursion Committee',
     description:
-      'Working in the Excurtion committee to organize the yearly excursion for the informatic-students. Mainly working with planning and hosting Tech Talks, a series of events where companies come to the university to present themselves and their work to support the excursion. ',
+      'Working in the Excursion Committee to organize the yearly excursion for the informatic-students. Mainly working with planning and hosting Tech Talks, a series of events where companies come to the university to present themselves and their work to support the excursion. ',
     institution: 'Online',
     location: 'Trondheim',
     startYear: 2023,
