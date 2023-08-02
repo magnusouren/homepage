@@ -26,14 +26,14 @@ export const HomeView = () => (
       <div className="flex gap-4">
         <Link
           to="/cv"
-          className="bg-white hover:bg-black hover:text-white text-black font-bold py-2 px-4 rounded border-black border-2 w-1/2 transition-all duration-300 shadow-md flex justify-between"
+          className="bg-white hover:bg-black hover:text-white font-medium text-black py-2 px-4 border-l-8 border-black border w-1/2 transition-all duration-300 shadow-md flex justify-between"
         >
           <p>CV</p>
           <FolderOpen />
         </Link>
         <Link
           to="/projects"
-          className="bg-white hover:bg-black hover:text-white text-black font-bold py-2 px-4 rounded border-black border-2 w-1/2 transition-all duration-300 shadow-md flex justify-between"
+          className="bg-white hover:bg-black hover:text-white font-medium text-black py-2 px-4 border-l-8 border-black border w-1/2 transition-all duration-300 shadow-md flex justify-between"
         >
           <p>My Projects</p>
           <Code />
