@@ -25,8 +25,12 @@ export const CV = () => (
       ))}
     </div>
     <div>
-      <h3 className="text-2xl font-bold border-b-2 mb-4">working experience:</h3>
-      {CVJobsData.map((job) => (
+      <h3 className="text-2xl font-bold border-b-2 mb-4">
+        working experience:
+      </h3>
+      {CVJobsData.sort(
+        (job1, job2) => (job2.endYear ?? 10000) - (job1.endYear ?? 10000),
+      ).map((job) => (
         <CVJob
           jobTitle={job.jobTitle}
           company={job.company}
