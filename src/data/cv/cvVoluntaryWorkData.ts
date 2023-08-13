@@ -3,7 +3,8 @@ import { CvVoluntaryWorkProps } from '../../components/cv/cvVoluntaryWork';
 export const CvVoluntaryWorkData: CvVoluntaryWorkProps[] = [
   {
     position: 'Board member',
-    description: 'Representing the Business Relation Committee in the at the student organization.',
+    description:
+      'Representing the Business Relation Committee in board the at the student organization Online.',
     institution: 'Online',
     location: 'Trondheim',
     startYear: 2022,

@@ -26,7 +26,7 @@ export const CvEducation: React.FC<CvEducationProps> = ({
   startYear,
   startMonth = '',
 }: CvEducationProps) => (
-  <div className="mb-4">
+  <div className="my-8">
     <CvContent
       header={degree + ' in ' + fieldOfStudy}
       location={institution + ', ' + location}

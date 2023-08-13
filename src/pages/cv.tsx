@@ -29,7 +29,7 @@ export const CV = () => (
         working experience:
       </h3>
       {CVJobsData.sort(
-        (job1, job2) => (job2.endYear ?? 10000) - (job1.endYear ?? 10000),
+        (job1, job2) => (job2.endYear ?? 3000) - (job1.endYear ?? 3000),
       ).map((job) => (
         <CVJob
           jobTitle={job.jobTitle}
