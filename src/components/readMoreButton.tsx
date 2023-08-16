@@ -1,18 +1,25 @@
-import React from 'react';
+import React, { type FC } from 'react';
+
 import Arrow from '../img/downArrow.png';
 
-type ReadMoreButtonProps = {
+interface ReadMoreButtonProps {
   displayDescription: boolean;
   setDisplayDescription: React.Dispatch<React.SetStateAction<boolean>>;
-};
+}
 
-export const ReadMoreButton = ({ displayDescription, setDisplayDescription }: ReadMoreButtonProps) => {
-  const toggleContent = () => {
+export const ReadMoreButton: FC<ReadMoreButtonProps> = ({
+  displayDescription,
+  setDisplayDescription,
+}: ReadMoreButtonProps) => {
+  const toggleContent = (): void => {
     setDisplayDescription(!displayDescription);
   };
 
   return (
-    <button className="border-black bg-transparent flex hover:underline" onClick={toggleContent}>
+    <button
+      className="border-black bg-transparent flex hover:underline"
+      onClick={toggleContent}
+    >
       <img
         src={Arrow}
         alt="Arrow down"

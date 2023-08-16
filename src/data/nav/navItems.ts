@@ -1,6 +1,6 @@
-import { navItemType } from '../../components/nav/navItem';
+import { type NavItemType } from '../../components/nav/navItem';
 
-export const navItems: navItemType[] = [
+export const navItems: NavItemType[] = [
   {
     text: 'home',
     emoji: '🤍',

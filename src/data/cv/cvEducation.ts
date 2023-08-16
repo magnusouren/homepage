@@ -1,6 +1,6 @@
-import { CvEducationProps } from '../../components/cv/cvEducation';
-import NTNU from '../../img/cv/ntnu.png';
-import LVGS from '../../img/cv/lvgs.jpg';
+import { type CvEducationProps } from '../../components/cv/cvEducation'
+import LVGS from '../../img/cv/lvgs.jpg'
+import NTNU from '../../img/cv/ntnu.png'
 
 export const CVEducationData: CvEducationProps[] = [
   {
@@ -10,7 +10,7 @@ export const CVEducationData: CvEducationProps[] = [
     institution: 'NTNU',
     location: 'Trondheim',
     logo: NTNU,
-    startYear: 2021,
+    startYear: 2021
   },
   {
     degree: 'General academic competence',
@@ -20,6 +20,6 @@ export const CVEducationData: CvEducationProps[] = [
     institution: 'Lambertseter VGS',
     location: 'Oslo',
     logo: LVGS,
-    startYear: 2016,
-  },
-];
+    startYear: 2016
+  }
+]

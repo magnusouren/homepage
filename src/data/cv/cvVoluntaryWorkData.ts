@@ -1,4 +1,4 @@
-import { CvVoluntaryWorkProps } from '../../components/cv/cvVoluntaryWork';
+import { type CvVoluntaryWorkProps } from '../../components/cv/cvVoluntaryWork'
 
 export const CvVoluntaryWorkData: CvVoluntaryWorkProps[] = [
   {
@@ -9,7 +9,7 @@ export const CvVoluntaryWorkData: CvVoluntaryWorkProps[] = [
     location: 'Trondheim',
     startYear: 2022,
     logo: '',
-    startMonth: 'October',
+    startMonth: 'October'
   },
   {
     position: 'Member of the Business Relation Committee',
@@ -19,7 +19,7 @@ export const CvVoluntaryWorkData: CvVoluntaryWorkProps[] = [
     location: 'Trondheim',
     startYear: 2022,
     logo: '',
-    startMonth: 'October',
+    startMonth: 'October'
   },
   {
     position: 'Board member in KiD - student-business network',
@@ -29,7 +29,7 @@ export const CvVoluntaryWorkData: CvVoluntaryWorkProps[] = [
     location: 'Trondheim',
     startYear: 2022,
     logo: '',
-    startMonth: 'August',
+    startMonth: 'August'
   },
   {
     position: 'Member of the Excursion Committee',
@@ -39,7 +39,7 @@ export const CvVoluntaryWorkData: CvVoluntaryWorkProps[] = [
     location: 'Trondheim',
     startYear: 2023,
     logo: '',
-    startMonth: 'April',
+    startMonth: 'April'
   },
   {
     position: 'Grill event coordinator for the Welcome Committee',
@@ -51,6 +51,6 @@ export const CvVoluntaryWorkData: CvVoluntaryWorkProps[] = [
     logo: '',
     startMonth: 'January',
     endMonth: 'September',
-    endYear: 2022,
-  },
-];
+    endYear: 2022
+  }
+]

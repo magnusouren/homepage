@@ -1,9 +1,14 @@
+import { type FC } from 'react';
+
 interface ReadMoreProps {
   longDescription: string;
   secondaryImages?: string[];
 }
 
-export const ReadMore = ({ longDescription, secondaryImages = [] }: ReadMoreProps) => (
+export const ReadMore: FC<ReadMoreProps> = ({
+  longDescription,
+  secondaryImages = [],
+}: ReadMoreProps) => (
   <div className="text-gray-800 text-justify bg-gray-100 p-4 mt-4">
     <p>{longDescription}</p>
     {secondaryImages && (

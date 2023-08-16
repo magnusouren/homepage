@@ -1,19 +1,19 @@
-import { ProjectType } from '../../components/projects/project';
-import TrainingDiary from '../../img/projects/trainingDiary/trainingDiary.png';
-import Strength from '../../img/projects/trainingDiary/strength.png';
-import Run from '../../img/projects/trainingDiary/run.png';
+import { type ProjectProps } from '../../components/projects/project';
 import Cardsnap from '../../img/projects/cardsnap/cardsnap.png';
 import NewCard from '../../img/projects/cardsnap/newCard.png';
 import PlayDeck from '../../img/projects/cardsnap/playDeck.png';
-import WOShare from '../../img/projects/woshare/main.png';
-import Sessions from '../../img/projects/woshare/sessions.png';
-import Programs from '../../img/projects/woshare/programs.png';
-import Profile from '../../img/projects/woshare/profile.png';
-import Feed from '../../img/projects/woshare/feed.png';
-import CreateSession from '../../img/projects/woshare/create_session.png';
+import Run from '../../img/projects/trainingDiary/run.png';
+import Strength from '../../img/projects/trainingDiary/strength.png';
+import TrainingDiary from '../../img/projects/trainingDiary/trainingDiary.png';
 import CreateProgram from '../../img/projects/woshare/create_program.png';
+import CreateSession from '../../img/projects/woshare/create_session.png';
+import Feed from '../../img/projects/woshare/feed.png';
+import WOShare from '../../img/projects/woshare/main.png';
+import Profile from '../../img/projects/woshare/profile.png';
+import Programs from '../../img/projects/woshare/programs.png';
+import Sessions from '../../img/projects/woshare/sessions.png';
 
-export const projects: ProjectType[] = [
+export const projects: ProjectProps[] = [
   {
     title: 'WO Share',
     image: WOShare,
@@ -32,9 +32,23 @@ export const projects: ProjectType[] = [
       'The project lasted for 8 weeks, and was divided into 2 sprints for 4 weeks each. \n ' +
       'Our product let the user create workouts and programs, and share them with other users. ' +
       'The user can also search for others users, follow them, and see their publishes content.',
-    tags: ['React', 'Typescript', 'TailwindCSS', 'Firebase', 'Agile development', 'Scrum'],
+    tags: [
+      'React',
+      'Typescript',
+      'TailwindCSS',
+      'Firebase',
+      'Agile development',
+      'Scrum',
+    ],
     url: 'https://github.com/magnusouren/woshare',
-    secondaryImages: [Sessions, Programs, Profile, Feed, CreateSession, CreateProgram],
+    secondaryImages: [
+      Sessions,
+      Programs,
+      Profile,
+      Feed,
+      CreateSession,
+      CreateProgram,
+    ],
   },
   {
     title: 'Cardsnap',
@@ -54,7 +68,14 @@ export const projects: ProjectType[] = [
       'Backend unit- and integrationtests is tested with Junit. ' +
       'The frontend is tested with Vitest and React Testing Library. ' +
       'End to end testing is done with Playwrigth. ',
-    tags: ['Java', 'React', 'Typescript', 'TailwindCSS', 'Agile development', 'Scrum'],
+    tags: [
+      'Java',
+      'React',
+      'Typescript',
+      'TailwindCSS',
+      'Agile development',
+      'Scrum',
+    ],
     url: 'https://github.com/magnusouren/Cardsnap',
     secondaryImages: [NewCard, PlayDeck],
   },

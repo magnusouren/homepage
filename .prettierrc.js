@@ -1,4 +1,5 @@
 module.exports = {
+  tailwindConfig: './tailwind.config.js',
   // Bruk enkeltfnutter for strenger
   singleQuote: true,
   // Ingen ubrukte variabler tillatt
@@ -11,8 +12,7 @@ module.exports = {
   overrides: [
     {
       files: '*.{js,jsx,ts,tsx}',
-      options: {
-      },
+      options: {},
     },
   ],
 };

@@ -1,4 +1,4 @@
-export type CvContentProps = {
+export interface CvContentProps {
   description?: string | JSX.Element;
   endMonth?: string;
   endYear?: number;
@@ -8,7 +8,7 @@ export type CvContentProps = {
   location: string;
   startMonth?: string;
   startYear: number;
-};
+}
 
 export const CvContent = ({
   description = '',
@@ -20,17 +20,18 @@ export const CvContent = ({
   location,
   startMonth = '',
   startYear,
-}: CvContentProps) => {
-  const handleOnClick = () => {
-    if (href) window.open(href, '_blank');
+}: CvContentProps): JSX.Element => {
+  const handleOnClick = (): void => {
+    if (href !== '') window.open(href, '_blank');
   };
   return (
     <div className="flex justify-between">
       <div>
         <h4 className="font-semibold my-2">{header}</h4>
         <p className="text-gray-500 my-2">
-          {location} | {startMonth ? startMonth : ''} {startYear} - {endMonth ? endMonth + ' ' : ''}
-          {endYear ? endYear : 'Present'}
+          {location} | {startMonth || ''} {startYear} -{' '}
+          {endMonth ? endMonth + ' ' : ''}
+          {endYear || 'Present'}
         </p>
         {description}
       </div>

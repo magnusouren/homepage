@@ -1,9 +1,10 @@
-import { useState } from 'react';
-import { ReadMoreButton } from '../readMoreButton';
+import { type FC, useState } from 'react';
+
 import ExternalLink from '../../img/external-link.png';
+import { ReadMoreButton } from '../readMoreButton';
 import { ReadMore } from './readMore';
 
-export type ProjectType = {
+export interface ProjectProps {
   title: string;
   image: string;
   shortDescription: string;
@@ -11,9 +12,9 @@ export type ProjectType = {
   tags: string[];
   url?: string;
   secondaryImages?: string[];
-};
+}
 
-export const Project = ({
+export const Project: FC<ProjectProps> = ({
   title,
   image: img,
   shortDescription,
@@ -21,7 +22,7 @@ export const Project = ({
   url,
   tags,
   secondaryImages = [],
-}: ProjectType) => {
+}: ProjectProps) => {
   const [displayDescription, setDisplayDescription] = useState(false);
 
   return (

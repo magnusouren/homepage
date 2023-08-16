@@ -5,7 +5,7 @@ module.exports = {
   ignorePatterns: ['node_modules/'],
   parserOptions: {
     ecmaVersion: 2021,
-    sourceType: 'module',
+    sourceType: 'module'
   },
 
   rules: {
@@ -14,6 +14,6 @@ module.exports = {
     // Bruk kun ESLint for håndtering av regler, ikke Prettier
     'prettier/prettier': 'off',
     'prefer-single/prefer-single': ['error', { allowTemplateLiterals: false }],
-    quotes: ['error', 'single'],
-  },
-};
+    quotes: ['error', 'single']
+  }
+}

@@ -1,3 +1,5 @@
+import { type FC } from 'react';
+
 import { CvEducation } from '../components/cv/cvEducation';
 import { CVJob } from '../components/cv/cvJob';
 import { Subtitle } from '../components/subtitle';
@@ -5,7 +7,7 @@ import { CVEducationData } from '../data/cv/cvEducation';
 import { CVJobsData } from '../data/cv/cvJobs';
 import { CvVoluntaryWorkData } from '../data/cv/cvVoluntaryWorkData';
 
-export const CV = () => (
+export const CV: FC = () => (
   <div className="ml-auto mr-auto max-w-xl px-4">
     <Subtitle subtitle="curriculum vitae" />
     <div className="py-4">

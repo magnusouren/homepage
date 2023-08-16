@@ -1,10 +1,14 @@
-import { NavItem, navItemType } from './navItem';
+import { type FC } from 'react';
 
-type DesktopNavProps = {
-  navItems: navItemType[];
-};
+import { NavItem, type NavItemType } from './navItem';
 
-export const DesktopNav = ({ navItems }: DesktopNavProps) => {
+interface DesktopNavProps {
+  navItems: NavItemType[];
+}
+
+export const DesktopNav: FC<DesktopNavProps> = ({
+  navItems,
+}: DesktopNavProps) => {
   const year = new Date().getFullYear();
 
   return (
@@ -21,7 +25,7 @@ export const DesktopNav = ({ navItems }: DesktopNavProps) => {
         ))}
       </ul>
       <p className="hidden md:block absolute bottom-8 w-full text-center font-extralight align-middle">
-        {'- ' + year + ' -'}
+        {`- ${year} -`}
       </p>
     </>
   );

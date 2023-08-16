@@ -1,18 +1,19 @@
-import React from 'react';
-import { CvContent } from './cvContent';
+import React from 'react'
 
-export type CvEducationProps = {
-  degree: string;
-  description?: string;
-  endYear?: number;
-  endmonth?: string;
-  fieldOfStudy: string;
-  institution: string;
-  location: string;
-  logo: string;
-  startYear: number;
-  startMonth?: string;
-};
+import { CvContent } from './cvContent'
+
+export interface CvEducationProps {
+  degree: string
+  description?: string
+  endYear?: number
+  endmonth?: string
+  fieldOfStudy: string
+  institution: string
+  location: string
+  logo: string
+  startYear: number
+  startMonth?: string
+}
 
 export const CvEducation: React.FC<CvEducationProps> = ({
   degree,
@@ -24,7 +25,7 @@ export const CvEducation: React.FC<CvEducationProps> = ({
   location,
   logo,
   startYear,
-  startMonth = '',
+  startMonth = ''
 }: CvEducationProps) => (
   <div className="my-8">
     <CvContent
@@ -38,4 +39,4 @@ export const CvEducation: React.FC<CvEducationProps> = ({
       description={description}
     />
   </div>
-);
+)

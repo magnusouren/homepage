@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { CvContent } from './cvContent';
-import { ReadMoreButton } from '../readMoreButton';
 
-export type CVJobProps = {
+import { ReadMoreButton } from '../readMoreButton';
+import { CvContent } from './cvContent';
+
+export interface CVJobProps {
   company: string;
   endMonth?: string;
   endYear?: number;
@@ -13,7 +14,7 @@ export type CVJobProps = {
   location: string;
   startMonth?: string;
   startYear: number;
-};
+}
 
 export const CVJob = ({
   company,
@@ -26,7 +27,7 @@ export const CVJob = ({
   location,
   startMonth,
   startYear,
-}: CVJobProps) => {
+}: CVJobProps): JSX.Element => {
   const [displayDescription, setDisplayDescription] = useState(false);
 
   return (

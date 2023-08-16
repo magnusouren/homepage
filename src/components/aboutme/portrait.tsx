@@ -1,3 +1,5 @@
-import CVImageToAdd from '../../img/portrait.jpg';
+import CVImageToAdd from '../../img/portrait.jpg'
 
-export const CvPhoto = () => <img alt="portrait of me" src={CVImageToAdd} className=" my-8" />;
+export const CvPhoto = (): JSX.Element => (
+  <img alt="portrait of me" src={CVImageToAdd} className=" my-8" />
+)

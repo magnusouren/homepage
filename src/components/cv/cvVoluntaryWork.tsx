@@ -1,17 +1,18 @@
-import React from 'react';
-import { CvContent } from './cvContent';
+import React from 'react'
 
-export type CvVoluntaryWorkProps = {
-  position: string;
-  description: string;
-  endYear?: number;
-  endMonth?: string;
-  institution: string;
-  location: string;
-  logo: string;
-  startYear: number;
-  startMonth?: string;
-};
+import { CvContent } from './cvContent'
+
+export interface CvVoluntaryWorkProps {
+  position: string
+  description: string
+  endYear?: number
+  endMonth?: string
+  institution: string
+  location: string
+  logo: string
+  startYear: number
+  startMonth?: string
+}
 
 export const CvVoluntaryWork: React.FC<CvVoluntaryWorkProps> = ({
   position,
@@ -22,7 +23,7 @@ export const CvVoluntaryWork: React.FC<CvVoluntaryWorkProps> = ({
   location,
   logo,
   startYear,
-  startMonth = '',
+  startMonth = ''
 }: CvVoluntaryWorkProps) => (
   <div className="mb-4">
     <CvContent
@@ -36,4 +37,4 @@ export const CvVoluntaryWork: React.FC<CvVoluntaryWorkProps> = ({
       description={description}
     />
   </div>
-);
+)

@@ -1,25 +1,36 @@
-import { useState } from 'react';
+import { type FC, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { NavItem, navItemType } from './navItem';
 
-type MobileNavProps = {
-  navItems: navItemType[];
-};
+import { NavItem, type NavItemType } from './navItem';
 
-export const MobileNav = ({ navItems }: MobileNavProps) => {
+interface MobileNavProps {
+  navItems: NavItemType[];
+}
+
+export const MobileNav: FC<MobileNavProps> = ({ navItems }: MobileNavProps) => {
   const [viewMenu, setViewMenu] = useState(false);
 
-  const toggleMenu = () => {
+  const toggleMenu = (): void => {
     setViewMenu(!viewMenu);
   };
 
   return (
     <>
       <div className="flex md:hidden bg-black h-16 justify-between items-center p-4">
-        <Link to="" onClick={() => setViewMenu(false)} className="font-medium">
+        <Link
+          to=""
+          onClick={() => {
+            setViewMenu(false);
+          }}
+          className="font-medium"
+        >
           magnus.ouren.no
         </Link>
-        {viewMenu ? <button onClick={toggleMenu}>close</button> : <button onClick={toggleMenu}>menu</button>}
+        {viewMenu ? (
+          <button onClick={toggleMenu}>close</button>
+        ) : (
+          <button onClick={toggleMenu}>menu</button>
+        )}
       </div>
       {viewMenu && (
         <div className="bg-black h-screen">

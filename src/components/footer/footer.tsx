@@ -1,7 +1,9 @@
+import { type FC } from 'react';
+
 import gh from '../../img/github-mark-white.png';
 import li from '../../img/linkedin-logo-white-big.png';
 
-export const Footer = () => {
+export const Footer: FC = () => {
   const year = new Date().getFullYear();
   return (
     <footer className="bg-black text-white p-4 flex justify-between">
@@ -9,7 +11,10 @@ export const Footer = () => {
         <a href="https://www.github.com/magnusouren" target="blank">
           <img src={gh} alt="github" className="w-6 h-6" />
         </a>
-        <a href="https://www.linkedin.com/in/magnus-tomter-ouren-44a80321b/" target="blank">
+        <a
+          href="https://www.linkedin.com/in/magnus-tomter-ouren-44a80321b/"
+          target="blank"
+        >
           <img src={li} alt="linkedin" className="w-6 h-6" />
         </a>
       </div>
