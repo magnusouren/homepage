@@ -2,6 +2,10 @@ import { type ProjectProps } from '../../components/projects/project';
 import Cardsnap from '../../img/projects/cardsnap/cardsnap.png';
 import NewCard from '../../img/projects/cardsnap/newCard.png';
 import PlayDeck from '../../img/projects/cardsnap/playDeck.png';
+import EMCDrink from '../../img/projects/enjoyMyCocktail/EMCDrink.png';
+import EMCDrinks from '../../img/projects/enjoyMyCocktail/EMCDrinks.png';
+import EMCFavorites from '../../img/projects/enjoyMyCocktail/EMCFavorites.png';
+import EMCHomePage from '../../img/projects/enjoyMyCocktail/EMCHomepage.png';
 import Run from '../../img/projects/trainingDiary/run.png';
 import Strength from '../../img/projects/trainingDiary/strength.png';
 import TrainingDiary from '../../img/projects/trainingDiary/trainingDiary.png';
@@ -14,6 +18,17 @@ import Programs from '../../img/projects/woshare/programs.png';
 import Sessions from '../../img/projects/woshare/sessions.png';
 
 export const projects: ProjectProps[] = [
+  {
+    title: 'Enjoy My Cocktail',
+    image: EMCHomePage,
+    shortDescription:
+      'A project from the IT2810 course at NTNU. The project was to create a web application. We chose to create a web application for cocktails. The web application is a tool for users to find recipies for cocktails. We have used React, Typescript, and vanilla CSS to create this application.',
+    longDescription:
+      'This project was a group project with me and 3 other classmates. The task was to fetch some data from an optional API, and create a web application. We chose to create a web application for cocktails. The web application is a tool for users to find recipies for different types of cocktail. The project is created with Vite, using React and Typescript. For styling we was only allowed to use vanilla CSS. The data is fetched with axios, and caching is handled with Tanstack to avoid unnecessary API calls. Furthermore, testing is done with Vitest and React Testing Library. We have written snapshot-test for all components, and unit tests for the most of the functions. We have used mocks to mock the API calls in testing. The project is per now hosted on our virtual machine at NTNU, and can be found at http://it2810-16.idi.ntnu.no/project1 if you are connected to NTNU network. In the future I will host it on my own domain.',
+    tags: ['React', 'Typescript', 'CSS', 'Vite', 'Vitest', 'Tanstack'],
+    url: '',
+    secondaryImages: [EMCDrinks, EMCDrink, EMCFavorites],
+  },
   {
     title: 'WO Share',
     image: WOShare,

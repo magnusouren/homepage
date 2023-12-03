@@ -1,8 +1,8 @@
-import { type FC } from 'react'
-import { Outlet } from 'react-router-dom'
+import { type FC } from 'react';
+import { Outlet } from 'react-router-dom';
 
-import { Footer } from '../components/footer/footer'
-import { Navbar } from '../components/nav/navbar'
+import { Footer } from '../components/footer/footer';
+import { Navbar } from '../components/nav/navbar';
 
 export const PageLayout: FC = () => (
   <main>
@@ -14,4 +14,4 @@ export const PageLayout: FC = () => (
       <Footer />
     </div>
   </main>
-)
+);

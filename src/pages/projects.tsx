@@ -1,6 +1,7 @@
 import { Project } from '../components/projects/project';
 import { Subtitle } from '../components/subtitle';
 import { projects } from '../data/projects/projects';
+
 export const Projects = (): JSX.Element => (
   <div className="ml-auto mr-auto max-w-2xl px-4">
     <div>
@@ -14,16 +15,7 @@ export const Projects = (): JSX.Element => (
     </div>
     <div>
       {projects.map((project) => (
-        <Project
-          title={project.title}
-          image={project.image}
-          shortDescription={project.shortDescription}
-          longDescription={project.longDescription}
-          secondaryImages={project.secondaryImages}
-          url={project.url}
-          tags={project.tags}
-          key={project.title}
-        />
+        <Project {...project} key={project.title} />
       ))}
     </div>
   </div>

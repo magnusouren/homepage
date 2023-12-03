@@ -1,16 +1,16 @@
-import { type CvEducationProps } from '../../components/cv/cvEducation'
-import LVGS from '../../img/cv/lvgs.jpg'
-import NTNU from '../../img/cv/ntnu.png'
+import { type CvEducationProps } from '../../components/cv/cvEducation';
+import LVGS from '../../img/cv/lvgs.jpg';
+import NTNU from '../../img/cv/ntnu.png';
 
 export const CVEducationData: CvEducationProps[] = [
   {
     degree: 'Bachelor',
-    description: 'Currently studying at the second year',
+    description: 'Currently studying at the third year',
     fieldOfStudy: 'Informatics',
     institution: 'NTNU',
     location: 'Trondheim',
     logo: NTNU,
-    startYear: 2021
+    startYear: 2021,
   },
   {
     degree: 'General academic competence',
@@ -20,6 +20,6 @@ export const CVEducationData: CvEducationProps[] = [
     institution: 'Lambertseter VGS',
     location: 'Oslo',
     logo: LVGS,
-    startYear: 2016
-  }
-]
+    startYear: 2016,
+  },
+];

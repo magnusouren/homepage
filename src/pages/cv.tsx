@@ -13,17 +13,7 @@ export const CV: FC = () => (
     <div className="py-4">
       <h3 className="text-2xl font-bold border-b-2 mb-4">education:</h3>
       {CVEducationData.map((education) => (
-        <CvEducation
-          degree={education.degree}
-          description={education.description}
-          fieldOfStudy={education.fieldOfStudy}
-          institution={education.institution}
-          location={education.location}
-          logo={education.logo}
-          startYear={education.startYear}
-          endYear={education.endYear}
-          key={education.degree}
-        />
+        <CvEducation {...education} key={education.degree} />
       ))}
     </div>
     <div>
@@ -33,19 +23,7 @@ export const CV: FC = () => (
       {CVJobsData.sort(
         (job1, job2) => (job2.endYear ?? 3000) - (job1.endYear ?? 3000),
       ).map((job) => (
-        <CVJob
-          jobTitle={job.jobTitle}
-          company={job.company}
-          startYear={job.startYear}
-          endYear={job.endYear}
-          startMonth={job.startMonth}
-          endMonth={job.endMonth}
-          jobDescription={job.jobDescription}
-          logo={job.logo}
-          location={job.location}
-          href={job.href}
-          key={job.jobTitle}
-        />
+        <CVJob {...job} key={job.jobTitle} />
       ))}
     </div>
     <div>

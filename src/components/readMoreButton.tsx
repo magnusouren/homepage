@@ -17,7 +17,7 @@ export const ReadMoreButton: FC<ReadMoreButtonProps> = ({
 
   return (
     <button
-      className="border-black bg-transparent flex hover:underline"
+      className="border-black bg-transparent flex border-b-transparent border-b-2 font-medium hover:border-b-black"
       onClick={toggleContent}
     >
       <img
@@ -27,7 +27,7 @@ export const ReadMoreButton: FC<ReadMoreButtonProps> = ({
           displayDescription ? 'rotate-180' : 'rotate-0'
         } transition duration-300 ease-in-out`}
       />
-      {displayDescription ? 'Hide' : 'Read more'}
+      {displayDescription ? 'hide' : 'read more'}
     </button>
   );
 };

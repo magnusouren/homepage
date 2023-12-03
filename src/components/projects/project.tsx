@@ -27,7 +27,7 @@ export const Project: FC<ProjectProps> = ({
 
   return (
     <div className="justify-center mt-4 mb-8 w-full">
-      <h3 className="text-2xl font-bold">{title}</h3>
+      <h2 className="text-2xl font-bold">{title}</h2>
       <p className="font-semibold text-gray-500 my-2 w-full">
         | {tags.map((tag) => tag + ' | ')}
       </p>
