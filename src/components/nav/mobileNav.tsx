@@ -16,7 +16,7 @@ export const MobileNav: FC<MobileNavProps> = ({ navItems }: MobileNavProps) => {
 
   return (
     <>
-      <div className="flex md:hidden bg-black h-16 justify-between items-center p-4">
+      <div className="flex lg:hidden bg-black h-16 justify-between items-center p-4">
         <Link
           to=""
           onClick={() => {

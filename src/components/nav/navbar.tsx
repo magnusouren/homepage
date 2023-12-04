@@ -5,11 +5,11 @@ import { DesktopNav } from './desktopNav';
 import { MobileNav } from './mobileNav';
 
 export const Navbar: FC = () => (
-  <nav className="w-full md:w-48 md:min-h-screen bg-black fixed left-0 top-0 text-white">
-    <div className="hidden md:block">
+  <nav className="w-full lg:w-48 lg:min-h-screen bg-black fixed left-0 top-0 text-white">
+    <div className="hidden lg:block">
       <DesktopNav navItems={navItems} />
     </div>
-    <div className="block md:hidden">
+    <div className="block lg:hidden">
       <MobileNav navItems={navItems} />
     </div>
   </nav>
