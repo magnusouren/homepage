@@ -1,14 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.3a482a25.css",
-    "main.js": "/static/js/main.004039fa.js",
+    "main.css": "/static/css/main.300a651f.css",
+    "main.js": "/static/js/main.d115d204.js",
+    "static/media/BWDetails.png": "/static/media/BWDetails.6bd24616d49de5b2fe7a.png",
     "static/media/main.png": "/static/media/main.505b9131e83f96089ec1.png",
+    "static/media/EMCDrinks.png": "/static/media/EMCDrinks.5aa586787b1c65d439b3.png",
+    "static/media/BWWatchlist.png": "/static/media/BWWatchlist.acc6c10b9833525d68a9.png",
+    "static/media/BWSearch.png": "/static/media/BWSearch.67cf7f268cb833991b2b.png",
+    "static/media/BWHome.png": "/static/media/BWHome.9a2c549bf7f3660e37c2.png",
+    "static/media/BWDarkmode.png": "/static/media/BWDarkmode.69d69ac586b923949f14.png",
+    "static/media/BWFilter.png": "/static/media/BWFilter.e797914964d59ca65a2a.png",
     "static/media/feed.png": "/static/media/feed.63b13c48ea64b84c2d45.png",
     "static/media/sessions.png": "/static/media/sessions.523da4b94ca4799a9525.png",
     "static/media/create_session.png": "/static/media/create_session.9055cb1c5352a5616a48.png",
+    "static/media/EMCDrink.png": "/static/media/EMCDrink.b449be8c22d40bf2ab0f.png",
     "static/media/create_program.png": "/static/media/create_program.c3f7b1012297d046f94d.png",
     "static/media/newCard.png": "/static/media/newCard.262d10e6c504989026ab.png",
+    "static/media/EMCHomepage.png": "/static/media/EMCHomepage.f94fbc230d4c347f81cc.png",
     "static/media/playDeck.png": "/static/media/playDeck.40f99e31965e2ec5691e.png",
+    "static/media/EMCFavorites.png": "/static/media/EMCFavorites.c11584ef2da09d5c1cc8.png",
+    "static/media/BWDetails2.png": "/static/media/BWDetails2.6b93b95231965bcb4e4e.png",
     "static/media/trainingDiary.png": "/static/media/trainingDiary.db2d2334dc60aceb179b.png",
     "static/media/profile.png": "/static/media/profile.2fff1cc097d4a551cbd6.png",
     "static/media/monaco.jpg": "/static/media/monaco.520259c254a5bf3a8c4b.jpg",
@@ -23,11 +34,11 @@
     "static/media/lvgs.jpg": "/static/media/lvgs.b479e2574c72d9db1aad.jpg",
     "static/media/ntnu.png": "/static/media/ntnu.832c94c7151cdf2f043c.png",
     "index.html": "/index.html",
-    "main.3a482a25.css.map": "/static/css/main.3a482a25.css.map",
-    "main.004039fa.js.map": "/static/js/main.004039fa.js.map"
+    "main.300a651f.css.map": "/static/css/main.300a651f.css.map",
+    "main.d115d204.js.map": "/static/js/main.d115d204.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a482a25.css",
-    "static/js/main.004039fa.js"
+    "static/css/main.300a651f.css",
+    "static/js/main.d115d204.js"
   ]
 }
