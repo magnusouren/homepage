@@ -1,4 +1,11 @@
 import { type ProjectProps } from '../../components/projects/project';
+import BWDarkmode from '../../img/projects/bingewatcher/BWDarkmode.png';
+import BWDetails from '../../img/projects/bingewatcher/BWDetails.png';
+import BWDetails2 from '../../img/projects/bingewatcher/BWDetails2.png';
+import BWFilter from '../../img/projects/bingewatcher/BWFilter.png';
+import BWHome from '../../img/projects/bingewatcher/BWHome.png';
+import BWSearch from '../../img/projects/bingewatcher/BWSearch.png';
+import BWWatchlist from '../../img/projects/bingewatcher/BWWatchlist.png';
 import Cardsnap from '../../img/projects/cardsnap/cardsnap.png';
 import NewCard from '../../img/projects/cardsnap/newCard.png';
 import PlayDeck from '../../img/projects/cardsnap/playDeck.png';
@@ -19,6 +26,35 @@ import Sessions from '../../img/projects/woshare/sessions.png';
 
 export const projects: ProjectProps[] = [
   {
+    title: 'Bingewatcher',
+    image: BWHome,
+    shortDescription:
+      'The biggest and most important in IT2810. We developed a web application for searching for movies from a big dataset. Frontend is made with React, Typescript, and SCSS. Backend is made with Node.js, Apollo Server, Mongoose and GrapgQL. Database is made with MongoDB. All servives is hosted on a virtual machine at NTNU.',
+    longDescription:
+      'Our project was an extensive venture into web development, focusing on managing large datasets. We chose to develop a web application that allows users to search through a substantial movie database, offering features like adding movies to a watchlist. The application was built using Vite, React, and TypeScript, with SCSS for styling.' +
+      'For data retrieval, we utilized Axios, while Apollo Client MemoryCache was employed for efficient caching, minimizing redundant API calls. Testing was conducted using Vitest and React Testing Library, incorporating snapshot tests for all components and unit tests for most functions. API call simulations in testing were achieved using mocks.' +
+      'The backend infrastructure comprises Node.js, Apollo Server, Mongoose, and GraphQL, with MongoDB for database management. Apollo facilitated backend query handling, supported by custom resolvers for queries and mutations. The applications robustness was ensured through unit testing of resolvers and frontend components, complemented by Playwright for end-to-end testing.',
+    tags: [
+      'React',
+      'Typescript',
+      'SCSS',
+      'Node.js',
+      'Apollo Server',
+      'Mongoose',
+      'GraphQL',
+      'MongoDB',
+    ],
+    url: 'https://github.com/magnusouren/it2810-project2',
+    secondaryImages: [
+      BWSearch,
+      BWDetails,
+      BWDetails2,
+      BWFilter,
+      BWWatchlist,
+      BWDarkmode,
+    ],
+  },
+  {
     title: 'Enjoy My Cocktail',
     image: EMCHomePage,
     shortDescription:
@@ -26,7 +62,7 @@ export const projects: ProjectProps[] = [
     longDescription:
       'This project was a group project with me and 3 other classmates. The task was to fetch some data from an optional API, and create a web application. We chose to create a web application for cocktails. The web application is a tool for users to find recipies for different types of cocktail. The project is created with Vite, using React and Typescript. For styling we was only allowed to use vanilla CSS. The data is fetched with axios, and caching is handled with Tanstack to avoid unnecessary API calls. Furthermore, testing is done with Vitest and React Testing Library. We have written snapshot-test for all components, and unit tests for the most of the functions. We have used mocks to mock the API calls in testing. The project is per now hosted on our virtual machine at NTNU, and can be found at http://it2810-16.idi.ntnu.no/project1 if you are connected to NTNU network. In the future I will host it on my own domain.',
     tags: ['React', 'Typescript', 'CSS', 'Vite', 'Vitest', 'Tanstack'],
-    url: '',
+    url: 'https://github.com/magnusouren/it2810-project1',
     secondaryImages: [EMCDrinks, EMCDrink, EMCFavorites],
   },
   {
