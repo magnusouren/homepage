@@ -1,14 +1,4 @@
-export interface CvContentProps {
-  description?: string | JSX.Element;
-  endMonth?: string;
-  endYear?: number;
-  header: string;
-  href?: string;
-  logo?: string;
-  location: string;
-  startMonth?: string;
-  startYear: number;
-}
+import { type CvContentProps } from '../../types';
 
 export const CvContent = ({
   description = '',
@@ -29,8 +19,7 @@ export const CvContent = ({
       <div>
         <h4 className="font-semibold my-2">{header}</h4>
         <p className="text-gray-500 my-2">
-          {location} | {startMonth || ''} {startYear} -{' '}
-          {endMonth ? endMonth + ' ' : ''}
+          {location} | {startMonth || ''} {startYear} - {endMonth ?? ''}
           {endYear || 'Present'}
         </p>
         {description}
@@ -40,7 +29,7 @@ export const CvContent = ({
           src={logo}
           alt="education"
           onClick={handleOnClick}
-          className={`w-24 h-24 mx-2 ${href && 'cursor-pointer'}`}
+          className={`w-24 h-24 mx-2 ${href ? 'cursor-pointer' : ''}`}
         />
       )}
     </div>

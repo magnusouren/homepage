@@ -1,6 +1,6 @@
-import { type CvEducationProps } from '../../components/cv/cvEducation';
 import LVGS from '../../img/cv/lvgs.jpg';
 import NTNU from '../../img/cv/ntnu.png';
+import { type CvEducationProps } from '../../types';
 
 export const CVEducationData: CvEducationProps[] = [
   {

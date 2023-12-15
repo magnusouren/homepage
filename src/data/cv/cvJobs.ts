@@ -1,9 +1,9 @@
-import { type CVJobProps } from '../../components/cv/cvJob';
 import ForsvaretLogo from '../../img/cv/forsvaret.jpg';
 import Havsport from '../../img/cv/havsport.svg';
 import NLS from '../../img/cv/nls.jpeg';
 import NTNU from '../../img/cv/ntnu.png';
 import Skatteetaten from '../../img/cv/skatteetaten.jpg';
+import { type CVJobProps } from '../../types';
 
 export const CVJobsData: CVJobProps[] = [
   {

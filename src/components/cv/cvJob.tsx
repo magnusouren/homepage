@@ -1,20 +1,8 @@
 import { useState } from 'react';
 
+import { type CVJobProps } from '../../types';
 import { ReadMoreButton } from '../readMoreButton';
 import { CvContent } from './cvContent';
-
-export interface CVJobProps {
-  company: string;
-  endMonth?: string;
-  endYear?: number;
-  href?: string;
-  jobDescription: string;
-  jobTitle: string;
-  logo: string;
-  location: string;
-  startMonth?: string;
-  startYear: number;
-}
 
 export const CVJob = ({
   company,
@@ -33,7 +21,7 @@ export const CVJob = ({
   return (
     <div className="my-8">
       <CvContent
-        header={jobTitle + ' at ' + company}
+        header={`${jobTitle} at ${company}`}
         location={location}
         logo={logo}
         startYear={startYear}
