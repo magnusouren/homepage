@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import { Wallpaper } from '../components/home/wallpaper';
 
 export const HomeView: FC = () => (
-  <div className="-mt-8 md:mt-0">
+  <div className="-mt-8 lg:mt-0">
     <Wallpaper />
     <div className="ml-auto mr-auto mt-8 max-w-xl px-4">
       <h2 className="text-4xl font-bold">magnus.ouren.no</h2>
