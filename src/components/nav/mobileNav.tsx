@@ -1,3 +1,4 @@
+import { CloseSharp, MenuSharp } from '@material-ui/icons';
 import { type FC, useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -22,14 +23,20 @@ export const MobileNav: FC<MobileNavProps> = ({ navItems }: MobileNavProps) => {
           onClick={() => {
             setViewMenu(false);
           }}
-          className="font-medium"
+          className="font-medium hover:underline"
         >
           magnus.ouren.no
         </Link>
         {viewMenu ? (
-          <button onClick={toggleMenu}>close</button>
+          <button onClick={toggleMenu} className="flex gap-2 hover:underline">
+            close
+            <CloseSharp className="pt-1" />
+          </button>
         ) : (
-          <button onClick={toggleMenu}>menu</button>
+          <button onClick={toggleMenu} className="flex gap-2 hover:underline">
+            menu
+            <MenuSharp className="pt-1" />
+          </button>
         )}
       </div>
       {viewMenu && (
