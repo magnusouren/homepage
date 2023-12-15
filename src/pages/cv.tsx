@@ -1,7 +1,6 @@
 import { type FC } from 'react';
 
-import { CvEducation } from '../components/cv/cvEducation';
-import { CVJob } from '../components/cv/cvJob';
+import { CvContent } from '../components/cv/cvContent';
 import { Subtitle } from '../components/subtitle';
 import { CVEducationData } from '../data/cv/cvEducation';
 import { CVJobsData } from '../data/cv/cvJobs';
@@ -13,7 +12,12 @@ export const CV: FC = () => (
     <div className="py-4">
       <h3 className="text-2xl font-bold border-b-2 mb-4">education:</h3>
       {CVEducationData.map((education) => (
-        <CvEducation {...education} key={education.degree} />
+        <CvContent
+          {...education}
+          header={`${education.degree} in ${education.fieldOfStudy}`}
+          location={`${education.institution}, ${education.location}`}
+          key={education.degree}
+        />
       ))}
     </div>
     <div>
@@ -23,23 +27,20 @@ export const CV: FC = () => (
       {CVJobsData.sort(
         (job1, job2) => (job2.endYear ?? 3000) - (job1.endYear ?? 3000),
       ).map((job) => (
-        <CVJob {...job} key={job.jobTitle} />
+        <CvContent
+          {...job}
+          header={`${job.jobTitle} at ${job.company}`}
+          key={job.jobTitle}
+        />
       ))}
     </div>
     <div>
       <h3 className="text-2xl font-bold border-b-2 mb-4">voluntary work:</h3>
       {CvVoluntaryWorkData.map((voluntaryWork) => (
-        <CVJob
-          jobTitle={voluntaryWork.position}
-          company={voluntaryWork.institution}
-          startYear={voluntaryWork.startYear}
-          endYear={voluntaryWork.endYear}
-          startMonth={voluntaryWork.startMonth}
-          endMonth={voluntaryWork.endMonth}
-          jobDescription={voluntaryWork.description}
-          logo={voluntaryWork.logo}
-          location={voluntaryWork.location}
-          key={voluntaryWork.position}
+        <CvContent
+          {...voluntaryWork}
+          header={`${voluntaryWork.position} at ${voluntaryWork.institution}`}
+          key={voluntaryWork.header}
         />
       ))}
     </div>

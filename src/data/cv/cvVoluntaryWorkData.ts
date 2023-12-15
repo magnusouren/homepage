@@ -1,9 +1,9 @@
-import { type CvVoluntaryWorkProps } from '../../types';
+import { type CvVoluntaryWorkProp } from '../../types';
 
-export const CvVoluntaryWorkData: CvVoluntaryWorkProps[] = [
+export const CvVoluntaryWorkData: CvVoluntaryWorkProp[] = [
   {
     position: 'Board member',
-    description:
+    longDescription:
       'Representing the Business Relation Committee in board the at the student organization Online.',
     institution: 'Online',
     location: 'Trondheim',
@@ -13,7 +13,7 @@ export const CvVoluntaryWorkData: CvVoluntaryWorkProps[] = [
   },
   {
     position: 'Member of the Business Relation Committee',
-    description:
+    longDescription:
       'Working in the Business relation committee to improve the relationship between the students and the companies. Helping the companies with hosting events and workshops for the students, publishing job advertisements and more.',
     institution: 'Online',
     location: 'Trondheim',
@@ -23,7 +23,7 @@ export const CvVoluntaryWorkData: CvVoluntaryWorkProps[] = [
   },
   {
     position: 'Board member in KiD - student-business network',
-    description:
+    longDescription:
       'Representing my student organization, Online, in the student-business network KiD. KiD is a network of 3 student organizations in Trondheim and about 25 companies. The network is working to improve the relationship between the students and the companies to promote motivation and learning outcome in the lower levels of the studies. ',
     institution: 'IE-faculty NTNU',
     location: 'Trondheim',
@@ -33,7 +33,7 @@ export const CvVoluntaryWorkData: CvVoluntaryWorkProps[] = [
   },
   {
     position: 'Member of the Excursion Committee',
-    description:
+    longDescription:
       'Working in the Excursion Committee to organize the yearly excursion for the informatic-students. Mainly working with planning and hosting Tech Talks, a series of events where companies come to the university to present themselves and their work to support the excursion. ',
     institution: 'Online',
     location: 'Trondheim',
@@ -43,7 +43,7 @@ export const CvVoluntaryWorkData: CvVoluntaryWorkProps[] = [
   },
   {
     position: 'Grill event coordinator for the Welcome Committee',
-    description:
+    longDescription:
       'Was grill event coordinator in "Fadderukene" for the student organization. Arranged grill events for 200 new informatics-students. ',
     institution: 'Online',
     location: 'Trondheim',

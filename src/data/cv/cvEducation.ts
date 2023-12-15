@@ -5,7 +5,7 @@ import { type CvEducationProps } from '../../types';
 export const CVEducationData: CvEducationProps[] = [
   {
     degree: 'Bachelor',
-    description: 'Currently studying at the third year',
+    shortDescription: 'Currently studying at the third year',
     fieldOfStudy: 'Informatics',
     institution: 'NTNU',
     location: 'Trondheim',
@@ -14,7 +14,7 @@ export const CVEducationData: CvEducationProps[] = [
   },
   {
     degree: 'General academic competence',
-    description: '5,00 / 6,00 as final grade (without extra points)',
+    shortDescription: '5,00 / 6,00 as final grade (without extra points)',
     endYear: 2019,
     fieldOfStudy: 'Natural sciences',
     institution: 'Lambertseter VGS',

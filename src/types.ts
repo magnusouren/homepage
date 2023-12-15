@@ -8,11 +8,12 @@ export interface ProjectProps {
   secondaryImages?: string[];
 }
 
-export interface CvContentProps {
-  description?: string | JSX.Element;
+export interface CVBaseProps {
+  shortDescription?: string;
+  longDescription?: string;
   endMonth?: string;
   endYear?: number;
-  header: string;
+  header?: string;
   href?: string;
   logo?: string;
   location: string;
@@ -20,40 +21,18 @@ export interface CvContentProps {
   startYear: number;
 }
 
-export interface CvEducationProps {
+export interface CvEducationProps extends CVBaseProps {
   degree: string;
-  description?: string;
-  endYear?: number;
-  endmonth?: string;
   fieldOfStudy: string;
   institution: string;
-  location: string;
-  logo: string;
-  startYear: number;
-  startMonth?: string;
 }
 
-export interface CVJobProps {
+export interface CVJobProps extends CVBaseProps {
   company: string;
-  endMonth?: string;
-  endYear?: number;
-  href?: string;
-  jobDescription: string;
   jobTitle: string;
-  logo: string;
-  location: string;
-  startMonth?: string;
-  startYear: number;
 }
 
-export interface CvVoluntaryWorkProps {
+export interface CvVoluntaryWorkProp extends CVBaseProps {
   position: string;
-  description: string;
-  endYear?: number;
-  endMonth?: string;
   institution: string;
-  location: string;
-  logo: string;
-  startYear: number;
-  startMonth?: string;
 }
