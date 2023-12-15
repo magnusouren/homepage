@@ -1,4 +1,3 @@
-import { type ProjectProps } from '../../components/projects/project';
 import BWDarkmode from '../../img/projects/bingewatcher/BWDarkmode.png';
 import BWDetails from '../../img/projects/bingewatcher/BWDetails.png';
 import BWDetails2 from '../../img/projects/bingewatcher/BWDetails2.png';
@@ -23,6 +22,7 @@ import WOShare from '../../img/projects/woshare/main.png';
 import Profile from '../../img/projects/woshare/profile.png';
 import Programs from '../../img/projects/woshare/programs.png';
 import Sessions from '../../img/projects/woshare/sessions.png';
+import { type ProjectProps } from '../../types';
 
 export const projects: ProjectProps[] = [
   {
