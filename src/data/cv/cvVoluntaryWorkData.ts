@@ -1,6 +1,6 @@
-import { type CvVoluntaryWorkProp } from '../../types';
+import { type CvVoluntaryWork } from '../../types';
 
-export const CvVoluntaryWorkData: CvVoluntaryWorkProp[] = [
+export const CvVoluntaryWorkData: CvVoluntaryWork[] = [
   {
     position: 'Board member',
     longDescription:

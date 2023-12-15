@@ -8,7 +8,7 @@ export interface ProjectProps {
   secondaryImages?: string[];
 }
 
-export interface CVBaseProps {
+export interface CVBase {
   shortDescription?: string;
   longDescription?: string;
   endMonth?: string;
@@ -21,18 +21,18 @@ export interface CVBaseProps {
   startYear: number;
 }
 
-export interface CvEducationProps extends CVBaseProps {
+export interface CvEducation extends CVBase {
   degree: string;
   fieldOfStudy: string;
   institution: string;
 }
 
-export interface CVJobProps extends CVBaseProps {
+export interface CvJob extends CVBase {
   company: string;
   jobTitle: string;
 }
 
-export interface CvVoluntaryWorkProp extends CVBaseProps {
+export interface CvVoluntaryWork extends CVBase {
   position: string;
   institution: string;
 }

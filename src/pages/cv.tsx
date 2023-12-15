@@ -2,8 +2,8 @@ import { type FC } from 'react';
 
 import { CvContent } from '../components/cv/cvContent';
 import { Subtitle } from '../components/subtitle';
-import { CVEducationData } from '../data/cv/cvEducation';
-import { CVJobsData } from '../data/cv/cvJobs';
+import { CVEducationData } from '../data/cv/cvEducationData';
+import { CVJobsData } from '../data/cv/cvJobsData';
 import { CvVoluntaryWorkData } from '../data/cv/cvVoluntaryWorkData';
 
 export const CV: FC = () => (

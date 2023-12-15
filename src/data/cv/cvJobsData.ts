@@ -3,9 +3,9 @@ import Havsport from '../../img/cv/havsport.svg';
 import NLS from '../../img/cv/nls.jpeg';
 import NTNU from '../../img/cv/ntnu.png';
 import Skatteetaten from '../../img/cv/skatteetaten.jpg';
-import { type CVJobProps } from '../../types';
+import { type CvJob } from '../../types';
 
-export const CVJobsData: CVJobProps[] = [
+export const CVJobsData: CvJob[] = [
   {
     jobTitle: 'Scientific assistant - IT2805 Web technologies',
     company: 'NTNU',

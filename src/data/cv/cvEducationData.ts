@@ -1,8 +1,8 @@
 import LVGS from '../../img/cv/lvgs.jpg';
 import NTNU from '../../img/cv/ntnu.png';
-import { type CvEducationProps } from '../../types';
+import { type CvEducation } from '../../types';
 
-export const CVEducationData: CvEducationProps[] = [
+export const CVEducationData: CvEducation[] = [
   {
     degree: 'Bachelor',
     shortDescription: 'Currently studying at the third year',

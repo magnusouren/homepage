@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { type CVBaseProps } from '../../types';
+import { type CVBase } from '../../types';
 import { ReadMoreButton } from '../readMoreButton';
 
 export const CvContent = ({
@@ -14,7 +14,7 @@ export const CvContent = ({
   longDescription: longerDescription,
   startMonth = '',
   startYear,
-}: CVBaseProps): JSX.Element => {
+}: CVBase): JSX.Element => {
   const handleOnClick = (): void => {
     if (href !== '') window.open(href, '_blank');
   };
