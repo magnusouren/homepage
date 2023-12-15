@@ -1,18 +1,9 @@
 import { type FC, useState } from 'react';
 
 import ExternalLink from '../../img/external-link.png';
+import { type ProjectProps } from '../../types';
 import { ReadMoreButton } from '../readMoreButton';
 import { ReadMore } from './readMore';
-
-export interface ProjectProps {
-  title: string;
-  image: string;
-  shortDescription: string;
-  longDescription: string;
-  tags: string[];
-  url?: string;
-  secondaryImages?: string[];
-}
 
 export const Project: FC<ProjectProps> = ({
   title,
@@ -35,9 +26,9 @@ export const Project: FC<ProjectProps> = ({
       <img
         src={img}
         alt={title + ' snapshot '}
-        className="w-full cursor-pointer object-cover"
+        className="w-full object-cover lg:cursor-pointer"
         onClick={() => {
-          setIsModalOpen(true);
+          if (window.innerWidth > 1024) setIsModalOpen(true);
         }}
       />
       <p className="my-4">{shortDescription}</p>
