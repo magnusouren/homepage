@@ -1,5 +1,7 @@
 import { type FC } from 'react';
 
+import { ClickableImg } from '../clickableImg/ClickableImg';
+
 interface ReadMoreProps {
   longDescription: string;
   secondaryImages?: string[];
@@ -19,13 +21,7 @@ export const ReadMore: FC<ReadMoreProps> = ({
         </h3>
         <div className="flex flex-wrap justify-center">
           {secondaryImages.map((image, index) => (
-            <img
-              src={image}
-              key={index}
-              alt="alt text
-                "
-              className="my-2 max-h-96 max-w-full"
-            />
+            <ClickableImg img={image} key={index} alt={'screenshot'} />
           ))}
         </div>
       </>
