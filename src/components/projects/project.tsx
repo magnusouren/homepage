@@ -11,8 +11,9 @@ export const Project: FC<ProjectProps> = ({
   image: img,
   shortDescription,
   longDescription,
-  url,
+  repository: url,
   tags,
+  hosted,
   secondaryImages = [],
 }: ProjectProps) => {
   const [displayDescription, setDisplayDescription] = useState(false);
@@ -25,6 +26,19 @@ export const Project: FC<ProjectProps> = ({
       </p>
       <ClickableImg img={img} alt={title} />
       <p className="my-4">{shortDescription}</p>
+      {hosted && (
+        <p className="font-semibold text-gray-500 mb-4">
+          {`Hosted at `}
+          <a
+            href={hosted}
+            target="_blank"
+            rel="noreferrer"
+            className="underline hover:text-gray-500"
+          >
+            {hosted}
+          </a>
+        </p>
+      )}
       <div className="flex justify-between">
         <ReadMoreButton
           displayDescription={displayDescription}

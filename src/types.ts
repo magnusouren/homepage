@@ -4,8 +4,9 @@ export interface ProjectProps {
   shortDescription: string;
   longDescription: string;
   tags: string[];
-  url?: string;
+  repository?: string;
   secondaryImages?: string[];
+  hosted?: string;
 }
 
 export interface CVBase {

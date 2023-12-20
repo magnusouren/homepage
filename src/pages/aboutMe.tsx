@@ -27,9 +27,7 @@ export const AboutMe: FC = () => {
           I love the social aspect of studying in Trondheim, and I am very happy
           to be a part of the student life here. Currently, I am a part of the
           student organization for informatics, called Online. I am also a part
-          of the board for the student organization. My role in the board is to
-          represent the Business relation committee. More about Online can be
-          found.{' '}
+          of the Business relation committee. More about Online can be found{' '}
           <a
             href="https://online.ntnu.no/"
             className="underline hover:text-gray-500"
@@ -60,10 +58,17 @@ export const AboutMe: FC = () => {
           but also some other technologies.
         </p>
         <p className="my-4 text-justify">
-          I am not a big fan of writing about myself, so I will leave it at
-          that. But something that is really cool is that mostly of this content
-          is generated with Github Copilot and I am very impressed with the
-          results. And yes I have made sure that the content is correct.
+          As a result of studying at NTNU, we are lucky to have the opportunity
+          to work in different positions at NTNU. I have been working as a
+          scientific assistant and teaching assistant for different courses.
+          This has been a great experience and I have learned a lot from it. It
+          has also been a nice opportunity to earn some extra money while
+          studying.
+        </p>
+        <p className="my-4 text-justify">
+          I am currently looking foreward to finish my bachelor degree by the
+          summer of 2024. After that I am planning to take a master degree in
+          informatics.
         </p>
       </div>
     </div>

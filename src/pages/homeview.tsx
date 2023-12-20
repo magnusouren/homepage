@@ -59,8 +59,7 @@ export const HomeView: FC = () => {
           </a>
         </p>
         <p className="my-4 text-justify">
-          {`The amazing photo you can see above was taken on my last holiday. The
-        picture was taken in Monaco, where I was on a trip with my friends. It
+          {`The amazing photo you can see above was was taken in Monaco, where I was on a trip with my friends. It
         was an expensive stay, but a very cool place! I can strongly recommend
         it!`}
         </p>

@@ -23,12 +23,12 @@ export const ClickableImg: FC<ClickableImgProps> = ({
       />
       {isModalOpen && (
         <div
-          className="inset-0 bg-gray-900 bg-opacity-70 hidden justify-center items-center z-50 lg:fixed lg:flex"
+          className="inset-0 bg-gray-900 bg-opacity-70 hidden justify-center z-50 lg:fixed lg:flex"
           onClick={() => {
             setIsModalOpen(false);
           }}
         >
-          <div className="p-4 rounded-lg shadow-lg md:max-w-5xl">
+          <div className="p-4 rounded-lg h-[100vh]">
             <img
               src={img}
               alt={alt + ' in modal '}

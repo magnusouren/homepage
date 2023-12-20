@@ -44,7 +44,7 @@ export const projects: ProjectProps[] = [
       'GraphQL',
       'MongoDB',
     ],
-    url: 'https://github.com/magnusouren/it2810-project2',
+    repository: 'https://github.com/magnusouren/it2810-project2',
     secondaryImages: [
       BWSearch,
       BWDetails,
@@ -62,8 +62,9 @@ export const projects: ProjectProps[] = [
     longDescription:
       'This project was a group project with me and 3 other classmates. The task was to fetch some data from an optional API, and create a web application. We chose to create a web application for cocktails. The web application is a tool for users to find recipies for different types of cocktail. The project is created with Vite, using React and Typescript. For styling we was only allowed to use vanilla CSS. The data is fetched with axios, and caching is handled with Tanstack to avoid unnecessary API calls. Furthermore, testing is done with Vitest and React Testing Library. We have written snapshot-test for all components, and unit tests for the most of the functions. We have used mocks to mock the API calls in testing. The project is per now hosted on our virtual machine at NTNU, and can be found at http://it2810-16.idi.ntnu.no/project1 if you are connected to NTNU network. In the future I will host it on my own domain.',
     tags: ['React', 'Typescript', 'CSS', 'Vite', 'Vitest', 'Tanstack'],
-    url: 'https://github.com/magnusouren/it2810-project1',
+    repository: 'https://github.com/magnusouren/it2810-project1',
     secondaryImages: [EMCDrinks, EMCDrink, EMCFavorites],
+    hosted: 'https://cocktail.magnusbyrkjeland.no/',
   },
   {
     title: 'WO Share',
@@ -91,7 +92,8 @@ export const projects: ProjectProps[] = [
       'Agile development',
       'Scrum',
     ],
-    url: 'https://github.com/magnusouren/woshare',
+    repository: 'https://github.com/magnusouren/woshare',
+    hosted: 'https://www.woshare.ouren.no',
     secondaryImages: [
       Sessions,
       Programs,
@@ -127,7 +129,7 @@ export const projects: ProjectProps[] = [
       'Agile development',
       'Scrum',
     ],
-    url: 'https://github.com/magnusouren/Cardsnap',
+    repository: 'https://github.com/magnusouren/Cardsnap',
     secondaryImages: [NewCard, PlayDeck],
   },
   {
@@ -146,7 +148,7 @@ export const projects: ProjectProps[] = [
       'I used Visual Studio Code as my IDE, and Git for version control.' +
       'For the project I used the JavaFX library for the GUI, and the JUnit library for testing.',
     tags: ['OOP', 'Java', 'FXML'],
-    url: 'https://github.com/magnusouren/Training-diary',
+    repository: 'https://github.com/magnusouren/Training-diary',
     secondaryImages: [Strength, Run],
   },
 ];
