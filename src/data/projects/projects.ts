@@ -145,7 +145,7 @@ export const projects: ProjectProps[] = [
       'The project was made in Java, and the GUI was made with FXML.' +
       'I used Visual Studio Code as my IDE, and Git for version control.' +
       'For the project I used the JavaFX library for the GUI, and the JUnit library for testing.',
-    tags: ['Object-Oriented Programming', 'Java', 'FXML'],
+    tags: ['OOP', 'Java', 'FXML'],
     url: 'https://github.com/magnusouren/Training-diary',
     secondaryImages: [Strength, Run],
   },
