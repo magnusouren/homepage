@@ -24,19 +24,21 @@ export const CV: FC = () => (
       <h3 className="text-2xl font-bold border-b-2 mb-4">
         working experience:
       </h3>
-      {CVJobsData.sort(
-        (job1, job2) => (job2.endYear ?? 3000) - (job1.endYear ?? 3000),
-      ).map((job) => (
-        <CvContent
-          {...job}
-          header={`${job.jobTitle} at ${job.company}`}
-          key={job.jobTitle}
-        />
-      ))}
+      {CVJobsData.sort((x, y) => (y.endYear ?? 3000) - (x.endYear ?? 3000)).map(
+        (job) => (
+          <CvContent
+            {...job}
+            header={`${job.jobTitle} at ${job.company}`}
+            key={job.jobTitle}
+          />
+        ),
+      )}
     </div>
     <div>
       <h3 className="text-2xl font-bold border-b-2 mb-4">voluntary work:</h3>
-      {CvVoluntaryWorkData.map((voluntaryWork) => (
+      {CvVoluntaryWorkData.sort(
+        (x, y) => (y.endYear ?? 3000) - (x.endYear ?? 3000),
+      ).map((voluntaryWork) => (
         <CvContent
           {...voluntaryWork}
           header={`${voluntaryWork.position} at ${voluntaryWork.institution}`}

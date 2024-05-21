@@ -14,13 +14,13 @@ export const AboutMe: FC = () => {
       <div className="ml-auto mr-auto max-w-xl px-4">
         <Subtitle subtitle="about me" />
         <p className="my-4 text-justify">
-          {`I am a ${age} year old student from Trondheim, Norway. I grew up and come
-        from Oslo. Currently, I am studying informatics at NTNU in Trondheim. At
-        the moment, I am in the second year of the bachelor program. I am a very
-        curious person and I love to learn new things. Studying informatics
-        makes it possible for me to learn a lot of new things that I never
-        thought would be relevant to learn, but the more I learn, the more I
-        understand how much I don't know.`}
+          I am a ${age} year old student from Trondheim, Norway. I grew up and
+          come from Oslo. Currently, I am studying informatics at NTNU in
+          Trondheim. At the moment, I am finishing the third and last year of
+          the bachelor program. I am a very curious person and I love to learn
+          new things. Studying informatics makes it possible for me to learn a
+          lot of new things that I never thought would be relevant to learn, but
+          the more I learn, the more I understand how much I dont know.
         </p>
         <CvPhoto />
         <p className="my-4 text-justify">

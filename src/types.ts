@@ -20,6 +20,7 @@ export interface CVBase {
   location: string;
   startMonth?: string;
   startYear: number;
+  readMoreURL?: string;
 }
 
 export interface CvEducation extends CVBase {

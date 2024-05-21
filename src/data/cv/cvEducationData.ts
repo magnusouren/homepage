@@ -5,12 +5,14 @@ import { type CvEducation } from '../../types';
 export const CVEducationData: CvEducation[] = [
   {
     degree: 'Bachelor',
-    shortDescription: 'Currently studying at the third year',
+    shortDescription: 'Completed a 3-year bachelor degree in informatics.',
     fieldOfStudy: 'Informatics',
     institution: 'NTNU',
     location: 'Trondheim',
     logo: NTNU,
     startYear: 2021,
+    endYear: 2024,
+    longDescription: `I hold a Bachelors Degree in Informatics from NTNU, where I acquired knowledge in programming and software development. My studies covered the fundamental workings and architecture of computers, a deeper understanding of algorithms and data structures, along with different courses within technology. Optional courses I have included in the degree: Ethical Hacking and Penetration Testing, Big Data, Web Development, Introduction to AI and Digitalization. Read more about my bachelor project at the projects page.`,
   },
   {
     degree: 'General academic competence',

@@ -14,6 +14,7 @@ export const CvContent = ({
   longDescription: longerDescription,
   startMonth = '',
   startYear,
+  readMoreURL,
 }: CVBase): JSX.Element => {
   const handleOnClick = (): void => {
     if (href !== '') window.open(href, '_blank');
@@ -26,10 +27,10 @@ export const CvContent = ({
         <div>
           <h4 className="font-semibold my-2">{header}</h4>
           <p className="text-gray-500 my-2">
-            {location} | {startMonth || ''} {startYear} - {endMonth ?? ''}
+            {location} | {startMonth || ''} {startYear} - {endMonth ?? ''}{' '}
             {endYear || 'Present'}
           </p>
-          {shortDescription}
+          <p className="my-2">{shortDescription}</p>
           {longerDescription && (
             <ReadMoreButton
               displayDescription={displayDescription}
@@ -47,9 +48,22 @@ export const CvContent = ({
         )}
       </div>
       {displayDescription && (
-        <p className="text-gray-800 bg-gray-100 p-4 mt-4">
-          {longerDescription}
-        </p>
+        <div className="bg-gray-100 p-4 mt-4">
+          <p className="text-gray-800 ">{longerDescription}</p>
+          {readMoreURL && (
+            <p className="mt-4">
+              Read more:{' '}
+              <a
+                href={readMoreURL}
+                target="_blank"
+                rel="noreferrer"
+                className="text-blue-500 visited:text-purple-500 hover:text-blue-700 active:text-blue-800"
+              >
+                {readMoreURL}
+              </a>
+            </p>
+          )}
+        </div>
       )}
     </div>
   );
