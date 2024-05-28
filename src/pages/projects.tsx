@@ -40,8 +40,9 @@ export const Projects = (): JSX.Element => {
         <p>
           On this page you will find a list of projects I have worked on. Since
           I am a student I have not had so much time to work on projects in my
-          sparetime, therefore some of them are from school. Click on images to
-          make them bigger. More projects will be added in the future!
+          sparetime, therefore all these are currently from my courses at NTNU.
+          Click on images to make them bigger. More projects will be added in
+          the future!
         </p>
         <div className=" border-black border-t border-b my-4">
           <h2 className="mt-2 font-semibold">filter projects:</h2>
