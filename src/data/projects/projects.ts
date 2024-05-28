@@ -106,7 +106,7 @@ export const projects: ProjectProps[] = [
       'The project lasted for 8 weeks, and was divided into 2 sprints for 4 weeks each. \n ' +
       'Our product let the user create workouts and programs, and share them with other users. ' +
       'The user can also search for others users, follow them, and see their publishes content.',
-    tags: ['React', 'Typescript', 'TailwindCSS', 'Firebase', 'Scrum'],
+    tags: ['React', 'Typescript', 'TailwindCSS', 'Firebase'],
     repository: 'https://github.com/magnusouren/woshare',
     hosted: 'https://www.woshare.ouren.no',
     secondaryImages: [
@@ -136,7 +136,7 @@ export const projects: ProjectProps[] = [
       'Backend unit- and integrationtests is tested with Junit. ' +
       'The frontend is tested with Vitest and React Testing Library. ' +
       'End to end testing is done with Playwrigth. ',
-    tags: ['Java', 'React', 'Typescript', 'TailwindCSS', 'Scrum'],
+    tags: ['Java', 'React', 'Typescript', 'TailwindCSS'],
     repository: 'https://github.com/magnusouren/Cardsnap',
     secondaryImages: [NewCard, PlayDeck],
   },
