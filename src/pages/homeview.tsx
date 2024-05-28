@@ -15,18 +15,18 @@ export const HomeView: FC = () => {
     <div className="-mt-8 lg:mt-0">
       <Wallpaper />
       <div className="ml-auto mr-auto mt-8 max-w-xl px-4">
-        <h2 className="text-4xl font-bold">magnus.ouren.no</h2>
+        <h2 className="text-4xl font-bold">magnus.ouren.no</h2>{' '}
         <p className="font-semibold text-gray-500">
           react/typescript/tailwind css
         </p>
         <p className="mt-4 mb-4 text-justify">
-          {`Hello, I'm Magnus and this is my first homepage. I am currently studying
-        informatics at my second year at NTNU in Trondheim. This webpage is made
-        with React, Typescript, and Tailwind CSS as a hobby project to learn
-        more about new technologies. It started as a workshop with a friend for
-        learning React, but has developed into a bigger webpage about me, what I
-        do, and who I am. That's reasonably selfish, but hopefully I will add
-        other types of content in the future :)`}
+          Hello, I am Magnus and this is my personal homepage. I have just
+          finished my bachelor degree in informatics at NTNU i Trondheim, and
+          will continue with a Master of Science - Informatics at NTNU in August
+          2024. This webpage is made with React, Typescript, and Tailwind CSS as
+          a hobby project to learn more about these technologies. It started as
+          a workshop with a friend for learning React, but has developed into a
+          bigger webpage about me, what I do, and who I am.
         </p>
         <div className="flex gap-4">
           <Link
@@ -47,9 +47,8 @@ export const HomeView: FC = () => {
           </Link>
         </div>
         <p className="my-4 text-justify">
-          {`It's my first ever built React webpage. My React skills are mostly
-        self-taught, so don't be harsh. You can check out the repository for
-        this webpage `}
+          It is my first ever built React webpage. You can check out the
+          repository for this webpage{' '}
           <a
             target="blank"
             href="https://github.com/magnusouren/homepage"
@@ -59,9 +58,9 @@ export const HomeView: FC = () => {
           </a>
         </p>
         <p className="my-4 text-justify">
-          {`The amazing photo you can see above was was taken in Monaco, where I was on a trip with my friends. It
-        was an expensive stay, but a very cool place! I can strongly recommend
-        it!`}
+          The amazing photo you can see above was was taken in Monaco, where I
+          was on a trip with my friends. It was an expensive stay, but a very
+          cool place! I can strongly recommend it!
         </p>
       </div>
     </div>

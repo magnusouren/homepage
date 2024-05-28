@@ -14,7 +14,7 @@ export const AboutMe: FC = () => {
       <div className="ml-auto mr-auto max-w-xl px-4">
         <Subtitle subtitle="about me" />
         <p className="my-4 text-justify">
-          I am a ${age} year old student from Trondheim, Norway. I grew up and
+          I am a {age} year old student from Trondheim, Norway. I grew up and
           come from Oslo. Currently, I am studying informatics at NTNU in
           Trondheim. At the moment, I am finishing the third and last year of
           the bachelor program. I am a very curious person and I love to learn

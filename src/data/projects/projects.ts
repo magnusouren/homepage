@@ -12,6 +12,9 @@ import EMCDrink from '../../img/projects/enjoyMyCocktail/EMCDrink.png';
 import EMCDrinks from '../../img/projects/enjoyMyCocktail/EMCDrinks.png';
 import EMCFavorites from '../../img/projects/enjoyMyCocktail/EMCFavorites.png';
 import EMCHomePage from '../../img/projects/enjoyMyCocktail/EMCHomepage.png';
+import Deficiencies from '../../img/projects/proto/deficiencies.png';
+import Routine from '../../img/projects/proto/routine.png';
+import Search from '../../img/projects/proto/Searchpage.png';
 import Run from '../../img/projects/trainingDiary/run.png';
 import Strength from '../../img/projects/trainingDiary/strength.png';
 import TrainingDiary from '../../img/projects/trainingDiary/trainingDiary.png';
@@ -25,6 +28,25 @@ import Sessions from '../../img/projects/woshare/sessions.png';
 import { type ProjectProps } from '../../types';
 
 export const projects: ProjectProps[] = [
+  {
+    title: 'Proto',
+    image: Search,
+    shortDescription:
+      'The bachelor project in the last semester of my bachelor degree in Informatics. We developed a prototype to enchance the internal Quality Management System (QMS) in Trondheim Municipality. We fetched the existing data from the current system, implemented a search engine with Elasticsearch making easier to retrieve routines. Furthermore a detailed dashboard-view to highlight deficiencies was developed to raise awareness for users of work needed to be done. Black boxes have been added to the screenshots to hide the content because of an existing NDA concerning the applications data content.',
+    longDescription:
+      'Initially, a significant amount of research was conducted to understand the project scope. Through continued dialogue with the customer, we identified the main pain points of the current system. The primary goal of the project was to develop a prototype to enhance the internal Quality Management System (QMS) in Trondheim Municipality. The prototype was developed using Next.js, React, Typescript, and TailwindCSS, along with TailwindUI. The backend was built using Node.js, Next.js, and Postgres DB. A substantial portion of the work involved fetching data from the existing system API and restructuring it into a new Postgres database. This process was time-consuming but ultimately provided us with extensive possibilities to develop new functionality through database queries instead of relying solely on simple API endpoints. This allowed for detailed views of deficiencies and the use of Elasticsearch for efficient routine retrieval. Minio S3 Object Storage was used for storing PDF files. The dashboard view was designed to highlight deficiencies, enabling users to easily identify tasks that need attention. The application was containerized using Docker, and worked out really well. The project was a great learning experience, and we are proud of the result we achieved in the end. Thanks to Trondheim Municipality for the opportunity to work on this project.',
+    tags: [
+      'Next.js',
+      'React',
+      'Typescript',
+      'TailwindCSS',
+      'Postgres',
+      'Elasticsearch',
+      'Docker',
+      'Minio',
+    ],
+    secondaryImages: [Routine, Deficiencies],
+  },
   {
     title: 'Bingewatcher',
     image: BWHome,
@@ -84,14 +106,7 @@ export const projects: ProjectProps[] = [
       'The project lasted for 8 weeks, and was divided into 2 sprints for 4 weeks each. \n ' +
       'Our product let the user create workouts and programs, and share them with other users. ' +
       'The user can also search for others users, follow them, and see their publishes content.',
-    tags: [
-      'React',
-      'Typescript',
-      'TailwindCSS',
-      'Firebase',
-      'Agile development',
-      'Scrum',
-    ],
+    tags: ['React', 'Typescript', 'TailwindCSS', 'Firebase', 'Scrum'],
     repository: 'https://github.com/magnusouren/woshare',
     hosted: 'https://www.woshare.ouren.no',
     secondaryImages: [
@@ -121,14 +136,7 @@ export const projects: ProjectProps[] = [
       'Backend unit- and integrationtests is tested with Junit. ' +
       'The frontend is tested with Vitest and React Testing Library. ' +
       'End to end testing is done with Playwrigth. ',
-    tags: [
-      'Java',
-      'React',
-      'Typescript',
-      'TailwindCSS',
-      'Agile development',
-      'Scrum',
-    ],
+    tags: ['Java', 'React', 'Typescript', 'TailwindCSS', 'Scrum'],
     repository: 'https://github.com/magnusouren/Cardsnap',
     secondaryImages: [NewCard, PlayDeck],
   },
