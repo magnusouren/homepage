@@ -1,6 +1,7 @@
 import { type FC } from 'react';
 
 import { CvContent } from '../components/cv/cvContent';
+import { DownloadButton } from '../components/pdfDownload';
 import { Subtitle } from '../components/subtitle';
 import { CVEducationData } from '../data/cv/cvEducationData';
 import { CVJobsData } from '../data/cv/cvJobsData';
@@ -45,6 +46,11 @@ export const CV: FC = () => (
           key={voluntaryWork.header}
         />
       ))}
+    </div>
+
+    <div>
+      <hr className="text-2xl font-bold border-b-2 mb-4"></hr>
+      <DownloadButton fileUrl="https://raw.githubusercontent.com/magnusouren/homepage/main/public/CV.pdf" />
     </div>
   </div>
 );
