@@ -24,7 +24,7 @@ const iconType = {
   education: { tag: <School />, color: 'bg-white' },
   work: { tag: <Work />, color: 'bg-white' },
   volunteer: { tag: <Group />, color: 'bg-white' },
-  project: { tag: <Code />, color: 'bg-white' },
+  project: { tag: <Code />, color: 'bg-gray-200 text-black' },
   other: { tag: `🎉`, color: 'bg-white' },
 };
 
@@ -46,7 +46,7 @@ export const TimeObject: FC<TimeObjectProps> = ({
         className={`relative w-1/2 p-4 ${index % 2 === 0 ? 'text-right' : 'text-left'}`}
       >
         <div
-          className={`${iconType[type].color} p-4 rounded-lg shadow-md border border-gray-200 mx-4 cursor-pointer relative hover:shadow-lg`}
+          className={`${iconType[type].color} p-4 rounded-lg shadow-md border border-gray-200 mx-4 relative ${content ? 'cursor-pointer  hover:shadow-lg' : ''}`}
           onClick={() => {
             setShowMore(!showMore);
           }}

@@ -11,48 +11,59 @@ import { type YearMonth } from '../types';
 
 export const Timeline: React.FC = () => {
   const educationData = CVEducationData.map((education) => ({
-    id: education.degree,
+    ...education,
+    id: education.degree + education.institution,
     title: `${education.degree} in ${education.fieldOfStudy} at ${education.institution}`,
     content: education.longDescription ?? education.shortDescription,
-    startTime: education.startTime,
-    endTime: education.endTime,
     type: 'education' as TimeObjectType,
   }));
 
   const jobData = CVJobsData.map((work) => ({
-    id: work.company,
+    ...work,
+    id: work.company + work.jobTitle,
     title: `${work.jobTitle} at ${work.company}`,
     content: work.longDescription ?? work.shortDescription,
-    startTime: work.startTime,
-    endTime: work.endTime,
     type: 'work' as TimeObjectType,
   }));
 
   const volunteerData = CvVoluntaryWorkData.map((work) => ({
+    ...work,
     id: work.institution + work.position,
     title: `${work.position} at ${work.institution}`,
     content: work.longDescription ?? work.shortDescription,
-    startTime: work.startTime,
-    endTime: work.endTime,
     type: 'volunteer' as TimeObjectType,
   }));
 
   const projectData = projects.map((project) => ({
+    ...project,
     id: project.title,
-    title: project.title,
     content: project.shortDescription,
-    startTime: project.startTime,
-    endTime: project.endTime,
     type: 'project' as TimeObjectType,
   }));
 
   const otherData = [
     {
       id: 1,
-      title: 'Finished my Bachelor in Informatics',
-      content:
-        'Finished with my three years at my Bachelor Degree in informatics at NTNU',
-      startTime: { year: 2024, month: 6 } satisfies YearMonth,
+      title: 'Finished my Bachelor degree in Informatics',
+      startTime: { year: 2024, month: 6, day: 1 } satisfies YearMonth,
+      type: 'other' as TimeObjectType,
+    },
+    {
+      id: 2,
+      title: 'Moved from Bergen to Trondheim to begin my studies at NTNU',
+      startTime: { year: 2021, month: 7 } satisfies YearMonth,
+      type: 'other' as TimeObjectType,
+    },
+    {
+      id: 3,
+      title: 'Finished my general academic competence at Lambertseter VGS',
+      startTime: { year: 2019, month: 6 } satisfies YearMonth,
+      type: 'other' as TimeObjectType,
+    },
+    {
+      id: 4,
+      title: 'Exchange year in Rome, Italy',
+      startTime: { year: 2024, month: 9 } satisfies YearMonth,
       type: 'other' as TimeObjectType,
     },
   ];
@@ -68,7 +79,11 @@ export const Timeline: React.FC = () => {
     if (yearDiff !== 0) {
       return yearDiff;
     }
-    return a.startTime.month - b.startTime.month;
+    const monthDiff = a.startTime.month - b.startTime.month;
+    if (monthDiff !== 0) {
+      return monthDiff;
+    }
+    return a.startTime.day ? a.startTime.day - (b.startTime.day ?? 32) : 0;
   });
 
   return (
@@ -77,12 +92,12 @@ export const Timeline: React.FC = () => {
       <p className="mt-8">
         This is an effort to create a visual timeline of things I have done in
         my life. It is a mix of education, work, voluntary work, projects, and
-        other things that I have done.
+        other things that I have done. The elements are sorted by start date.
       </p>
       <p className="my-4 border-l-4 border-gray-500 pl-2 text-gray-500 text-sm">
         Select an element to read more details
       </p>
-      <div className="relative">
+      <div className="relative mt-8">
         <div className="absolute inset-0 flex justify-center">
           <div className="w-1 bg-gray-200"></div>
         </div>
@@ -92,6 +107,9 @@ export const Timeline: React.FC = () => {
           ))}
         </div>
       </div>
+      <p className="mt-16 text-gray-500 text-sm text-center">
+        Still more to come ...
+      </p>
     </div>
   );
 };
