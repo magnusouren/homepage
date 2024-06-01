@@ -1,19 +1,18 @@
 import { useState } from 'react';
 
 import { type CVBase } from '../../types';
+import { monthToString } from '../../utils/time';
 import { ReadMoreButton } from '../readMoreButton';
 
 export const CvContent = ({
   shortDescription,
-  endMonth = '',
-  endYear = 0,
+  startTime,
   header,
   href = '',
   logo = '',
   location,
   longDescription: longerDescription,
-  startMonth = '',
-  startYear,
+  endTime,
   readMoreURL,
 }: CVBase): JSX.Element => {
   const handleOnClick = (): void => {
@@ -27,8 +26,8 @@ export const CvContent = ({
         <div>
           <h4 className="font-semibold my-2">{header}</h4>
           <p className="text-gray-500 my-2">
-            {location} | {startMonth || ''} {startYear} - {endMonth ?? ''}{' '}
-            {endYear || 'Present'}
+            {location} | {monthToString(startTime.month)} {startTime.year} -{' '}
+            {monthToString(endTime?.month ?? 0)} {endTime?.year ?? 'to date'}
           </p>
           <p className="my-2">{shortDescription}</p>
           {longerDescription && (

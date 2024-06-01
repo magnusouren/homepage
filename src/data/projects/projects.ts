@@ -46,12 +46,14 @@ export const projects: ProjectProps[] = [
       'Minio',
     ],
     secondaryImages: [Routine, Deficiencies],
+    startTime: { year: 2024, month: 1 },
+    endTime: { year: 2024, month: 5 },
   },
   {
     title: 'Bingewatcher',
     image: BWHome,
     shortDescription:
-      'The biggest and most important in IT2810. We developed a web application for searching for movies from a big dataset. Frontend is made with React, Typescript, and SCSS. Backend is made with Node.js, Apollo Server, Mongoose and GrapgQL. Database is made with MongoDB. All servives is hosted on a virtual machine at NTNU.',
+      'The biggest and most important project in IT2810. We developed a web application for searching for movies from a big dataset. Frontend is made with React, Typescript, and SCSS. Backend is made with Node.js, Apollo Server, Mongoose and GrapgQL. Database is made with MongoDB. All servives is hosted on a virtual machine at NTNU.',
     longDescription:
       'Our project was an extensive venture into web development, focusing on managing large datasets. We chose to develop a web application that allows users to search through a substantial movie database, offering features like adding movies to a watchlist. The application was built using Vite, React, and TypeScript, with SCSS for styling.' +
       'For data retrieval, we utilized Axios, while Apollo Client MemoryCache was employed for efficient caching, minimizing redundant API calls. Testing was conducted using Vitest and React Testing Library, incorporating snapshot tests for all components and unit tests for most functions. API call simulations in testing were achieved using mocks.' +
@@ -75,6 +77,8 @@ export const projects: ProjectProps[] = [
       BWWatchlist,
       BWDarkmode,
     ],
+    startTime: { year: 2023, month: 8 },
+    endTime: { year: 2023, month: 11 },
   },
   {
     title: 'Enjoy My Cocktail',
@@ -87,6 +91,8 @@ export const projects: ProjectProps[] = [
     repository: 'https://github.com/magnusouren/it2810-project1',
     secondaryImages: [EMCDrinks, EMCDrink, EMCFavorites],
     hosted: 'https://cocktail.magnusbyrkjeland.no/',
+    startTime: { year: 2023, month: 8 },
+    endTime: { year: 2023, month: 9 },
   },
   {
     title: 'WO Share',
@@ -117,6 +123,8 @@ export const projects: ProjectProps[] = [
       CreateSession,
       CreateProgram,
     ],
+    startTime: { year: 2023, month: 1 },
+    endTime: { year: 2023, month: 5 },
   },
   {
     title: 'Cardsnap',
@@ -139,6 +147,8 @@ export const projects: ProjectProps[] = [
     tags: ['Java', 'React', 'Typescript', 'TailwindCSS'],
     repository: 'https://github.com/magnusouren/Cardsnap',
     secondaryImages: [NewCard, PlayDeck],
+    startTime: { year: 2022, month: 9 },
+    endTime: { year: 2022, month: 12 },
   },
   {
     title: 'Training diary',
@@ -158,5 +168,7 @@ export const projects: ProjectProps[] = [
     tags: ['OOP', 'Java', 'FXML'],
     repository: 'https://github.com/magnusouren/Training-diary',
     secondaryImages: [Strength, Run],
+    startTime: { year: 2022, month: 3 },
+    endTime: { year: 2022, month: 4 },
   },
 ];
