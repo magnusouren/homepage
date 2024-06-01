@@ -7,7 +7,7 @@ import { type CvJob } from '../../types';
 
 export const CVJobsData: CvJob[] = [
   {
-    jobTitle: 'Scientific assistant - IT2805 Web technologies',
+    jobTitle: 'Scientific assistant - IT2805, Web technologies',
     company: 'NTNU',
     startYear: 2023,
     startMonth: 'August',
@@ -34,7 +34,7 @@ export const CVJobsData: CvJob[] = [
     href: 'https://www.ntnu.edu/',
   },
   {
-    jobTitle: 'Teaching assistant - TDT4100 OOP',
+    jobTitle: 'Teaching assistant - TDT4100, OOP',
     company: 'NTNU',
     startYear: 2023,
     startMonth: 'January',
@@ -48,7 +48,7 @@ export const CVJobsData: CvJob[] = [
     readMoreURL: 'https://www.ntnu.edu/studies/courses/TDT4100',
   },
   {
-    jobTitle: 'Teaching assistant - TDT4180 Human–Computer Interaction',
+    jobTitle: 'Teaching assistant - TDT4180, Human–Computer Interaction',
     company: 'NTNU',
     startYear: 2024,
     startMonth: 'January',
@@ -102,7 +102,7 @@ export const CVJobsData: CvJob[] = [
   },
   {
     jobTitle: 'Diving instructor',
-    company: 'The Norwegain Naval Diving School - Royal Norwegian Navy',
+    company: 'The Norwegain Naval Diving School',
     startYear: 2020,
     startMonth: 'July',
     endYear: 2021,
@@ -115,7 +115,7 @@ export const CVJobsData: CvJob[] = [
   },
   {
     jobTitle: 'Shipdiver',
-    company: 'The Norwegain Naval Diving School - Royal Norwegian Navy',
+    company: 'The Norwegain Naval Diving School',
     startYear: 2019,
     startMonth: 'July',
     endYear: 2020,

@@ -26,6 +26,12 @@ export const navItems: NavItemType[] = [
     target: '_self',
   },
   {
+    text: 'timeline',
+    emoji: '🕰️',
+    url: 'timeline',
+    target: '_self',
+  },
+  {
     text: 'github',
     emoji: '💻',
     url: 'https://www.github.com/magnusouren',
