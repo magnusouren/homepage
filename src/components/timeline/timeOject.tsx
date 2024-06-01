@@ -51,17 +51,15 @@ export const TimeObject: FC<TimeObjectProps> = ({
             setShowMore(!showMore);
           }}
         >
-          <p className="font-medium">{title}</p>
-          {showMore && <div className="text-sm font-light mt-4">{content}</div>}
-          {showMore && endTime && (
+          <p className="font-medium text-sm">{title}</p>
+          {showMore && content && (
+            <div className="text-sm font-light mt-4">{content}</div>
+          )}
+          {showMore && type !== 'other' && (
             <div className="text-xs font-light mt-4">
               {monthToString(startTime.month)} {startTime.year} -{' '}
-              {monthToString(endTime.month)} {endTime.year}
-            </div>
-          )}
-          {showMore && !endTime && (
-            <div className="text-xs font-light mt-4">
-              {monthToString(startTime.month)} {startTime.year} - to date
+              {endTime ? `${monthToString(endTime.month)} ` : 'To date'}
+              {endTime?.year ?? ''}
             </div>
           )}
         </div>
@@ -71,7 +69,7 @@ export const TimeObject: FC<TimeObjectProps> = ({
           {iconType[type].tag}
         </div>
         <div
-          className={`absolute top-1/2 transform -translate-y-1/2 ${index % 2 === 0 ? '-right-40' : '-left-40'}  h-8 w-40 text-center flex items-center justify-center text-gray-600`}
+          className={`absolute top-1/2 transform -translate-y-1/2 ${index % 2 === 0 ? '-right-48 justify-start pl-4' : '-left-48 justify-end pr-4'}  h-8 w-40 flex items-center  text-gray-600 left`}
         >
           {monthToString(startTime.month)} {startTime.year}
         </div>

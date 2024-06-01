@@ -72,7 +72,7 @@ export const Timeline: React.FC = () => {
   });
 
   return (
-    <div className="ml-auto mr-auto max-w-4xl px-4 py-0">
+    <div className="ml-auto mr-auto max-w-2xl px-4 py-0">
       <Subtitle subtitle="timeline" />
       <p className="mt-8">
         This is an effort to create a visual timeline of things I have done in
