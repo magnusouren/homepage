@@ -98,7 +98,7 @@ export const Timeline: React.FC = () => {
         Select an element to read more details
       </p>
       <div className="relative mt-8">
-        <div className="absolute inset-0 flex ml-2 md:justify-center">
+        <div className="absolute inset-0 flex ml-4 md:ml-0 md:justify-center">
           <div className="w-1 bg-gray-200"></div>
         </div>
         <div className="space-y-8">
