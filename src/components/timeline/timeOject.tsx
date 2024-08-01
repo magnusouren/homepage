@@ -67,12 +67,12 @@ export const TimeObject: FC<TimeObjectProps> = ({
           )}
         </div>
         <div
-          className={`absolute -left-0.5 top-1/2 -translate-y-1/2${index % 2 === 0 ? 'md:left-1/2' : 'md:left-1/2'}  flex size-10 items-center justify-center rounded-full border border-gray-200 bg-white text-center shadow-md md:-ml-5`}
+          className={`absolute left-1/2 top-1/2 -translate-y-1/2 ${index % 2 === 0 ? 'md:left-1/2' : 'md:left-1/2'}  flex size-10 items-center justify-center rounded-full border border-gray-200 bg-white text-center shadow-md md:-ml-5`}
         >
           {iconType[type].tag}
         </div>
         <div
-          className={`absolute top-1/2 hidden -translate-y-1/2 md:block${index % 2 === 0 ? 'pl-8 text-left md:left-1/2' : 'pr-8 text-right md:right-1/2'}  text-gray-600 `}
+          className={`absolute top-1/2 hidden -translate-y-1/2 md:block ${index % 2 === 0 ? 'pl-8 text-left md:left-1/2' : 'pr-8 text-right md:right-1/2'}  text-gray-600 `}
         >
           {monthToString(startTime.month)} {startTime.year}
         </div>
