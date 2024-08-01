@@ -74,31 +74,31 @@ export const Timeline: React.FC = () => {
     ...volunteerData,
     ...projectData,
     ...otherData,
-  ].sort((a, b) => {
-    const yearDiff = a.startTime.year - b.startTime.year;
+  ].sort((x, y) => {
+    const yearDiff = y.startTime.year - x.startTime.year;
     if (yearDiff !== 0) {
       return yearDiff;
     }
-    const monthDiff = a.startTime.month - b.startTime.month;
+    const monthDiff = y.startTime.month - x.startTime.month;
     if (monthDiff !== 0) {
       return monthDiff;
     }
-    return a.startTime.day ? a.startTime.day - (b.startTime.day ?? 32) : 0;
+    return y.startTime.day ? y.startTime.day - (x.startTime.day ?? 32) : 0;
   });
 
   return (
-    <div className="ml-auto mr-auto max-w-2xl px-4 py-0">
+    <div className="mx-auto max-w-2xl px-4 py-0">
       <Subtitle subtitle="timeline" />
       <p className="mt-8">
         This is an effort to create a visual timeline of things I have done in
         my life. It is a mix of education, work, voluntary work, projects, and
         other things that I have done. The elements are sorted by start date.
       </p>
-      <p className="my-4 border-l-4 border-gray-500 pl-2 text-gray-500 text-sm">
+      <p className="my-4 border-l-4 border-gray-500 pl-2 text-sm text-gray-500">
         Select an element to read more details
       </p>
       <div className="relative mt-8">
-        <div className="absolute inset-0 flex ml-4 md:ml-0 md:justify-center">
+        <div className="absolute inset-0 ml-4 flex md:ml-0 md:justify-center">
           <div className="w-1 bg-gray-200"></div>
         </div>
         <div className="space-y-8">
@@ -107,7 +107,7 @@ export const Timeline: React.FC = () => {
           ))}
         </div>
       </div>
-      <p className="mt-16 text-gray-500 text-sm text-center">
+      <p className="mt-16 text-center text-sm text-gray-500">
         Still more to come ...
       </p>
     </div>

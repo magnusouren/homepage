@@ -19,15 +19,15 @@ export const Project: FC<ProjectProps> = ({
   const [displayDescription, setDisplayDescription] = useState(false);
 
   return (
-    <div className="justify-center mt-4 mb-8 w-full">
+    <div className="mb-8 mt-4 w-full justify-center">
       <h2 className="text-2xl font-bold">{title}</h2>
-      <p className="font-semibold text-gray-500 my-2 w-full">
+      <p className="my-2 w-full font-semibold text-gray-500">
         | {tags.map((tag) => tag + ' | ')}
       </p>
       <ClickableImg img={img} alt={title} />
       <p className="my-4">{shortDescription}</p>
       {hosted && (
-        <p className="font-semibold text-gray-500 mb-4">
+        <p className="mb-4 font-semibold text-gray-500">
           {`Hosted at `}
           <a
             href={hosted}
@@ -46,12 +46,12 @@ export const Project: FC<ProjectProps> = ({
         />
         {url && (
           <a href={url} target="_blank" rel="noreferrer">
-            <button className="bg-white hover:underline py-1 px-4 border border-black flex justify-between">
+            <button className="flex justify-between border border-black bg-white px-4 py-1 hover:underline">
               <span>Visit repo</span>
               <img
                 src={ExternalLink}
                 alt="External link"
-                className="w-4 ml-2 mt-1"
+                className="ml-2 mt-1 w-4"
               />
             </button>
           </a>

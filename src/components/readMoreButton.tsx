@@ -17,13 +17,13 @@ export const ReadMoreButton: FC<ReadMoreButtonProps> = ({
 
   return (
     <button
-      className="border-black bg-transparent flex border-b-transparent border-b-2 font-medium hover:border-b-black"
+      className="flex border-b-2 border-black border-b-transparent bg-transparent font-medium hover:border-b-black"
       onClick={toggleContent}
     >
       <img
         src={Arrow}
         alt="Arrow down"
-        className={`w-4 mr-2 mt-1 ${
+        className={`mr-2 mt-1 w-4 ${
           displayDescription ? 'rotate-180' : 'rotate-0'
         } transition duration-300 ease-in-out`}
       />

@@ -14,12 +14,12 @@ export const HomeView: FC = () => {
   return (
     <div className="-mt-8 lg:mt-0">
       <Wallpaper />
-      <div className="ml-auto mr-auto mt-8 max-w-xl px-4">
+      <div className="mx-auto mt-8 max-w-xl px-4">
         <h2 className="text-4xl font-bold">magnus.ouren.no</h2>{' '}
         <p className="font-semibold text-gray-500">
           react/typescript/tailwind css
         </p>
-        <p className="mt-4 mb-4 text-justify">
+        <p className="my-4 text-justify">
           Hello, I am Magnus and this is my personal homepage. I have just
           finished my bachelor degree in informatics at NTNU i Trondheim, and
           will continue with a Master of Science - Informatics at NTNU in August
@@ -32,7 +32,7 @@ export const HomeView: FC = () => {
           <Link
             to="/cv"
             onClick={scrollToTop}
-            className="bg-white hover:bg-black hover:text-white font-medium text-black py-2 px-4 border-l-8 border-black border w-1/2 transition-all duration-300 shadow-md flex justify-between"
+            className="flex w-1/2 justify-between border border-l-8 border-black bg-white px-4 py-2 font-medium text-black shadow-md transition-all duration-300 hover:bg-black hover:text-white"
           >
             <p>CV</p>
             <FolderOpen />
@@ -40,7 +40,7 @@ export const HomeView: FC = () => {
           <Link
             to="/projects"
             onClick={scrollToTop}
-            className="bg-white hover:bg-black hover:text-white font-medium text-black py-2 px-4 border-l-8 border-black border w-1/2 transition-all duration-300 shadow-md flex justify-between"
+            className="flex w-1/2 justify-between border border-l-8 border-black bg-white px-4 py-2 font-medium text-black shadow-md transition-all duration-300 hover:bg-black hover:text-white"
           >
             <p>My Projects</p>
             <Code />

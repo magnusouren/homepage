@@ -25,8 +25,14 @@ module.exports = {
     'multiline-ternary': 'off',
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
+    'tailwindcss/classnames-order': 'error',
   },
-  extends: ['standard-with-typescript', 'plugin:react/recommended'],
+  extends: [
+    'standard-with-typescript',
+    'plugin:react/recommended',
+    'plugin:tailwindcss/recommended',
+    'plugin:prettier/recommended',
+  ],
   overrides: [
     {
       env: {
@@ -44,5 +50,5 @@ module.exports = {
     project: './tsconfig.json',
     tsconfigRootDir: __dirname,
   },
-  plugins: ['react', 'simple-import-sort'],
+  plugins: ['react', 'simple-import-sort', '@typescript-eslint'],
 };

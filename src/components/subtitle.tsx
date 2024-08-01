@@ -5,5 +5,5 @@ interface SubtitleProps {
 }
 
 export const Subtitle: FC<SubtitleProps> = ({ subtitle }: SubtitleProps) => (
-  <h1 className="text-4xl font-bold my-8">{subtitle}</h1>
+  <h1 className="my-8 text-4xl font-bold">{subtitle}</h1>
 );

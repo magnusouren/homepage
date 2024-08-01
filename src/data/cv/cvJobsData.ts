@@ -1,3 +1,4 @@
+import Computas from '../../img/cv/computas.png';
 import ForsvaretLogo from '../../img/cv/forsvaret.jpg';
 import Havsport from '../../img/cv/havsport.svg';
 import NLS from '../../img/cv/nls.jpeg';
@@ -30,12 +31,13 @@ export const CVJobsData: CvJob[] = [
     href: 'https://www.ntnu.edu/',
   },
   {
-    jobTitle: 'Summer Intern - Developer',
+    jobTitle: 'Summer Intern',
     company: 'Computas',
     startTime: { year: 2024, month: 6 },
     endTime: { year: 2024, month: 7 },
-    longDescription: 'TBA',
-    logo: '',
+    longDescription:
+      'Summer internship at Computas. Developed a Chatbot for internal use for TV-aksjonen based on RAG with Azure Cloud Services.',
+    logo: Computas,
     location: 'Oslo',
     href: 'https://www.computas.com/',
   },

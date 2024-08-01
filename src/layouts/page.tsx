@@ -7,7 +7,7 @@ import { Navbar } from '../components/nav/navbar';
 export const PageLayout: FC = () => (
   <main>
     <Navbar />
-    <div className="ml-0 mt-24 lg:pl-48 lg:mt-0 mb-20 w-full min-h-screen">
+    <div className="mb-20 ml-0 mt-24 min-h-screen w-full lg:mt-0 lg:pl-48">
       <Outlet />
     </div>
     <div className="md:hidden">

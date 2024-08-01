@@ -11,7 +11,7 @@ export const AboutMe: FC = () => {
 
   return (
     <div>
-      <div className="ml-auto mr-auto max-w-xl px-4">
+      <div className="mx-auto max-w-xl px-4">
         <Subtitle subtitle="about me" />
         <p className="my-4 text-justify">
           I am a {age} year old student from Trondheim, Norway. I grew up and

@@ -24,8 +24,8 @@ export const CvContent = ({
     <div className="my-8">
       <div className="flex justify-between">
         <div>
-          <h4 className="font-semibold my-2">{header}</h4>
-          <p className="text-gray-500 my-2">
+          <h4 className="my-2 font-semibold">{header}</h4>
+          <p className="my-2 text-gray-500">
             {location} | {monthToString(startTime.month)} {startTime.year} -{' '}
             {monthToString(endTime?.month ?? 0)} {endTime?.year ?? 'to date'}
           </p>
@@ -42,12 +42,12 @@ export const CvContent = ({
             src={logo}
             alt="education"
             onClick={handleOnClick}
-            className={`w-24 h-24 mx-2 ${href ? 'cursor-pointer' : ''}`}
+            className={`mx-2 size-24 ${href ? 'cursor-pointer' : ''}`}
           />
         )}
       </div>
       {displayDescription && (
-        <div className="bg-gray-100 p-4 mt-4">
+        <div className="mt-4 bg-gray-100 p-4">
           <p className="text-gray-800 ">{longerDescription}</p>
           {readMoreURL && (
             <p className="mt-4">

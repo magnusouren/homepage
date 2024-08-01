@@ -24,7 +24,7 @@ export const DesktopNav: FC<DesktopNavProps> = ({
           />
         ))}
       </ul>
-      <p className="hidden lg:block absolute bottom-8 w-full text-center font-extralight align-middle">
+      <p className="absolute bottom-8 hidden w-full text-center align-middle font-extralight lg:block">
         {`- ${year} -`}
       </p>
     </>

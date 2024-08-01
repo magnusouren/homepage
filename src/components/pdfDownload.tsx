@@ -32,7 +32,7 @@ export const DownloadButton: React.FC<DownloadButtonProps> = ({ fileUrl }) => {
   return (
     <button
       onClick={handleDownload}
-      className="bg-black hover:bg-white hover:text-black border-solid border-black border-2 text-white font-bold py-2 px-4 mt-8 flex"
+      className="mt-8 flex border-2 border-solid border-black bg-black px-4 py-2 font-bold text-white hover:bg-white hover:text-black"
     >
       Download as PDF <CloudDownload className="ml-2" />
     </button>

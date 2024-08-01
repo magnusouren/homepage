@@ -34,7 +34,7 @@ export const Projects = (): JSX.Element => {
   );
 
   return (
-    <div className="ml-auto mr-auto max-w-2xl px-4">
+    <div className="mx-auto max-w-2xl px-4">
       <div>
         <Subtitle subtitle="projects" />
         <p>
@@ -44,9 +44,9 @@ export const Projects = (): JSX.Element => {
           Click on images to make them bigger. More projects will be added in
           the future!
         </p>
-        <div className=" border-black border-t border-b my-4">
+        <div className=" my-4 border-y border-black">
           <h2 className="mt-2 font-semibold">filter projects:</h2>
-          <div className="flex flex-grow flex-wrap gap-2 mb-4 mt-2">
+          <div className="mb-4 mt-2 flex grow flex-wrap gap-2">
             {Object.entries(tagCounts)
               .filter(([_tag, count]) => count > 1)
               .sort(([_tag, count1], [_tag2, count2]) => count2 - count1)
@@ -54,7 +54,7 @@ export const Projects = (): JSX.Element => {
                 <button
                   className={`${
                     filter === tag ? 'bg-black text-white' : 'bg-white'
-                  } px-4 py-2 border border-black border-l-8 min-w-[7rem]`}
+                  } min-w-28 border border-l-8 border-black px-4 py-2`}
                   value={tag}
                   onClick={handleFilterChange}
                   key={tag}

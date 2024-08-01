@@ -17,7 +17,7 @@ export const MobileNav: FC<MobileNavProps> = ({ navItems }: MobileNavProps) => {
 
   return (
     <>
-      <div className="flex lg:hidden bg-black h-16 justify-between items-center p-4">
+      <div className="flex h-16 items-center justify-between bg-black p-4 lg:hidden">
         <Link
           to=""
           onClick={() => {
@@ -40,8 +40,8 @@ export const MobileNav: FC<MobileNavProps> = ({ navItems }: MobileNavProps) => {
         )}
       </div>
       {viewMenu && (
-        <div className="bg-black h-screen">
-          <ul className="px-4 w-screen text-center" onClick={toggleMenu}>
+        <div className="h-screen bg-black">
+          <ul className="w-screen px-4 text-center" onClick={toggleMenu}>
             {navItems.map((navItem) => (
               <NavItem
                 text={navItem.text}

@@ -27,7 +27,7 @@ export const navItems: NavItemType[] = [
   },
   {
     text: 'timeline',
-    emoji: '🕰️',
+    emoji: '🧭',
     url: 'timeline',
     target: '_self',
   },

@@ -43,23 +43,23 @@ export const TimeObject: FC<TimeObjectProps> = ({
       className={`relative flex items-center justify-end ${index % 2 === 0 ? 'md:justify-start' : 'md:justify-end'}`}
     >
       <div
-        className={`w-11/12 md:w-1/2 p-4 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left ml-8'}`}
+        className={`w-11/12 p-4 md:w-1/2 ${index % 2 === 0 ? 'md:text-right' : 'ml-8 md:text-left'}`}
       >
         <div
-          className={`${iconType[type].color} p-4 rounded-lg shadow-md border border-gray-200 mx-4 relative ${content ? 'cursor-pointer  hover:shadow-lg' : ''}`}
+          className={`${iconType[type].color} relative mx-4 rounded-lg border border-gray-200 p-4 shadow-md ${content ? 'cursor-pointer  hover:shadow-lg' : ''}`}
           onClick={() => {
             setShowMore(!showMore);
           }}
         >
-          <p className="md:hidden text-xs mb-2">
+          <p className="mb-2 text-xs md:hidden">
             {monthToString(startTime.month)} {startTime.year}
           </p>
-          <p className="font-medium text-sm">{title}</p>
+          <p className="text-sm font-medium">{title}</p>
           {showMore && content && (
-            <div className="text-sm font-light mt-4">{content}</div>
+            <div className="mt-4 text-sm font-light">{content}</div>
           )}
           {showMore && type !== 'other' && type !== 'project' && (
-            <div className="text-xs font-light mt-4">
+            <div className="mt-4 text-xs font-light">
               {monthToString(startTime.month)} {startTime.year} -{' '}
               {endTime ? `${monthToString(endTime.month)} ` : 'To date'}
               {endTime?.year ?? ''}
@@ -67,12 +67,12 @@ export const TimeObject: FC<TimeObjectProps> = ({
           )}
         </div>
         <div
-          className={`absolute -left-0.5 top-1/2 transform -translate-y-1/2  ${index % 2 === 0 ? 'md:left-1/2' : 'md:left-1/2'}  md:-ml-5 h-10 w-10 bg-white rounded-full border text-center border-gray-200 shadow-md flex items-center justify-center`}
+          className={`absolute -left-0.5 top-1/2 -translate-y-1/2${index % 2 === 0 ? 'md:left-1/2' : 'md:left-1/2'}  flex size-10 items-center justify-center rounded-full border border-gray-200 bg-white text-center shadow-md md:-ml-5`}
         >
           {iconType[type].tag}
         </div>
         <div
-          className={`hidden md:block absolute top-1/2 transform -translate-y-1/2 ${index % 2 === 0 ? 'md:left-1/2 text-left pl-8' : 'md:right-1/2 text-right pr-8'}  text-gray-600 `}
+          className={`absolute top-1/2 hidden -translate-y-1/2 md:block${index % 2 === 0 ? 'pl-8 text-left md:left-1/2' : 'pr-8 text-right md:right-1/2'}  text-gray-600 `}
         >
           {monthToString(startTime.month)} {startTime.year}
         </div>

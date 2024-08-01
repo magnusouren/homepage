@@ -19,26 +19,26 @@ export const NavItem: FC<NavItemType> = ({
   };
 
   return (
-    <li key={text} className="my-4 md:my-8 md:w-full text-center md:block flex">
+    <li key={text} className="my-4 flex text-center md:my-8 md:block md:w-full">
       {url.includes('.com' || 'www' || 'https' || '.org') ? (
         <a
           key={text}
           href={url}
           target="_blank"
           rel="noreferrer"
-          className="hover:font-bold"
+          className="flex items-center justify-center gap-2 hover:font-bold"
         >
-          <span className="text-2xl hidden md:inline">{emoji} </span>
+          <span className="hidden text-2xl md:inline">{emoji} </span>
           {text}
         </a>
       ) : (
         <Link
           to={url}
           key={text}
-          className="hover:font-bold"
+          className="flex items-center justify-center gap-2 hover:font-bold"
           onClick={scrollToTop}
         >
-          <span className="text-2xl hidden md:inline">{emoji} </span>
+          <span className="hidden text-2xl md:inline">{emoji} </span>
           {text}
         </Link>
       )}
