@@ -99,7 +99,7 @@ export const Timeline: React.FC = () => {
       </p>
       <div className="relative mt-8">
         <div className="absolute inset-0 ml-4 flex md:ml-0 md:justify-center">
-          <div className="w-1 bg-gray-200"></div>
+          <div className="w-1 bg-gray-200"></div> {/* To create gray line */}
         </div>
         <div className="space-y-8">
           {mergedData.map((item, index) => (
