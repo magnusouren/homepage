@@ -16,11 +16,12 @@ export const AboutMe: FC = () => {
         <p className="my-4 text-justify">
           I am a {age} year old student from Trondheim, Norway. I grew up and
           come from Oslo. Currently, I am studying informatics at NTNU in
-          Trondheim. At the moment, I am finishing the third and last year of
-          the bachelor program. I am a very curious person and I love to learn
-          new things. Studying informatics makes it possible for me to learn a
-          lot of new things that I never thought would be relevant to learn, but
-          the more I learn, the more I understand how much I dont know.
+          Trondheim. At the moment, I am at my first year of my MSc in
+          Informatics with specialization in Software Engineering. I am a very
+          curious person and I love to learn new things. Studying informatics
+          makes it possible for me to learn a lot of new things that I never
+          thought would be relevant to learn, but the more I learn, the more I
+          understand how much I dont know.
         </p>
         <CvPhoto />
         <p className="my-4 text-justify">
@@ -66,9 +67,10 @@ export const AboutMe: FC = () => {
           studying.
         </p>
         <p className="my-4 text-justify">
-          I am currently looking foreward to finish my bachelor degree by the
-          summer of 2024. After that I am planning to take a master degree in
-          informatics.
+          I am currently at my exchange semester at the University of La
+          Sapienza in Rome as a part of my MSc in Informatics at NTNU. Looking
+          forward to learn more about the Italian culture with food and drinks,
+          and the Italian way of studying.
         </p>
       </div>
     </div>
