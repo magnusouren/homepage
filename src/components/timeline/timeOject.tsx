@@ -20,12 +20,12 @@ interface TimeObjectProps {
   type: TimeObjectType;
 }
 
-const iconType = {
-  education: { tag: <School />, color: 'bg-white' },
-  work: { tag: <Work />, color: 'bg-white' },
-  volunteer: { tag: <Group />, color: 'bg-white' },
-  project: { tag: <Code />, color: 'bg-gray-200 text-black' },
-  other: { tag: `🎉`, color: 'bg-white' },
+const objectType = {
+  education: { icon: <School />, bgColor: 'bg-white' },
+  work: { icon: <Work />, bgColor: 'bg-white' },
+  volunteer: { icon: <Group />, bgColor: 'bg-white' },
+  project: { icon: <Code />, bgColor: 'bg-gray-200 text-black' },
+  other: { icon: `🎉`, bgColor: 'bg-white' },
 };
 
 export const TimeObject: FC<TimeObjectProps> = ({
@@ -46,7 +46,7 @@ export const TimeObject: FC<TimeObjectProps> = ({
         className={`w-11/12 p-4 md:w-1/2 ${index % 2 === 0 ? 'md:text-right' : 'ml-8 md:text-left'}`}
       >
         <div
-          className={`${iconType[type].color} relative mx-4 rounded-lg border border-gray-200 p-4 shadow-md ${content ? 'cursor-pointer  hover:shadow-lg' : ''}`}
+          className={`${objectType[type].bgColor} relative mx-4 rounded-lg border border-gray-200 p-4 shadow-md ${content ? 'cursor-pointer  hover:shadow-lg' : ''}`}
           onClick={() => {
             setShowMore(!showMore);
           }}
@@ -67,9 +67,9 @@ export const TimeObject: FC<TimeObjectProps> = ({
           )}
         </div>
         <div
-          className={`absolute left-1/2 top-1/2 -translate-y-1/2 ${index % 2 === 0 ? 'md:left-1/2' : 'md:left-1/2'}  flex size-10 items-center justify-center rounded-full border border-gray-200 bg-white text-center shadow-md md:-ml-5`}
+          className={`absolute left-0 top-1/2 -translate-y-1/2 ${index % 2 === 0 ? 'md:left-1/2' : 'md:left-1/2'}  flex size-10 items-center justify-center rounded-full border border-gray-200 bg-white text-center shadow-md md:-ml-5`}
         >
-          {iconType[type].tag}
+          {objectType[type].icon}
         </div>
         <div
           className={`absolute top-1/2 hidden -translate-y-1/2 md:block ${index % 2 === 0 ? 'pl-8 text-left md:left-1/2' : 'pr-8 text-right md:right-1/2'}  text-gray-600 `}
