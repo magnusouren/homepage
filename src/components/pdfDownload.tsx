@@ -1,5 +1,6 @@
 import { CloudDownload } from '@material-ui/icons';
 import React from 'react';
+import ReactGa from 'react-ga4';
 
 interface DownloadButtonProps {
   fileUrl: string;
@@ -7,6 +8,13 @@ interface DownloadButtonProps {
 
 export const DownloadButton: React.FC<DownloadButtonProps> = ({ fileUrl }) => {
   const handleDownload = (): void => {
+    ReactGa.send({
+      hitType: 'event',
+      eventCategory: 'Download',
+      eventAction: 'Download CV',
+      eventLabel: 'Download CV as PDF',
+    });
+
     fetch(fileUrl)
       .then(async (response) => await response.blob())
       .then((blob) => {

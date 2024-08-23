@@ -1,3 +1,5 @@
+import ReactGa from 'react-ga4';
+
 import { Subtitle } from '../components/subtitle';
 import {
   TimeObject,
@@ -10,6 +12,12 @@ import { projects } from '../data/projects/projects';
 import { type YearMonth } from '../types';
 
 export const Timeline: React.FC = () => {
+  ReactGa.send({
+    hitType: 'pageview',
+    page: '/timeline',
+    title: 'Timeline',
+  });
+
   const educationData = CVEducationData.map((education) => ({
     ...education,
     id: education.degree + education.institution,
