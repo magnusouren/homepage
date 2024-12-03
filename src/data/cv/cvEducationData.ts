@@ -5,13 +5,14 @@ import { type CvEducation } from '../../types';
 export const CVEducationData: CvEducation[] = [
   {
     degree: 'Master of Science in Informatics - Software Engineering',
-    shortDescription: 'Starting my master degree in informatics at NTNU.',
+    shortDescription: 'Currently in my Masters in Informatics at NTNU.',
     fieldOfStudy: 'Informatics',
     institution: 'NTNU',
     location: 'Trondheim',
     logo: NTNU,
     startTime: { year: 2024, month: 8 },
-    longDescription: `I am starting my master degree in informatics at NTNU in August 2024. The master program is a 2-year program where I will specialize in software engineering. I am looking forward to learning more about software development and software architecture, and to continue my studies in informatics.`,
+    longDescription: `The degree is a 2-year program where I will specialize in software engineering. I am looking forward to learning more about software development and software architecture, and to continue my studies in informatics.
+    With exhange semester at La Sapienza in Rome, Italy in the fall of 2024, and at BME in Budapest, Hungary in the spring of 2025.`,
   },
   {
     degree: 'Bachelor in Informatics',

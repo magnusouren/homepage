@@ -50,4 +50,14 @@ export const CvVoluntaryWorkData: CvVoluntaryWork[] = [
     endTime: { year: 2022, month: 9 },
     logo: '',
   },
+  {
+    position: 'Boardmember',
+    longDescription:
+      'Onlinefondet is a fund that supports the student organization Online. As a board member, I am responsible for evaluating applications for funding and deciding on the allocation of funds. ',
+    institution: 'Onlinefondet',
+    location: 'Trondheim',
+    startTime: { year: 2024, month: 3 },
+    logo: '',
+    readMoreURL: 'https://www.onlinefondet.no/',
+  },
 ];

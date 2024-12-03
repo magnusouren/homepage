@@ -70,7 +70,7 @@ export const Timeline: React.FC = () => {
     },
     {
       id: 4,
-      title: 'Exchange year in Rome, Italy',
+      title: 'Exchange year in Rome at La Sapienza',
       startTime: { year: 2024, month: 9 } satisfies YearMonth,
       type: 'other' as TimeObjectType,
     },
