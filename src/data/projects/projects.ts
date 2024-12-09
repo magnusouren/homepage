@@ -69,6 +69,7 @@ export const projects: ProjectProps[] = [
       'MongoDB',
     ],
     repository: 'https://github.com/magnusouren/it2810-project2',
+    hosted: 'https://bingewatcher.magnusbyrkjeland.no/',
     secondaryImages: [
       BWSearch,
       BWDetails,
@@ -114,7 +115,6 @@ export const projects: ProjectProps[] = [
       'The user can also search for others users, follow them, and see their publishes content.',
     tags: ['React', 'Typescript', 'TailwindCSS', 'Firebase'],
     repository: 'https://github.com/magnusouren/woshare',
-    hosted: 'https://www.woshare.ouren.no',
     secondaryImages: [
       Sessions,
       Programs,
