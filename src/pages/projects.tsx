@@ -1,17 +1,11 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 import React, { useState } from 'react';
-import ReactGa from 'react-ga4';
 
 import { Project } from '../components/projects/project';
 import { Subtitle } from '../components/subtitle';
 import { projects } from '../data/projects/projects';
 
 export const Projects = (): JSX.Element => {
-  ReactGa.send({
-    hitType: 'pageview',
-    page: '/projects',
-    title: 'Projects',
-  });
   const [filter, setFilter] = useState('all');
 
   const tagCounts = projects.reduce<Record<string, number>>((acc, project) => {

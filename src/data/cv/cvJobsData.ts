@@ -80,6 +80,7 @@ export const CVJobsData: CvJob[] = [
     jobTitle: 'Webshop Maintainer and Developer',
     company: 'Havsport Diving center AS',
     startTime: { year: 2022, month: 1 },
+    endTime: { year: 2025, month: 2 },
     longDescription:
       "As part of my job at Havsport Diving Center AS, I was responsible for maintaining and developing the company's webshop. This involved updating and adding new products, as well as making price adjustments based on market conditions. I worked to ensure that the webshop was user-friendly and provided a smooth online shopping experience for our customers. Overall, my role was critical in maintaining the online presence and success of Havsport Diving Center AS.",
     logo: Havsport,

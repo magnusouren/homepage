@@ -1,20 +1,12 @@
 import '../App.css';
 
-// Import Material Icons
 import { Code, FolderOpen } from '@material-ui/icons';
 import { type FC } from 'react';
-import ReactGa from 'react-ga4';
 import { Link } from 'react-router-dom';
 
 import { Wallpaper } from '../components/home/wallpaper';
 
 export const HomeView: FC = () => {
-  ReactGa.send({
-    hitType: 'pageview',
-    page: '/',
-    title: 'Home',
-  });
-
   const scrollToTop = (): void => {
     window.scrollTo(0, 0);
   };

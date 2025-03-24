@@ -1,17 +1,10 @@
 import { type FC } from 'react';
-import ReactGa from 'react-ga4';
 import { Link } from 'react-router-dom';
 
 import { CvPhoto } from '../components/aboutme/portrait';
 import { Subtitle } from '../components/subtitle';
 
 export const AboutMe: FC = () => {
-  ReactGa.send({
-    hitType: 'pageview',
-    page: '/aboutme',
-    title: 'About Me',
-  });
-
   const age = Math.floor(
     (Date.now() - new Date('2000-03-02').getTime()) / 31556839680,
   );

@@ -1,5 +1,4 @@
 import { type FC } from 'react';
-import ReactGa from 'react-ga4';
 
 import { CvContent } from '../components/cv/cvContent';
 import { DownloadButton } from '../components/pdfDownload';
@@ -9,12 +8,6 @@ import { CVJobsData } from '../data/cv/cvJobsData';
 import { CvVoluntaryWorkData } from '../data/cv/cvVoluntaryWorkData';
 
 export const CV: FC = () => {
-  ReactGa.send({
-    hitType: 'pageview',
-    page: '/cv',
-    title: 'CV',
-  });
-
   return (
     <div className="mx-auto max-w-xl px-4">
       <Subtitle subtitle="curriculum vitae" />
