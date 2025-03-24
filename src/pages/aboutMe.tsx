@@ -46,31 +46,12 @@ export const AboutMe: FC = () => {
           page.
         </p>
         <p className="my-4 text-justify">
-          Currently I am working for{' '}
-          <a
-            href="https://www.dykkershop.no/"
-            className="underline hover:text-gray-500"
-          >
-            Havsport Dykkersenter
-          </a>{' '}
-          as maintainer of the webshop. Also working with the development of the
-          website for the shop. This is my first job relateded to IT, and has
-          gived me a lot of useful experience. Mainly working with Wordpress,
-          but also some other technologies.
-        </p>
-        <p className="my-4 text-justify">
           As a result of studying at NTNU, we are lucky to have the opportunity
           to work in different positions at NTNU. I have been working as a
           scientific assistant and teaching assistant for different courses.
           This has been a great experience and I have learned a lot from it. It
           has also been a nice opportunity to earn some extra money while
           studying.
-        </p>
-        <p className="my-4 text-justify">
-          I am currently at my exchange semester at the University of La
-          Sapienza in Rome as a part of my MSc in Informatics at NTNU. Looking
-          forward to learn more about the Italian culture with food and drinks,
-          and the Italian way of studying.
         </p>
       </div>
     </div>

@@ -64,6 +64,15 @@ export const Timeline: React.FC = () => {
       id: 4,
       title: 'Exchange year in Rome at La Sapienza',
       startTime: { year: 2024, month: 9 } satisfies YearMonth,
+      endTime: { year: 2025, month: 2 } satisfies YearMonth,
+      type: 'other' as TimeObjectType,
+    },
+    {
+      id: 5,
+      title:
+        'Exchange year in Budapest at Budapest University of Technology and Economics',
+      startTime: { year: 2025, month: 2 } satisfies YearMonth,
+      // endTime: { year: 2025, month: 7 } satisfies YearMonth,
       type: 'other' as TimeObjectType,
     },
   ];
