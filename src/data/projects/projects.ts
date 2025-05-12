@@ -18,6 +18,7 @@ import Search from '../../img/projects/proto/Searchpage.png';
 import Run from '../../img/projects/trainingDiary/run.png';
 import Strength from '../../img/projects/trainingDiary/strength.png';
 import TrainingDiary from '../../img/projects/trainingDiary/trainingDiary.png';
+import Main from '../../img/projects/worldHappiness/main.png';
 import CreateProgram from '../../img/projects/woshare/create_program.png';
 import CreateSession from '../../img/projects/woshare/create_session.png';
 import Feed from '../../img/projects/woshare/feed.png';
@@ -28,6 +29,18 @@ import Sessions from '../../img/projects/woshare/sessions.png';
 import { type ProjectProps } from '../../types';
 
 export const projects: ProjectProps[] = [
+  {
+    title: 'World Happiness Report',
+    image: Main,
+    shortDescription:
+      'From the course Visual Analytics at La Sapienza University of Rome. Visualization of the World Happiness Report 2005-2023.',
+    longDescription:
+      'Aim of the project is to visualize the World Happiness Report 2005-2023. The project is made with D3.js, React, Typescript and Vite. The data is fetched from a dataset found on Kaggle. The project was a solo project counting as the final exam. The purpose was to lear basic graphical principles for explaining big numerical datasets. PCA was used to reduce the dimensionality of the dataset, and linear regression was used to show the correlation between the different variables. The project was a great learning experience, and I learned a lot about D3.js and how to visualize data in a good way. The main purpose was to pass the exam during my exchange semester, but on overall it was a good experience.',
+    tags: ['D3.js', 'React', 'Typescript', 'Vite'],
+    repository: 'https://github.com/magnusouren/world-happiness-report',
+    startTime: { year: 2024, month: 10 },
+    endTime: { year: 2024, month: 12 },
+  },
   {
     title: 'Proto',
     image: Search,

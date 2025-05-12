@@ -19,7 +19,7 @@ export const Project: FC<ProjectProps> = ({
   const [displayDescription, setDisplayDescription] = useState(false);
 
   return (
-    <div className="mb-8 mt-4 w-full justify-center">
+    <div className="mb-16 w-full justify-center">
       <h2 className="text-2xl font-bold">{title}</h2>
       <p className="my-2 w-full font-semibold text-gray-500">
         | {tags.map((tag) => tag + ' | ')}
@@ -51,17 +51,19 @@ export const Project: FC<ProjectProps> = ({
               <img
                 src={ExternalLink}
                 alt="External link"
-                className="ml-2 mt-1 w-4"
+                className="ml-2 mt-1 size-4"
               />
             </button>
           </a>
         )}
       </div>
       {displayDescription && (
-        <ReadMore
-          longDescription={longDescription}
-          secondaryImages={secondaryImages}
-        />
+        <>
+          <ReadMore
+            longDescription={longDescription}
+            secondaryImages={secondaryImages}
+          />
+        </>
       )}
     </div>
   );

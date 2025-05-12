@@ -5,6 +5,7 @@ import { type FC } from 'react';
 import { Link } from 'react-router-dom';
 
 import { Wallpaper } from '../components/home/wallpaper';
+import monaco from '../img/monaco.jpg';
 
 export const HomeView: FC = () => {
   const scrollToTop = (): void => {
@@ -12,7 +13,7 @@ export const HomeView: FC = () => {
   };
   return (
     <div className="-mt-8 lg:mt-0">
-      <Wallpaper />
+      <Wallpaper src={monaco} alt={'Swimming pool in Monaco'} />
       <div className="mx-auto mt-8 max-w-xl px-4">
         <h2 className="text-4xl font-bold">magnus.ouren.no</h2>{' '}
         <p className="font-semibold text-gray-500">

@@ -24,6 +24,9 @@ export const ReadMore: FC<ReadMoreProps> = ({
             <ClickableImg img={image} key={index} alt={'screenshot'} />
           ))}
         </div>
+        <p className="mt-4 text-center text-sm font-semibold text-gray-500">
+          Click on the images to view them in full size.
+        </p>
       </>
     )}
   </div>

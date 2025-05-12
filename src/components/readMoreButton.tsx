@@ -27,7 +27,7 @@ export const ReadMoreButton: FC<ReadMoreButtonProps> = ({
           displayDescription ? 'rotate-180' : 'rotate-0'
         } transition duration-300 ease-in-out`}
       />
-      {displayDescription ? 'hide' : 'read more'}
+      <span className="pt-1">{displayDescription ? 'hide' : 'read more'}</span>
     </button>
   );
 };

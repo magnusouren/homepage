@@ -2,9 +2,9 @@ import { type CvVoluntaryWork } from '../../types';
 
 export const CvVoluntaryWorkData: CvVoluntaryWork[] = [
   {
-    position: 'Board member',
+    position: 'Board Member',
     longDescription:
-      'Representing the Business Relation Committee in board the at the student organization Online.',
+      'Representing the Business Relation Committee in board the at the student organization Online. Responsible for ensuring that business relations are prioritized in the daily management of the organization.',
     institution: 'Online',
     location: 'Trondheim',
     startTime: { year: 2022, month: 10 },
@@ -21,7 +21,7 @@ export const CvVoluntaryWorkData: CvVoluntaryWork[] = [
     logo: '',
   },
   {
-    position: 'Board member in KiD - student-business network',
+    position: 'Board Member at KiD - student-business network',
     longDescription:
       'Representing my student organization, Online, in the student-business network KiD. KiD is a network of 3 student organizations in Trondheim and about 25 companies. The network is working to improve the relationship between the students and the companies to promote motivation and learning outcome in the lower levels of the studies. ',
     institution: 'IE-faculty NTNU',
@@ -41,7 +41,7 @@ export const CvVoluntaryWorkData: CvVoluntaryWork[] = [
     logo: '',
   },
   {
-    position: 'Grill event coordinator for the Welcome Committee',
+    position: 'Grill Event Coordinator for the Welcome Committee',
     longDescription:
       'Was grill event coordinator in "Fadderukene" for the student organization. Arranged grill events for 200 new informatics-students. ',
     institution: 'Online',
@@ -51,9 +51,9 @@ export const CvVoluntaryWorkData: CvVoluntaryWork[] = [
     logo: '',
   },
   {
-    position: 'Boardmember',
+    position: 'Leader/Board Member',
     longDescription:
-      'Onlinefondet is a fund that supports the student organization Online. As a board member, I am responsible for evaluating applications for funding and deciding on the allocation of funds. ',
+      'Onlinefondet is a fund that supports the student organization Online. As a board member, I am responsible for evaluating applications for funding and deciding on the allocation of funds. Leader of the fund from March 2025. ',
     institution: 'Onlinefondet',
     location: 'Trondheim',
     startTime: { year: 2024, month: 3 },

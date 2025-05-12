@@ -1,7 +1,10 @@
 import { type FC } from 'react';
 
-import ImageToAdd from '../../img/monaco.jpg';
+interface WallpaperProps {
+  src: string;
+  alt: string;
+}
 
-export const Wallpaper: FC = () => (
-  <img alt="Monaco swimminpool" src={ImageToAdd} className="min-w-full" />
+export const Wallpaper: FC<WallpaperProps> = ({ src, alt }) => (
+  <img alt={alt} src={src} className="w-full" />
 );

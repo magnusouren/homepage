@@ -55,7 +55,7 @@ export const Projects = (): JSX.Element => {
                   className={`${
                     filter === tag ? 'bg-black text-white' : 'bg-white'
                   } min-w-28 border border-l-8 border-black px-4 py-2 
-                   transition-colors hover:bg-gray-300 hover:text-black active:bg-gray-500`}
+                   transition-colors hover:bg-black hover:text-white active:bg-gray-500`}
                   value={tag}
                   onClick={handleFilterChange}
                   key={tag}

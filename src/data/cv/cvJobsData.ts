@@ -29,6 +29,8 @@ export const CVJobsData: CvJob[] = [
     logo: Skatteetaten,
     location: 'Oslo',
     href: 'https://www.ntnu.edu/',
+    readMoreURL:
+      'https://www.skatteetaten.no/jobb/studenter-og-nyutdannede/sommerjobb/2023/',
   },
   {
     jobTitle: 'Summer Intern',
