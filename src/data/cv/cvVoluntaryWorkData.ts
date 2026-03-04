@@ -57,7 +57,17 @@ export const CvVoluntaryWorkData: CvVoluntaryWork[] = [
     institution: 'Onlinefondet',
     location: 'Trondheim',
     startTime: { year: 2024, month: 3 },
+    endTime: { year: 2026, month: 3 },
     logo: '',
     readMoreURL: 'https://www.onlinefondet.no/',
+  },
+  {
+    position: 'Chairman',
+    longDescription:
+      'Chairman in the condominium association for the building I live in. Responsible for leading the board and ensuring that the condominium association is well-managed and that the interests of the residents are represented.',
+    institution: 'Sameiet Nidarøygata 10',
+    location: 'Trondheim',
+    startTime: { year: 2025, month: 3 },
+    logo: '',
   },
 ];

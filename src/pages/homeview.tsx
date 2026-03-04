@@ -20,12 +20,12 @@ export const HomeView: FC = () => {
           react/typescript/tailwind css
         </p>
         <p className="my-4 text-justify">
-          Hello, I am Magnus and this is my personal homepage. I have just
-          finished my bachelor degree in informatics at NTNU i Trondheim, and
-          will continue with a Master of Science - Informatics at NTNU in August
-          2024. This webpage is made with React, Typescript, and Tailwind CSS as
-          a hobby project to learn more about these technologies. It started as
-          a workshop with a friend for learning React, but has developed into a
+          Hello, I am Magnus and this is my personal homepage. I am on my last
+          year of my MSc in Informatics at NTNU. This webpage is a hobby project
+          i have used for tracking my projects and experiences while applyin for
+          jobs. Its is made with React, Typescript, and Tailwind CSS as a hobby
+          project to learn more about these technologies. It started as a
+          workshop with a friend for learning React, but has developed into a
           bigger webpage about me, what I do, and who I am.
         </p>
         <div className="flex gap-4">

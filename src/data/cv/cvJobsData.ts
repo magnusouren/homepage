@@ -1,3 +1,4 @@
+import Bekk from '../../img/cv/bekk.png';
 import Computas from '../../img/cv/computas.png';
 import ForsvaretLogo from '../../img/cv/forsvaret.jpg';
 import Havsport from '../../img/cv/havsport.svg';
@@ -11,7 +12,7 @@ export const CVJobsData: CvJob[] = [
     jobTitle: 'Scientific Assistant - IT2805, Web technologies',
     company: 'NTNU',
     startTime: { year: 2023, month: 8 },
-    endTime: { year: 2023, month: 12 },
+    endTime: { year: 2025, month: 12 },
     longDescription:
       'As a scientific assistant, I am responsible for assisting the professor in the course for the semester. This includes preparing and holding exercise lectures, as well as preparing and coordinating grading of poject- and individual assignments. My main task is to facilitate the project assignment, where the students are going to develop a web application in groups. Course: IT2805, Web technologies (WebTek).',
     logo: NTNU,
@@ -42,6 +43,17 @@ export const CVJobsData: CvJob[] = [
     logo: Computas,
     location: 'Oslo',
     href: 'https://www.computas.com/',
+  },
+  {
+    jobTitle: 'Summer Intern',
+    company: 'Bekk',
+    startTime: { year: 2025, month: 6 },
+    endTime: { year: 2025, month: 7 },
+    longDescription:
+      'Summer internship at Bekk. Worked on a project for Entur, where we worked on developing a proof of concept for how trafic information from trains and operators easily can be integrated into professional tools and end user applications to increase the quality and availability of trafic information for both customer support and travelers.',
+    logo: Bekk,
+    location: 'Oslo',
+    href: 'https://www.bekk.no/',
   },
   {
     jobTitle: 'Teaching Assistant - TDT4100, OOP',
